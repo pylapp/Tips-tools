@@ -20,7 +20,7 @@
 #
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 15.0.0
+# Version.............: 16.0.0
 # Since...............: 18/08/2016
 # Description.........: Process a file/an input (mainly in CSV format) to HTML with CSS if needed
 #			This file must contain several columns: Type, OS, Constructor, Name, Screen size, Sreen type, Screen resolution, SoC, GPU, Sensors, Batery, Storage, RAM, Camera, Dimensions, Weight, IP, USB Type, SD Card, SIM , UI
@@ -29,6 +29,9 @@
 # Usage: cat myFileToProcess.csv | bash csvToHtml_devices.sh > myOutputFile.html
 #
 
+# Debug purposses
+#set -euxo pipefail
+set -euo pipefail
 
 # ###### #
 # CONFIG #

@@ -95,3 +95,18 @@ _However following improvements can be brought for GNU/Linux users_
 
 	* In _tipsntools.sh_ script: refactor of "count" feature
 	* In _tipsntools.sh_ script: improve help
+
+## v14.3.3
+
+_This version is dedicated to macOS users, and is based on v14.3.2_
+
+New bug fixes:
+
+	* More details in help message and documentation
+	* More logs in case of errors for web app logic
+	* More logs during scripts executions
+	* Add controls for script executions and failures
+
+Related issues:
+
+	* #5

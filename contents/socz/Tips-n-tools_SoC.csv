@@ -1,30 +1,113 @@
-System On Chip (SoC) System On Chip (SoC);System On Chip (SoC) System On Chip (SoC);;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;
-Constructor;Target;Name;Gravure;Modem;Peak download speed;Peak upload speed;Bluetooth;NFC;USB;Camera support max.;Video capture max.;Video playback max.;Display max.;CPU;CPU cores number;CPU clock speed max.;CPU architecture;GPU;GPU API support;AI support
-Qualcomm;smartphone;Snapdragon 820;?;Qualcomm Snapdragon X12 LTE;600 Mbps;150 Mbps;4.1;X;2.0 , 3.0;28 MP;4K Ultra HD;4K Ultra HD;2160 x 3840 px , 4K;Qualcomm Kryo;4;2.2 GHz;64 bits;Qualcomm Adreno 530;OpenGL ES , OpenCL , Vulkan;no
-Qualcomm;smartphone;Snapdragon 821;14 nm;Qualcomm Snapdragon X12 LTE;600 Mbps;150 Mbps;4.1;X;2.0 , 3.0;28 MP;4K Ultra HD;4K Ultra HD;2160 x 3840 px , 4K;Qualcomm Kryo;4;2.4 GHz;64 bits;Qualcomm Adreno 530;OpenGL ES , OpenCL , Vulkan;no
-Qualcomm;smartphone / tablet;Snapdragon 835;?;Qualcomm Snapdragon X16 LTE;1 Gbps;150 Mbps;5.0;X;3.1;32 MP;4K Ultra HD;4K Ultra HD;2160 x 3840 px , 4K;Qualcomm Kryo;8;2.45 GHz;64 bits;Qualcomm Adreno 540;OpenGL ES , OpenCL , Vulkan , Tango, Daydream;?
-Qualcomm;smartphone / tablet;Snapdragon 845;10 nm;Qualcomm Snapdragon X20 LTE;1.2 Gbps;150 Mbps;5.0;X;C , 3.1;32 MP;4K Ultra HD;4K Ultra HD;3840 x 2160 px;Qualcomm Kryo 385 , ARM Cortex A55;4 + 4;2.8 GHz – 1.8 GHz;64 bits;Qualcomm Adreno 630;Open Gl ES , Open CL , Vulkan , DirectX;yes (with Hexagon 685 DSP’s  Neural Processing Engine)
-Qualcomm;smartphone / tablet;Snapdragon 653;?;Qualcomm Snapdragon X9 LTE;300 Mbps;150 Mbps;4.1 , BLE;X;2.0 , 3.0;21 MP;4K Ultra HD;4K Ultra HD;1600 x 2560 px , Quad HD;ARM Cortex A72 , ARM Cortex 153;4 + 4;1.95 GHz;64 bits;Qualcomm Adreno 510;?;no
-Qualcomm;smartphone / tablet;Snapdragon 660;14 nm;Qualcomm Snapdragon X12 LTE;600 Mbps;150 Mbps;5.0;X;C , 3.1;24 MP;4K Ultra HD;4K Ultra HD;1600 x 2560 px , Quad HD;Qualcomm Kryo;4 + 4;2.2 GHz , 1.8 GHz;64 bits;Qualcomm Adreno 512;?;no
-Qualcomm;smartphone / tablet;Snapdragon 625;?;Qualcomm Snapdragon X9 LTE;300 Mbps;150 Mbps;4.1 , BLE;X;3.0;24 MP;4K Ultra HD;4K Ultra HD;1200 x 1900 , Full HD;ARM Cortex 53;4 + 4;2.0 GHz;64 bits;Qualcomm Adreno 506;Open GL ES;no
-Qualcomm;smartphone / tablet;Snapdragon 630;14 nm;Qualcomm Snapdragon X12 LTE;600 Mbps;150 Mbps;5.0;X;C , 3.1;?;4K Ultra HD;4K Ultra HD;1200 x 1900 , Full HD;ARM Cortex 53;4 + 4;2.2 GHz , 1.8 GHz;64 bits;Qualcomm Adreno 508;?;no
-Samsung;smartphone / tablet;Exynos 8 Octa (8890);10 nm;?;600 Mbps;150 Mbps;?;?;?;24 MP;4K Ultra HD;4K Ultra HD;4096 x 2160 px , UHD;Samsung custom core , ARM Cortex 53;8;2.3 GHz;64 bits;ARM Mali T880;?;no
-Samsung;smartphone / tablet;Exynos 9 Series 8895;10 nm;?;1 Gbps;150 Mbps;?;?;?;28 MP;4K Ultra HD;4K Ultra HD;?;Samsung custom core , ARM Cortex-A53;4 + 4;?;64 bits;ARM Mali G71;?;no
- ;smartphone / tablet;Exynos 9 Series 9810;10 nm;?;1.2 Gbps;200 Mbps;?;?;?;?;?;4K Ultra HD;3840 x 2400 px , WQUXGA;Samsung custom core , ARM Cortex-A55;4 + 4;2.9 GHz , 1.9 GHz;64 bits;ARM Mali G72 MP18;?;neural unit
-Apple;iPhone 7;A10 Fusion;?;?;?;?;4.1 , BLE;?;?;12 MP;4K;4K;?;Apple Twister;4;2.2 GHz;64 bits;PowerVR Series7XT;?;?
-Apple;IPhone 8;A11 Bionic;10 nm;?;?;?;?;?;?;?;?;?;?;Apple Monsoon , Apple Mistral;2 + 4;?;64 bits;Custom 3 cores;Metal 2;Neural Engine
-Apple;iPhone XR / XS / XS Max;A12 Bionic;7 nm;?;?;?;?;?;?;?;?;?;?;?;2 + 4;?;64 bits;Custom 4 cores;Metal 2;Neural Engine
-MediaTek;smartphone;Helio P10;?;?;?;?;?;?;?;21 MP;?;?;1200 x 1900 , Full HD;ARM Cortex A53;8;2 GHz;64 bits;ARM Mali T860;?;no
-MediaTek;smartphone;Helio P23;16 mm;?;?;?;?;?;?;24 MP;1920 x 1080;?;2160 x 1080;ARM Cortex A53;8;2.3 GHz;64 bits;ARM Mali G71;?;?
-MediaTek;smartphone;Helio P35;?;?;?;?;?;?;?;?;?;?;1080p;ARM Cortex-A73 , ARM Cortex-A52 , ARM Cortex-A35;4 + 4 + 2;?;?;ARM Mali G71;?;no
-MediaTek;smartphone;Helio X30;10 nm;?;600 Mbps;100 Mbps;?;?;?;?;?;4K;?;ARM Cortex A73 , ARM Cortex A53;2 + 8;2.5 GHz , 1.9 GHz – 2.2 GHz;?;?;?;no
-Huawei;smartphone;Kirin 950;?;?;600 Mbps;150 Mbps;?;?;?;?;?;?;?;ARM Cortex-A73 , ARM Cortex A53;4 + 4;?;?;ARM Mali T880;Vulkan , OpenGL ES , Direct X 12;no
-Huawei;smartphone;Kirin 960;?;?;600 Mbps;150 Mbps;?;?;?;?;?;?;?;ARM Cortex A73 , ARM Cortex A53;4 + 4;2.3 GHz , 1.8 GHz;?;ARM Mali G71 MP8;Vulkan;no
-Huawei;smartphone;Kirin 970;10 nm;?;1.2 Gbps;?;?;?;?;?;?;?;?;ARM Cortex-A73 , ARM Cortex A3;4 + 4;2.4 GHz , 1.8 GhZ;?;ARM Mali G72 MP12;?;Neural Processing Unit
-Huawei;smartphone;Kirin 980;7 nm;?;1.4 Gbps;?;;?;?;?;?;?;?;Cortex A76 , Cortex A 76 , Cortex A55;2 + 2 + 4;2.6 GHz , 1.92 GHz , 1.8 GHz;64 bits;ARM Mali G76;?;Neural Processing Unit (dual)
-Spreadtrum;smartphone;SC9861G-IA;?;?;300 Mbps;100 Mbps;?;?;?;26 MP;?;?;1600 x 2560 px , Quad HD;?;8;2 GHz;?;?;?;no
-Xiaomi;smartphone;Surge S1;28 nm;Modem of Xiaomi;?;?;?;?;?;?;?;?;?;ARM Cortex A53 , ARM Cortex A53;4 + 4;2.2 GHz , 1.4 GHz;?;ARM Mali T860;?;no
+System On Chip (SoC) System On Chip (SoC);;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+Constructor;Target;Name;Gravure;Modem;Peak download speed;Peak upload speed;Bluetooth;NFC;USB;Camera support max.;Video capture max.;Video playback max.;Display max.;CPU;CPU cores number;CPU clock speed max.;CPU architecture;GPU;GPU API support;AI support;
+Qualcomm;smartphone;Snapdragon 820;?;Qualcomm Snapdragon X12 LTE;600 Mbps;150 Mbps;4.1;X;2.0 , 3.0;28 MP;4K Ultra HD;4K Ultra HD;2160 x 3840 px , 4K;Qualcomm Kryo;4;2.2 GHz;64 bits;Qualcomm Adreno 530;OpenGL ES , OpenCL , Vulkan;no;
+Qualcomm;smartphone;Snapdragon 821;14 nm;Qualcomm Snapdragon X12 LTE;600 Mbps;150 Mbps;4.1;X;2.0 , 3.0;28 MP;4K Ultra HD;4K Ultra HD;2160 x 3840 px , 4K;Qualcomm Kryo;4;2.4 GHz;64 bits;Qualcomm Adreno 530;OpenGL ES , OpenCL , Vulkan;no;
+Qualcomm;smartphone / tablet;Snapdragon 835;?;Qualcomm Snapdragon X16 LTE;1 Gbps;150 Mbps;5.0;X;3.1;32 MP;4K Ultra HD;4K Ultra HD;2160 x 3840 px , 4K;Qualcomm Kryo;8;2.45 GHz;64 bits;Qualcomm Adreno 540;OpenGL ES , OpenCL , Vulkan , Tango, Daydream;?;
+Qualcomm;smartphone / tablet;Snapdragon 845;10 nm;Qualcomm Snapdragon X20 LTE;1.2 Gbps;150 Mbps;5.0;X;C , 3.1;32 MP;4K Ultra HD;4K Ultra HD;3840 x 2160 px;Qualcomm Kryo 385 , ARM Cortex A55;4 + 4;2.8 GHz  1.8 GHz;64 bits;Qualcomm Adreno 630;Open Gl ES , Open CL , Vulkan , DirectX;yes (with Hexagon 685 DSPs  Neural Processing Engine);
+Qualcomm;smartphone / tablet;Snapdragon 653;?;Qualcomm Snapdragon X9 LTE;300 Mbps;150 Mbps;4.1 , BLE;X;2.0 , 3.0;21 MP;4K Ultra HD;4K Ultra HD;1600 x 2560 px , Quad HD;ARM Cortex A72 , ARM Cortex 153;4 + 4;1.95 GHz;64 bits;Qualcomm Adreno 510;?;no;
+Qualcomm;smartphone / tablet;Snapdragon 660;14 nm;Qualcomm Snapdragon X12 LTE;600 Mbps;150 Mbps;5.0;X;C , 3.1;24 MP;4K Ultra HD;4K Ultra HD;1600 x 2560 px , Quad HD;Qualcomm Kryo;4 + 4;2.2 GHz , 1.8 GHz;64 bits;Qualcomm Adreno 512;?;no;
+Qualcomm;smartphone / tablet;Snapdragon 625;?;Qualcomm Snapdragon X9 LTE;300 Mbps;150 Mbps;4.1 , BLE;X;3.0;24 MP;4K Ultra HD;4K Ultra HD;1200 x 1900 , Full HD;ARM Cortex 53;4 + 4;2.0 GHz;64 bits;Qualcomm Adreno 506;Open GL ES;no;
+Qualcomm;smartphone / tablet;Snapdragon 630;14 nm;Qualcomm Snapdragon X12 LTE;600 Mbps;150 Mbps;5.0;X;C , 3.1;?;4K Ultra HD;4K Ultra HD;1200 x 1900 , Full HD;ARM Cortex 53;4 + 4;2.2 GHz , 1.8 GHz;64 bits;Qualcomm Adreno 508;?;no;
+Samsung;smartphone / tablet;Exynos 8 Octa (8890);10 nm;?;600 Mbps;150 Mbps;?;?;?;24 MP;4K Ultra HD;4K Ultra HD;4096 x 2160 px , UHD;Samsung custom core , ARM Cortex 53;8;2.3 GHz;64 bits;ARM Mali T880;?;no;
+Samsung;smartphone / tablet;Exynos 9 Series 8895;10 nm;?;1 Gbps;150 Mbps;?;?;?;28 MP;4K Ultra HD;4K Ultra HD;?;Samsung custom core , ARM Cortex-A53;4 + 4;?;64 bits;ARM Mali G71;?;no;
+ ;smartphone / tablet;Exynos 9 Series 9810;10 nm;?;1.2 Gbps;200 Mbps;?;?;?;?;?;4K Ultra HD;3840 x 2400 px , WQUXGA;Samsung custom core , ARM Cortex-A55;4 + 4;2.9 GHz , 1.9 GHz;64 bits;ARM Mali G72 MP18;?;neural unit;
+Apple;iPhone 7;A10 Fusion;?;?;?;?;4.1 , BLE;?;?;12 MP;4K;4K;?;Apple Twister;4;2.2 GHz;64 bits;PowerVR Series7XT;?;?;
+Apple;IPhone 8;A11 Bionic;10 nm;?;?;?;?;?;?;?;?;?;?;Apple Monsoon , Apple Mistral;2 + 4;?;64 bits;Custom 3 cores;Metal 2;Neural Engine;
+Apple;iPhone XR / XS/ XS Max;A12 Bionic;7 nm;?;?;?;?;?;?;?;?;?;?;?;2 + 4;?;64 bits;Custom 4 cores;Metal 2;Neural Engine;
+MediaTek;smartphone;Helio P10;?;?;?;?;?;?;?;21 MP;?;?;1200 x 1900 , Full HD;ARM Cortex A53;8;2 GHz;64 bits;ARM Mali T860;?;no;
+MediaTek;smartphone;Helio P23;16 mm;?;?;?;?;?;?;24 MP;1920 x 1080;?;2160 x 1080;ARM Cortex A53;8;2.3 GHz;64 bits;ARM Mali G71;?;?;
+MediaTek;smartphone;Helio P35;?;?;?;?;?;?;?;?;?;?;1080p;ARM Cortex-A73 , ARM Cortex-A52 , ARM Cortex-A35;4 + 4 + 2;?;?;ARM Mali G71;?;no;
+MediaTek;smartphone;Helio X30;10 nm;?;600 Mbps;100 Mbps;?;?;?;?;?;4K;?;ARM Cortex A73 , ARM Cortex A53;2 + 8;2.5 GHz , 1.9 GHz  2.2 GHz;?;?;?;no;
+Huawei;smartphone;Kirin 950;?;?;600 Mbps;150 Mbps;?;?;?;?;?;?;?;ARM Cortex-A73 , ARM Cortex A53;4 + 4;?;?;ARM Mali T880;Vulkan , OpenGL ES , Direct X 12;no;
+Huawei;smartphone;Kirin 960;?;?;600 Mbps;150 Mbps;?;?;?;?;?;?;?;ARM Cortex A73 , ARM Cortex A53;4 + 4;2.3 GHz , 1.8 GHz;?;ARM Mali G71 MP8;Vulkan;no;
+Huawei;smartphone;Kirin 970;10 nm;?;1.2 Gbps;?;?;?;?;?;?;?;?;ARM Cortex-A73 , ARM Cortex A3;4 + 4;2.4 GHz , 1.8 GhZ;?;ARM Mali G72 MP12;?;Neural Processing Unit;
+Huawei;smartphone;Kirin 980;7 nm;?;1.4 Gbps;?;;?;?;?;?;?;?;Cortex A76 , Cortex A 76 , Cortex A55;2 + 2 + 4;2.6 GHz , 1.92 GHz , 1.8 GHz;64 bits;ARM Mali G76;?;Neural Processing Unit (dual);
+Spreadtrum;smartphone;SC9861G-IA;?;?;300 Mbps;100 Mbps;?;?;?;26 MP;?;?;1600 x 2560 px , Quad HD;?;8;2 GHz;?;?;?;no;
+Xiaomi;smartphone;Surge S1;28 nm;Modem of Xiaomi;?;?;?;?;?;?;?;?;?;ARM Cortex A53 , ARM Cortex A53;4 + 4;2.2 GHz , 1.4 GHz;?;ARM Mali T860;?;no;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;

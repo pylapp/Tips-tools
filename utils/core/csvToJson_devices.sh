@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 #    MIT License
-#    Copyright (c) 2016-2019 Pierre-Yves Lapersonne (Mail: dev@pylapersonne.info)
+#    Copyright (c) 2016-2020 Pierre-Yves Lapersonne (Mail: dev@pylapersonne.info)
 #    Permission is hereby granted, free of charge, to any person obtaining a copy
 #    of this software and associated documentation files (the "Software"), to deal
 #    in the Software without restriction, including without limitation the rights
@@ -20,7 +20,7 @@
 #
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 1.0.1
+# Version.............: 2.0.0
 # Since...............: 06/03/2018
 # Description.........: Process a file/an input (mainly in CSV format) to JSON
 #			This CSV file must contain several columns: Type, OS, Constructor, Name, Screen size, Sreen type, Screen resolution, SoC, GPU, Sensors, Batery, Storage, RAM, Camera, Dimensions, Weight, IP, USB Type, SD Card, SIM , UI
@@ -29,6 +29,9 @@
 # Usage: cat myFileToProcess.csv | bash csvToJson_devices.sh > myOutputFile.json
 #
 
+# Debug purposses
+#set -euxo pipefail
+set -euo pipefail
 
 # ###### #
 # CONFIG #

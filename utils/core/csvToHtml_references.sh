@@ -20,7 +20,7 @@
 #
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 6.0.0
+# Version.............: 7.0.0
 # Since...............: 13/12/2017
 # Description.........: Process a file/an input (mainly in CSV format) to HTML with CSS if needed.
 #			This file must contain several columns: Plateform, Name, Description, Keywords, URL
@@ -29,6 +29,9 @@
 # Usage: cat myFileToProcess.csv | bash csvToHtml_references.sh > myOutputFile.html
 #
 
+# Debug purposses
+#set -euxo pipefail
+set -euo pipefail
 
 # ###### #
 # CONFIG #

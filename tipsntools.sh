@@ -28,8 +28,11 @@
 # Usage: bash tipsntools.sh {-h | -v | -c | -m | -s1 | -u | -st | -ch | -f | {-a | -w | -t | -d | -s } yourRegexp [-json] }
 #
 
+# Debug purposses
+#set -euxo pipefail
+set -euo pipefail
 
-VERSION="14.3.2"
+VERSION="14.3.3"
 SHELL_TO_USE="bash"
 
 # WARNING
@@ -85,10 +88,10 @@ fUsageAndExit(){
 	echo "*********************"
 	echo "Tips-n-tools (macOS) $VERSION"
 	echo "*********************"
-	echo "Feel free to get the version 14.3.0 for GNU/Linux usages"
+	echo "Feel free to get the version 14.3.3 for macOS usages"
 	echo "USAGE:"
-	echo "bash tipsntools.sh {--help | --version | --count | --md5 | sha1 | --update | --check | --stats | {--findAll | --findWeb | --findTools | --findDevices | --findSocs} yourRegexp [--json]}"
-	echo "bash tipsntools.sh {-h | -v | -c | -m | -s1 | -u | -ch | -st | {-a | -w | -t | -d | -s} yourRegexp [-json]}"
+	echo "bash tipsntools.sh {--help | --version | --count | --md5 | sha1 | --update | --check | --stats | --full | {--findAll | --findWeb | --findTools | --findDevices | --findSocs} yourRegexp [--json]}"
+	echo "bash tipsntools.sh {-h | -v | -c | -m | -s1 | -u | -ch | -st | -f | {-a | -w | -t | -d | -s} yourRegexp [-json]}"
 	echo -e "\t --help....................: display the help, i.e. this usage"
 	echo -e "\t -h.........................: display the help, i.e. this usage"
 	echo -e "\t --version..................: display the verison of this tool"

@@ -20,7 +20,7 @@
 #
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 11.0.0
+# Version.............: 12.0.0
 # Since...............: 28/11/2016
 # Description.........: Process a file/an input (mainly in CSV format) to HTML with CSS if needed
 #			This file must contain several columns: Constructor, Target, Name, Gravure, Modem, Peak download speed, Peak upload speed, Bluetooth, NFC, USB, Camera support max., Video capture max., Video playback max., Display max., CPU, CPU cores number, CPU clock speed max., CPU architecture, GPU, GPU API support, AI support
@@ -29,6 +29,9 @@
 # Usage: cat myFileToProcess.csv | bash csvToHtml_socs.sh > myOutputFile.html
 #
 
+# Debug purposses
+#set -euxo pipefail
+set -euo pipefail
 
 # ###### #
 # CONFIG #
