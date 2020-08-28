@@ -1,0 +1,106 @@
+/*
+MIT License
+Copyright (c) 2016-2018 Pierre-Yves Lapersonne (Mail: dev@pylapersonne.info)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+/*
+✿✿✿✿ ʕ •ᴥ•ʔ/ ︻デ═一
+*/
+
+/**
+* @file socs.css
+* @brief Style sheet contaning styles for things related to SoC
+* @author Pierre-Yves Lapersonne
+* @version 2.0.0
+* @since 10/12/2017
+*/
+
+/* **************** */
+/* Types of targets */
+/* **************** */
+
+.targetSmartphone {
+	background-color: #000000;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.targetSmartphoneTablet {
+	background-color: #4caf50;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.targetIphone {
+	background-color: #9e9e9e;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.targetOther {
+	background-color: #eeeeee;
+	color: #000000;
+	font-weight: bold;
+}
+
+/* ************ */
+/* Constructors */
+/* ************ */
+
+.constructorQualcomm {
+	background-color: #f44336;
+	color: #ffffff;
+}
+
+.constructorSamsung {
+	background-color: #3f51b5;
+	color: #ffffff;
+}
+
+.constructorApple {
+	background-color: #ffeb3b;
+	color: #000000;
+}
+
+.constructorMediaTek {
+	background-color: #00bcd4;
+	color: #ffffff;
+}
+
+.constructorHuawei {
+	background-color: #d50000;
+	color: #ffffff;
+}
+
+.constructorXiaomi {
+	background-color: #ff9800;
+	color: #000000;
+}
+
+.constructorOther {
+	background-color: #eeeeee;
+	color: #000000
+}
+
+/* *************** */
+/* Technical items */
+/* *************** */
+
+.target, .constructor, .name, .gravure, .modem, .pds, .pus, .bluetooth, .nfc, .usb, .csm, .vcm, .vpm, .dm, .cpu, .cpucn, .cpucsm, .cpua, .gpu, .gpuas, .ais  {
+	text-align: center;
+	font-weight: normal;
+}

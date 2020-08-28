@@ -1,0 +1,32 @@
+{
+  "short_name": "Tips'n'tools",
+  "name": "Tips'n'tools (v14.3.3) - for macOS",
+  "description": "Your own cache of references and tools",
+  "icons": [
+    {
+      "src": "webapp/pictures/logo-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "webapp/pictures/logo-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "webapp/pictures/logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "serviceworker": {
+    "src": "./serviceworker.js",
+    "scope": "/",
+    "update_via_cache": "none"
+  },
+  "start_url": "./webapp.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "dir": "auto",
+  "lang": "en"
+}
