@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 #    MIT License
-#    Copyright (c) 2016-2020 Pierre-Yves Lapersonne (Mail: dev@pylapersonne.info)
+#    Copyright (c) 2016-2018 Pierre-Yves Lapersonne (Mail: dev@pylapersonne.info)
 #    Permission is hereby granted, free of charge, to any person obtaining a copy
 #    of this software and associated documentation files (the "Software"), to deal
 #    in the Software without restriction, including without limitation the rights
@@ -20,7 +20,7 @@
 #
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 2.0.0
+# Version.............: 1.0.0
 # Since...............: 06/03/2018
 # Description.........: Process a file/an input (mainly in CSV format) to JSON
 #			This file must contain several columns: Plateform, Name, Description, Keywords, URL
@@ -28,9 +28,6 @@
 # Usage: bash csvToJson_tools.sh --help
 # Usage: cat myFileToProcess.csv | bash csvToJson_tools.sh > myOutputFile.html
 
-# Debug purposses
-#set -euxo pipefail
-set -euo pipefail
 
 # ###### #
 # CONFIG #
@@ -77,10 +74,7 @@ while read -r line; do
 
 	# ***** Step 4: Split the line and replace ; by \n, and delete useless "
 	fieldIndex=0;
-	# For GNU/Linux (good and best) systems
-	#echo $line | sed 's/;/\n/g' | while read -r item; do
-	# For macOS (not so best) systems	
-	echo $line | sed 's/;/\'$'\n/g' | while read -r item; do
+	echo $line | sed 's/;/\n/g' | while read -r item; do
 		cleanItem=`echo $item | sed 's/\"//g'`
 		# Update entry
 		case "$fieldIndex" in
@@ -109,10 +103,7 @@ while read -r line; do
 done
 
 # ***** Step 6: Prepare the footer of the output
-# For GNU/Linux
-#truncate -s-2 $TEMP_FILE_FOR_OUTPUTS;
-# For macOS
-truncate -s -2 $TEMP_FILE_FOR_OUTPUTS;
+truncate -s-2 $TEMP_FILE_FOR_OUTPUTS;
 echo -e "\n]" >> $TEMP_FILE_FOR_OUTPUTS
 
 # ***** Step 7: Display content

@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 #    MIT License
-#    Copyright (c) 2016-2020 Pierre-Yves Lapersonne (Mail: dev@pylapersonne.info)
+#    Copyright (c) 2016-2018 Pierre-Yves Lapersonne (Mail: dev@pylapersonne.info)
 #    Permission is hereby granted, free of charge, to any person obtaining a copy
 #    of this software and associated documentation files (the "Software"), to deal
 #    in the Software without restriction, including without limitation the rights
@@ -20,7 +20,7 @@
 #
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 16.0.0
+# Version.............: 14.0.0
 # Since...............: 18/08/2016
 # Description.........: Process a file/an input (mainly in CSV format) to HTML with CSS if needed
 #			This file must contain several columns: Type, OS, Constructor, Name, Screen size, Sreen type, Screen resolution, SoC, GPU, Sensors, Batery, Storage, RAM, Camera, Dimensions, Weight, IP, USB Type, SD Card, SIM , UI
@@ -29,9 +29,6 @@
 # Usage: cat myFileToProcess.csv | bash csvToHtml_devices.sh > myOutputFile.html
 #
 
-# Debug purposses
-#set -euxo pipefail
-set -euo pipefail
 
 # ###### #
 # CONFIG #
@@ -68,10 +65,7 @@ while read -r line; do
 		if [ $currentRowIndex -eq $(($NUMBER_OF_LINES_TO_IGNORE - 1)) ]; then
 			echo -e "\t<thead>"
 			echo -e "\t\t<tr>"
-			# For GNU/Linux (good and best) systems
-			#echo $line | sed 's/;/\n/g' | while read -r item; do
-			# For macOS (not so best) systems	
-			echo $line | sed 's/;/\'$'\n/g' | while read -r item; do
+			echo $line | sed 's/;/\n/g' | while read -r item; do
 				echo -e "\t\t\t<td class=\"header\">" $item "</td>"
 			done
 			echo -e "\t\t</tr>"
@@ -86,10 +80,7 @@ while read -r line; do
 
 	# ***** Step 4: Split the line and replace ; by \n, and delete useless "
 	fieldIndex=0;
-	# For GNU/Linux (good and best) systems
-	#echo $line | sed 's/;/\n/g' | while read -r item; do
-	# For macOS (not so best) systems	
-	echo $line | sed 's/;/\'$'\n/g' | while read -r item; do
+	echo $line | sed 's/;/\n/g' | while read -r item; do
 		cleanItem=`echo $item | sed 's/\"//g'`
 		# Add an good CSS class
 		case "$fieldIndex" in

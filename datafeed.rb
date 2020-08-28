@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 #
 #    MIT License
-#    Copyright (c) 2016-2020 Pierre-Yves Lapersonne (Mail: dev@pylapersonne.info)
+#    Copyright (c) 2016-2018 Pierre-Yves Lapersonne (Mail: dev@pylapersonne.info)
 #    Permission is hereby granted, free of charge, to any person obtaining a copy
 #    of this software and associated documentation files (the "Software"), to deal
 #    in the Software without restriction, including without limitation the rights
@@ -34,8 +34,6 @@
 # => http://SERVER_ADDRESS:PORT/filterWebs?filter=BTC
 # => http://SERVER_ADDRESS:PORT/filterDevices?filter=Huawei
 # => http://SERVER_ADDRESS:PORT/filterSocs?filter=Kirin
-#
-# Example of CURL command for tests:  curl  -X GET "http://localhost:4343/filterAll?filter=charts"
 #
 
 # ############

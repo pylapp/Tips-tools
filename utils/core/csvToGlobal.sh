@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 #    MIT License
-#    Copyright (c) 2016-2020 Pierre-Yves Lapersonne (Mail: dev@pylapersonne.info)
+#    Copyright (c) 2016-2018 Pierre-Yves Lapersonne (Mail: dev@pylapersonne.info)
 #    Permission is hereby granted, free of charge, to any person obtaining a copy
 #    of this software and associated documentation files (the "Software"), to deal
 #    in the Software without restriction, including without limitation the rights
@@ -20,7 +20,7 @@
 #
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 13.0.0
+# Version.............: 10.0.0
 # Since...............: 28/09/2017
 # Description.........: Parses the CSV files (previously generated from the ODS file) to HTML and JSON files,
 #	and concatenate them to the global web page file, and update the web app.
@@ -28,9 +28,6 @@
 # Usage: bash csvToGlobal.sh
 #
 
-# Debug purposses
-#set -euxo pipefail
-set -euo pipefail
 
 # ############# #
 # CONFIGURATION #
@@ -241,64 +238,37 @@ fi
 # #############################
 
 echo "Dealing with tools..."
-# WARNING: Change the command if using GNU/Linux or macOS (md5sum / md5, $1 / $4)
-# COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5sum $CSV_TOOLS_FILE | awk '{ print $1}'`
-COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5 $CSV_TOOLS_FILE | awk '{ print $4 }'`
 
-if [ -e $META_DATA_FILE ]; then
+STORED_CHECKSUM_CSV_TOOLZ_FILE=`cat $META_DATA_FILE | grep checksumTools | awk '{ print $2 }' | tr -d '",'`
+COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5sum $CSV_TOOLS_FILE | awk '{ print $1 }'`
 
-	STORED_CHECKSUM_CSV_TOOLZ_FILE=`cat $META_DATA_FILE | grep checksumTools | awk '{ print $2 }' | tr -d '",'`
-
-	echo "Dealing with checksums ($STORED_CHECKSUM_CSV_TOOLZ_FILE,$COMPUTED_CHECKSUM_CSV_TOOLZ_FILE) (stored, computed)"
-	if [ $STORED_CHECKSUM_CSV_TOOLZ_FILE != $COMPUTED_CHECKSUM_CSV_TOOLZ_FILE ]; then
-		echo "Checksums are not the same, we need to generated new files"
-		echo "Write HTML file from CSV file about libraries, frameworks and tools..."
-		cat $CSV_TOOLS_FILE | bash $CSV2HTML_TOOLS_SCRIPT > $HTML_TOOLS_FILE
-		echo "Write JSON file from CSV file about libraries, frameworks and tools..."
-		cat $CSV_TOOLS_FILE | bash $CSV2JSON_TOOLS_SCRIPT > $JSON_TOOLS_FILE
-	else
-		echo "Checksums are the same, no update needed"
-	fi
-
-else
-	echo "WARNING: metadata file does not exist or has been removed. Will update files..."
-	echo "Generating HTML content..."
+if [ $STORED_CHECKSUM_CSV_TOOLZ_FILE != $COMPUTED_CHECKSUM_CSV_TOOLZ_FILE ]; then
+	echo "Checksums are not the same, we need to generated new files"
+	echo "Write HTML file from CSV file about libraries, frameworks and tools..."
 	cat $CSV_TOOLS_FILE | bash $CSV2HTML_TOOLS_SCRIPT > $HTML_TOOLS_FILE
-	echo "Generating JSON content..."
+	echo "Write JSON file from CSV file about libraries, frameworks and tools..."
 	cat $CSV_TOOLS_FILE | bash $CSV2JSON_TOOLS_SCRIPT > $JSON_TOOLS_FILE
+else
+	echo "Checksums are the same, no update needed"
 fi
-
 
 # ##################################
 # Update files related to references
 # ##################################
 
 echo "Dealing with web references..."
-# WARNING: Change the command if using GNU/Linux or macOS (md5sum / md5, $1 / $4)
-# COMPUTED_CHECKSUM_CSV_WEBZ_FILE=`md5sum $CSV_WEB_FILE | awk '{ print $1}'`
-COMPUTED_CHECKSUM_CSV_WEBZ_FILE=`md5 $CSV_WEB_FILE | awk '{ print $4 }'`
 
-if [ -e $META_DATA_FILE ]; then
+STORED_CHECKSUM_CSV_WEBZ_FILE=`cat $META_DATA_FILE | grep checksumWeb | awk '{ print $2 }' | tr -d '",'`
+COMPUTED_CHECKSUM_CSV_WEBZ_FILE=`md5sum $CSV_WEB_FILE | awk '{ print $1 }'`
 
-	STORED_CHECKSUM_CSV_WEBZ_FILE=`cat $META_DATA_FILE | grep checksumWeb | awk '{ print $2 }' | tr -d '",'`
-
-	echo "Dealing with checksums ($STORED_CHECKSUM_CSV_WEBZ_FILE,$COMPUTED_CHECKSUM_CSV_WEBZ_FILE) (stored, computed)"
-	if [ $STORED_CHECKSUM_CSV_WEBZ_FILE != $COMPUTED_CHECKSUM_CSV_WEBZ_FILE ]; then
-		echo "Checksums are not the same, we need to generated new files"
-		echo "Write HTML file from CSV file about web links..."
-		cat $CSV_WEB_FILE | bash $CSV2HTML_WEBS_SCRIPT > $HTML_WEB_FILE
-		echo "Write JSON file from CSV file about web links..."
-		cat $CSV_WEB_FILE | bash $CSV2JSON_WEBS_SCRIPT > $JSON_WEB_FILE
-	else
-		echo "Checksums are the same, no update needed"
-	fi
-
-else
-	echo "WARNING: metadata file does not exist or has been removed. Will update files..."
-	echo "Generating HTML content..."
+if [ $STORED_CHECKSUM_CSV_WEBZ_FILE != $COMPUTED_CHECKSUM_CSV_WEBZ_FILE ]; then
+	echo "Checksums are not the same, we need to generated new files"
+	echo "Write HTML file from CSV file about web links..."
 	cat $CSV_WEB_FILE | bash $CSV2HTML_WEBS_SCRIPT > $HTML_WEB_FILE
-	echo "Generating JSON content..."
+	echo "Write JSON file from CSV file about web links..."
 	cat $CSV_WEB_FILE | bash $CSV2JSON_WEBS_SCRIPT > $JSON_WEB_FILE
+else
+	echo "Checksums are the same, no update needed"
 fi
 
 # ###############################
@@ -306,76 +276,45 @@ fi
 # ###############################
 
 echo "Dealing with devices..."
-# WARNING: Change the command if using GNU/Linux or macOS (md5sum / md5, $1 / $4)
-# COMPUTED_CHECKSUM_CSV_DEVZ_FILE=`md5sum $CSV_DEVICE_FILE | awk '{ print $1 }'`
-COMPUTED_CHECKSUM_CSV_DEVZ_FILE=`md5 $CSV_DEVICE_FILE | awk '{ print $4 }'`
 
-if [ -e $META_DATA_FILE ]; then
+STORED_CHECKSUM_CSV_DEVZ_FILE=`cat $META_DATA_FILE | grep checksumDevices | awk '{ print $2 }' | tr -d '",'`
+COMPUTED_CHECKSUM_CSV_DEVZ_FILE=`md5sum $CSV_DEVICE_FILE | awk '{ print $1 }'`
 
-	STORED_CHECKSUM_CSV_DEVZ_FILE=`cat $META_DATA_FILE | grep checksumDevices | awk '{ print $2 }' | tr -d '",'`
-
-	echo "Dealing with checksums ($STORED_CHECKSUM_CSV_DEVZ_FILE,$COMPUTED_CHECKSUM_CSV_DEVZ_FILE) (stored, computed)"
-	if [ $STORED_CHECKSUM_CSV_DEVZ_FILE != $COMPUTED_CHECKSUM_CSV_DEVZ_FILE ]; then
-		echo "Checksums are not the same, we need to generated new files"
-		echo "Write HTML file from CSV file about devices..."
-		cat $CSV_DEVICE_FILE | bash $CSV2HTML_DEVICES_SCRIPT > $HTML_DEVICE_FILE
-		echo "Write JSON file from CSV file about devices..."
-		cat $CSV_DEVICE_FILE | bash $CSV2JSON_DEVICES_SCRIPT > $JSON_DEVICE_FILE
-	else
-		echo "Checksums are the same, no update needed"
-	fi
-
-else
-	echo "WARNING: metadata file does not exist or has been removed. Will update files..."
-	echo "Generating HTML content..."
+if [ $STORED_CHECKSUM_CSV_DEVZ_FILE != $COMPUTED_CHECKSUM_CSV_DEVZ_FILE ]; then
+	echo "Checksums are not the same, we need to generated new files"
+	echo "Write HTML file from CSV file about devices..."
 	cat $CSV_DEVICE_FILE | bash $CSV2HTML_DEVICES_SCRIPT > $HTML_DEVICE_FILE
-	echo "Generating JSON content..."
+	echo "Write JSON file from CSV file about devices..."
 	cat $CSV_DEVICE_FILE | bash $CSV2JSON_DEVICES_SCRIPT > $JSON_DEVICE_FILE
+else
+	echo "Checksums are the same, no update needed"
 fi
-
 
 # ###########################
 # Update files related to SoC
 # ###########################
 
 echo "Dealing with SoC..."
-# WARNING: Change the command if using GNU/Linux or macOS (md5sum / md5, $1 / $4)
-# COMPUTED_CHECKSUM_CSV_SOCZ_FILE=`md5sum $CSV_SOC_FILE | awk '{ print $1 }'`
-COMPUTED_CHECKSUM_CSV_SOCZ_FILE=`md5 $CSV_SOC_FILE | awk '{ print $4 }'`
 
-if [ -e $META_DATA_FILE ]; then
+STORED_CHECKSUM_CSV_SOCZ_FILE=`cat $META_DATA_FILE | grep checksumSocs | awk '{ print $2 }' | tr -d '",'`
+COMPUTED_CHECKSUM_CSV_SOCZ_FILE=`md5sum $CSV_SOC_FILE | awk '{ print $1 }'`
 
-	STORED_CHECKSUM_CSV_SOCZ_FILE=`cat $META_DATA_FILE | grep checksumSocs | awk '{ print $2 }' | tr -d '",'`
-
-	echo "Dealing with checksums ($STORED_CHECKSUM_CSV_SOCZ_FILE,$COMPUTED_CHECKSUM_CSV_SOCZ_FILE) (stored, computed)"
-	if [ $STORED_CHECKSUM_CSV_SOCZ_FILE != $COMPUTED_CHECKSUM_CSV_SOCZ_FILE ]; then
-		echo "Checksums are not the same, we need to generated new files"
-		echo "Write HTML file from CSV file about SoC..."
-		cat $CSV_SOC_FILE | bash $CSV2HTML_SOCS_SCRIPT > $HTML_SOC_FILE
-		echo "Write JSON file from CSV file about SoC..."
-		cat $CSV_SOC_FILE | bash $CSV2JSON_SOCS_SCRIPT > $JSON_SOC_FILE
-	else
-		echo "Checksums are the same, no update needed"
-	fi
-
-else
-	echo "WARNING: metadata file does not exist or has been removed. Will update files..."
-	echo "Generating HTML content..."
+if [ $STORED_CHECKSUM_CSV_SOCZ_FILE != $COMPUTED_CHECKSUM_CSV_SOCZ_FILE ]; then
+	echo "Checksums are not the same, we need to generated new files"
+	echo "Write HTML file from CSV file about SoC..."
 	cat $CSV_SOC_FILE | bash $CSV2HTML_SOCS_SCRIPT > $HTML_SOC_FILE
-	echo "Generating JSON content..."
+	echo "Write JSON file from CSV file about SoC..."
 	cat $CSV_SOC_FILE | bash $CSV2JSON_SOCS_SCRIPT > $JSON_SOC_FILE
+else
+	echo "Checksums are the same, no update needed"
 fi
 
 # ########
 # Clean up
 # ########
 
-if [ -d $BUILD_FOLDER ]; then
-	echo "Clean build folder $BUILD_FOLDER..."
-	rm -rf $BUILD_FOLDER
-fi
-local=`pwd`
-echo "Creating build folder $BUILD_FOLDER in $local"
+echo "Clean build folder..."
+yes | rm -rf $BUILD_FOLDER
 mkdir $BUILD_FOLDER
 
 # ###################
