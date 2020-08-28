@@ -1,0 +1,82 @@
+/*
+MIT License
+Copyright (c) 2016-2018 Pierre-Yves Lapersonne (Mail: dev@pylapersonne.info)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+/*
+✿✿✿✿ ʕ •ᴥ•ʔ/ ︻デ═一
+*/
+
+/**
+* @file tables.css
+* @brief Style sheet contaning definitions for tables
+* @author Pierre-Yves Lapersonne
+* @version 1.0.0
+* @since 10/12/2017
+*/
+
+table, td {
+	border-collapse: collapse;
+	padding: 10px;
+  background-color: #ffffff;
+  color: #212121;
+  font-family: 'RobotoDraft, Roboto, Helvetica Neue, Helvetica, Arial', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1rem;
+  letter-spacing: 0.01rem;
+
+}
+
+table {
+  border: 1px solid rgba(0, 0, 0, 0.12)
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+}
+
+td.url > a {
+	color: #03a9f4;
+	font-weight: normal;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+td.header {
+  padding: 10px;
+  text-align: left;
+  line-height: 2rem;
+  vertical-align: bottom;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  color: #757575;
+  font-weight: 400;
+  font-style: normal;
+}
+
+tbody > tr:hover td {
+	background-color: #FFF3E0;
+}
+
+tbody > tr:hover td:first-child {
+	color: #212121;
+}
+
+.header::after, .header::before {
+  box-sizing: border-box;
+}
