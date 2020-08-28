@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 #    MIT License
-#    Copyright (c) 2016-2018 Pierre-Yves Lapersonne (Mail: dev@pylapersonne.info)
+#    Copyright (c) 2016-2020 Pierre-Yves Lapersonne (Mail: dev@pylapersonne.info)
 #    Permission is hereby granted, free of charge, to any person obtaining a copy
 #    of this software and associated documentation files (the "Software"), to deal
 #    in the Software without restriction, including without limitation the rights
@@ -20,7 +20,7 @@
 #
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 10.0.0
+# Version.............: 11.0.0
 # Since...............: 28/11/2016
 # Description.........: Process a file/an input (mainly in CSV format) to HTML with CSS if needed
 #			This file must contain several columns: Constructor, Target, Name, Gravure, Modem, Peak download speed, Peak upload speed, Bluetooth, NFC, USB, Camera support max., Video capture max., Video playback max., Display max., CPU, CPU cores number, CPU clock speed max., CPU architecture, GPU, GPU API support, AI support
@@ -65,7 +65,10 @@ while read -r line; do
 		if [ $currentRowIndex -eq $(($NUMBER_OF_LINES_TO_IGNORE - 1)) ]; then
 			echo -e "\t<thead>"
 			echo -e "\t\t<tr>"
-			echo $line | sed 's/;/\n/g' | while read -r item; do
+			# For GNU/Linux (good and best) systems
+			#echo $line | sed 's/;/\n/g' | while read -r item; do
+			# For macOS (not so best) systems	
+			echo $line | sed 's/;/\'$'\n/g' | while read -r item; do
 				echo -e "\t\t\t<td class=\"header\">" $item "</td>"
 			done
 			echo -e "\t\t</tr>"
@@ -81,7 +84,10 @@ while read -r line; do
 
 	# ***** Step 4: Split the line and replace ; by \n, and delete useless "
 	fieldIndex=0;
-	echo $line | sed 's/;/\n/g' | while read -r item; do
+	# For GNU/Linux (good and best) systems
+	#echo $line | sed 's/;/\n/g' | while read -r item; do
+	# For macOS (not so best) systems	
+	echo $line | sed 's/;/\'$'\n/g' | while read -r item; do
 		cleanItem=`echo $item | sed 's/\"//g'`
 		# Add a good CSS class
 		case "$fieldIndex" in

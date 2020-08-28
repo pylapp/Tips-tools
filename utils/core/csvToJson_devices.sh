@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 #    MIT License
-#    Copyright (c) 2016-2018 Pierre-Yves Lapersonne (Mail: dev@pylapersonne.info)
+#    Copyright (c) 2016-2019 Pierre-Yves Lapersonne (Mail: dev@pylapersonne.info)
 #    Permission is hereby granted, free of charge, to any person obtaining a copy
 #    of this software and associated documentation files (the "Software"), to deal
 #    in the Software without restriction, including without limitation the rights
@@ -20,7 +20,7 @@
 #
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 1.0.0
+# Version.............: 1.0.1
 # Since...............: 06/03/2018
 # Description.........: Process a file/an input (mainly in CSV format) to JSON
 #			This CSV file must contain several columns: Type, OS, Constructor, Name, Screen size, Sreen type, Screen resolution, SoC, GPU, Sensors, Batery, Storage, RAM, Camera, Dimensions, Weight, IP, USB Type, SD Card, SIM , UI
@@ -75,7 +75,10 @@ while read -r line; do
 
 	# ***** Step 4: Split the line and replace ; by \n, and delete useless "
 	fieldIndex=0;
-	echo $line | sed 's/;/\n/g' | while read -r item; do
+	# For GNU/Linux (good and best) systems
+	#echo $line | sed 's/;/\n/g' | while read -r item; do
+	# For macOS (not so best) systems	
+	echo $line | sed 's/;/\'$'\n/g' | while read -r item; do
 		cleanItem=`echo $item | sed 's/\"//g'`
 		# Update entry
 		case "$fieldIndex" in
@@ -152,7 +155,10 @@ while read -r line; do
 done
 
 # ***** Step 6: Prepare the footer of the output
-truncate -s-2 $TEMP_FILE_FOR_OUTPUTS;
+# For GNU/Linux
+#truncate -s-2 $TEMP_FILE_FOR_OUTPUTS;
+# For macOS
+truncate -s -2 $TEMP_FILE_FOR_OUTPUTS;
 echo -e "\n]" >> $TEMP_FILE_FOR_OUTPUTS
 
 # ***** Step 7: Display content

@@ -1,6 +1,6 @@
 ![Image of Tips and Tools](https://github.com/pylapp/Tips-n-tools/blob/master/picture.png)
 
-# Tips'n'tools (v14.2.0)
+# Tips'n'tools (v14.3.2)
 
   <em>Keep time and be faster with your own cache of references, tools and specifications useful for developers.</em>
 
@@ -72,12 +72,17 @@ So because web browsers world is fu****g missy, it remains web browsers which do
 Thus you should use an up-to-date web browser. And sometimes it still won't work. "Web is universal and cool" they said x-)  
 Because Service Workers are used, you should reach the web app through HTTPS or a local web server (_localhost_).
 
-
 ## Requirements
 
 - Operating system which can use **Shell** (BASH) and **Ruby** scripts (macOS, Linux, ...)
 - **Up-to-date web browser** compatible with IndexedDB, Web Workers, Service Workers, ES6, JS' Promises... (Firefox 58.0.2+, Chromium 64.0.+, ...)
 - Something which can deal with .ods file (Libre Office, Open Office, ...)
+
+For macOS users, you should install the _truncate_ command:
+```shell
+  brew install coreutils
+  brew install truncate
+```
 
 ## Deploy it
 
@@ -99,3 +104,13 @@ Here is the file tree for this version:
 
 It seems some web browsers (Firefox 58 for Android and Ubuntu) have bugs with IndexedDB. So you won't use the web app with them.  
 You ask why Shell and Ruby are used instead of full cross-platforms languages? Power, effectiveness, and free and open-source OS ;-)  
+
+## Must-read note
+
+Because there are differences and gaps between commands on macOS and GNU/Linux, the project in its v14.3.0 release will not work on macOS! v14.3.1 may be broken on macOS for HTML content production.
+In fact numerous commands like _truncate_ , _sed_, and MD5 or SHA1 checksums are not implemented or have a different behavior.
+
+Thus for macOS users **you must use** the v14.3.2 release, and for GNU/Linux users **you have to use** the v14.3.0 release.
+
+If you get errors like _sed: RE error: illegal byte sequence_, please refer to 
+https://stackoverflow.com/questions/19242275/re-error-illegal-byte-sequence-on-mac-os-x

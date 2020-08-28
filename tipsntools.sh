@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 #    MIT License
-#    Copyright (c) 2016-2018 Pierre-Yves Lapersonne (Mail: dev@pylapersonne.info)
+#    Copyright (c) 2016-2020 Pierre-Yves Lapersonne (Mail: dev@pylapersonne.info)
 #    Permission is hereby granted, free of charge, to any person obtaining a copy
 #    of this software and associated documentation files (the "Software"), to deal
 #    in the Software without restriction, including without limitation the rights
@@ -20,7 +20,7 @@
 #
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 13.3.0
+# Version.............: 14.0.0
 # Since...............: 05/10/2016
 # Description.........: Provides some features about this update/technical watch/... project: find some elements or build HTML files from CSV files to update another file
 #
@@ -29,13 +29,15 @@
 #
 
 
-VERSION="14.3.0"
+VERSION="14.3.2"
 SHELL_TO_USE="bash"
 
-if ! grep -q "$SHELL_TO_USE" /proc/$$/cmdline ; then
-		echo "This script must be run with $SHELL_TO_USE shell"
-		exit 1
-fi
+# WARNING
+# IF YOU ARE USING macOS YOU SHOULD COMMENT THE 3 FOLLOWING LINES
+#if ! grep -q "$SHELL_TO_USE" /proc/$$/cmdline ; then
+#		echo "This script must be run with $SHELL_TO_USE shell"
+#		exit 1
+#fi
 
 
 # ############# #
@@ -81,8 +83,9 @@ BUILD_DIR="build"
 # \brief Displays the usage and exits
 fUsageAndExit(){
 	echo "*********************"
-	echo "Tips-n-tools $VERSION"
+	echo "Tips-n-tools (macOS) $VERSION"
 	echo "*********************"
+	echo "Feel free to get the version 14.3.0 for GNU/Linux usages"
 	echo "USAGE:"
 	echo "bash tipsntools.sh {--help | --version | --count | --md5 | sha1 | --update | --check | --stats | {--findAll | --findWeb | --findTools | --findDevices | --findSocs} yourRegexp [--json]}"
 	echo "bash tipsntools.sh {-h | -v | -c | -m | -s1 | -u | -ch | -st | {-a | -w | -t | -d | -s} yourRegexp [-json]}"
@@ -102,8 +105,8 @@ fUsageAndExit(){
 	echo -e "\t -ch........................: check for not found URL, i.e. not anymore reachable content (404 error code)"
 	echo -e "\t --stats....................: compute some metrics about the subject or category of each row"
 	echo -e "\t -st........................: compute some metrics about the subject or category of each row"
-	echo -e "\t --full.....................: get all the data, without filter"
-	echo -e "\t -f.........................: get all the data, without filter"
+	echo -e "\t --full.....................: get all the data, without filter, returns JSON objects"
+	echo -e "\t -f.........................: get all the data, without filter, returns JSON objects"
 	echo -e "\t --findAll yourRegexp.......: find in all the CSV source files the rows which contain elements matching yourRegexp"
 	echo -e "\t -a yourRegexp..............: find in all the CSV source files the rows which contain elements matching yourRegexp"
 	echo -e "\t --findWeb yourRegexp.......: find in the web links CSV source file the rows which contain elements matching yourRegexp"
@@ -192,7 +195,7 @@ fGetFullData(){
 # \brief Finds in CSV source files some items
 fFindInAllCsvFiles(){
 	echo "**********************************"
-	echo "* Find in all CV files for '$1'..."
+	echo "* Find in all CSV files for '$1'..."
 	echo "*********************************"
 	regex=$1
 	# The tools file
@@ -245,7 +248,10 @@ fFindInCsvFile(){
 	cat $file | while read -r line; do
 		case "$line" in
 			*$regex*)
-				echo $line | sed 's/;/\n/g' | while read -r item; do
+				# Running on GNU/Linux
+				# echo $line | sed 's/;/\n/g' | while read -r item; do
+				# Runnning on macOS
+				echo $line | sed 's/;/\'$'\n/g' | while read -r item; do
 					if [ "$item" = "" ]; then
 						echo -e "\t <null>"
 					else
@@ -264,6 +270,7 @@ fFindInCsvFile(){
 # \param file - The file to use
 # \param regex - The regex to use
 # \brief Find a dedicated JSON file items wich match the regex
+# WARNING: Not working on macOS, truncate command is not available. Love apples.
 fFindInJsonFile(){
 	file=$1
 	regex=$2
@@ -294,77 +301,96 @@ fFindInJsonFile(){
 
 # \fn fMd5sum
 # \brief Make an MD5 checksum for each file and display them in the standard ouput
+# WARNING: For GNU/Linux, the command is 'md5sum', for macOS the command is 'md5'
 fMd5sum(){
 	echo "******************"
 	echo "* MD5 checksums..."
 	echo "******************"
 	# Utils folder...
-	echo -e "\tMD5 checksum for .sh files:\\n`md5sum utils/core/*.sh`"
+	echo -e "\tMD5 checksum for .sh files:\\n`md5 utils/core/*.sh`"
 	# CSV files
-	echo -e "\tMD5 checksum for .csv files:\\n`md5sum contents/*/*.csv`"
+	echo -e "\tMD5 checksum for .csv files:\\n`md5 contents/*/*.csv`"
 	# HTML files
-	echo -e "\tMD5 checksum for .html files:\\n`md5sum contents/*/*.html`"
+	echo -e "\tMD5 checksum for .html files:\\n`md5 contents/*/*.html`"
 	# JSON files
-	echo -e "\tMD5 checksum for .json files:\\n`md5sum contents/*/*.json`"
+	echo -e "\tMD5 checksum for .json files:\\n`md5 contents/*/*.json`"
 	# Assets files
-	echo -e "\tMD5 checksum for pictures:\\n`md5sum utils/webapp/pictures/*`"
-	echo -e "\tMD5 checksum for stylesheets:\\n`md5sum utils/webapp/styles/*`"
-	echo -e "\tMD5 checksum for JavaScript glue:\\n`md5sum utils/webapp/glue/*`"
-	echo -e "\tMD5 checksum for HTML patterns:\\n`md5sum utils/webapp/patterns/*`"
+	echo -e "\tMD5 checksum for pictures:\\n`md5 utils/web/webapp/pictures/*`"
+	echo -e "\tMD5 checksum for stylesheets:\\n`md5 utils/web/webapp/styles/*`"
+	echo -e "\tMD5 checksum for JavaScript glue:\\n`md5 utils/web/webapp/logic/*`"
+	echo -e "\tMD5 checksum for HTML patterns:\\n`md5 utils/web/webapp/patterns/*`"
 	# Main script, readme file and sheet file
-	echo -e "\tMD5 checksum for main files:\\n`md5sum *.*`"
+	echo -e "\tMD5 checksum for main files:\\n`md5 *.*`"
 }
 
 # \fn fSha1sum
 # \brief Make a SHA1 checksum for each file and display them in the standard ouput
+# WARNING: For GNU/Linux, the command is 'sha1sum', for macOS the command is 'shasum'
 fSha1sum(){
 	echo "*******************"
 	echo "* SHA1 checksums..."
 	echo "*******************"
 	# Utils folder...
-	echo -e "\tSHA1 checksum for .sh files:\\n`sha1sum utils/core/*.sh`"
+	echo -e "\tSHA1 checksum for .sh files:\\n`shasum utils/core/*.sh`"
 	# CSV files
-	echo -e "\tSHA1 checksum for .csv files:\\n`sha1sum contents/*/*.csv`"
+	echo -e "\tSHA1 checksum for .csv files:\\n`shasum contents/*/*.csv`"
 	# HTML files
-	echo -e "\tSHA1 checksum for .html files:\\n`sha1sum contents/*/*.html`"
+	echo -e "\tSHA1 checksum for .html files:\\n`shasum contents/*/*.html`"
 	# JSON files
-	echo -e "\tSHA1 checksum for .json files:\\n`sha1sum contents/*/*.json`"
+	echo -e "\tSHA1 checksum for .json files:\\n`shasum contents/*/*.json`"
 	# Assets files
-	echo -e "\tSHA1 checksum for pictures:\\n`sha1sum utils/webapp/pictures/*`"
-	echo -e "\tSHA1 checksum for stylesheets:\\n`sha1sum utils/webapp/styles/*`"
-	echo -e "\tSHA1 checksum for JavaScript glue:\\n`sha1sum utils/webapp/logic/*`"
-	echo -e "\tSHA1 checksum for HTML patterns:\\n`sha1sum utils/webapp/patterns/*`"
+	echo -e "\tSHA1 checksum for pictures:\\n`shasum utils/web/webapp/pictures/*`"
+	echo -e "\tSHA1 checksum for stylesheets:\\n`shasum utils/web/webapp/styles/*`"
+	echo -e "\tSHA1 checksum for JavaScript glue:\\n`shasum utils/web/webapp/logic/*`"
+	echo -e "\tSHA1 checksum for HTML patterns:\\n`shasum utils/web/webapp/patterns/*`"
 	# Main script, readme file and sheet file
-	echo -e "\tSHA1 checksum for main files:\\n`sha1sum *.*`"
+	echo -e "\tSHA1 checksum for main files:\\n`shasum *.*`"
 }
 
 # \fn fCountItems
-# \brief Computes the number of items listed in each file
+# \brief Computes the number of items listed in each CSV file
 fCountItems(){
+
+	# Files and constants
 	CSV_TOOLS_FILE_USELESS_ROWS=6
 	HTML_TOOLS_FILE="$TOOLS_DIR/Tips-n-tools_Tools.html"
 	CSV_WEB_FILE_USELESS_ROWS=6
 	HTML_WEB_FILE="$WEB_DIR/Tips-n-tools_WebLinks.html"
-	CSV_DEVICE_FILE_USELESS_ROWS=6
-	HTML_DEVICE_FILE="$DEVICE_DIR/Tips-n-tools_Devices.html"
+	CSV_DEVICES_FILE_USELESS_ROWS=6
+	HTML_DEVICES_FILE="$DEVICE_DIR/Tips-n-tools_Devices.html"
 	CSV_SOC_FILE_USELESS_ROWS=6
 	HTML_SOC_FILE="$SOC_DIR/Tips-n-tools_SoC.html"
-	csvToolsRows=`cat $CSV_TOOLS_FILE | wc -l`
-	csvWebRows=`cat $CSV_WEBS_FILE | wc -l`
-	csvDevicesRows=`cat $CSV_DEVICES_FILE | wc -l`
-	csvSocsRows=`cat $CSV_SOC_FILE | wc -l`
-	csvToolsRowsCleaned=$(($csvToolsRows - $CSV_TOOLS_FILE_USELESS_ROWS))
-	csvWebRowsCleaned=$(($csvWebRows - $CSV_WEB_FILE_USELESS_ROWS))
-	csvDevicesRowsCleaned=$(($csvDevicesRows - $CSV_DEVICE_FILE_USELESS_ROWS))
-	csvSocsRowsCleaned=$(($csvSocsRows - $CSV_SOC_FILE_USELESS_ROWS))
-	htmlToolsRowsNew=`cat $HTML_TOOLS_FILE | wc -l`
-	htmlWebRowsNew=`cat $HTML_WEB_FILE | wc -l`
-	htmlDevicesRowsNew=`cat $HTML_DEVICE_FILE | wc -l`
-	htmlSocsRowsNew=`cat $HTML_SOC_FILE | wc -l`
-	echo "Items as TOOLS..........: $csvToolsRowsCleaned items in $CSV_TOOLS_FILE"
-	echo "Items as WEB THINGS.....: $csvWebRowsCleaned items in $CSV_WEBS_FILE"
-	echo "Items in DEVICES........: $csvDevicesRowsCleaned items in $CSV_DEVICES_FILE"
-	echo "Items in SoC............: $csvSocsRowsCleaned items in $CSV_SOC_FILE"
+
+	# Count in CSV file
+	if [ -f $CSV_TOOLS_FILE ]; then
+		csvToolsRows=`cat $CSV_TOOLS_FILE | wc -l`
+		csvToolsRowsCleaned=$(($csvToolsRows - $CSV_TOOLS_FILE_USELESS_ROWS))
+		echo "Items as TOOLS..........: $csvToolsRowsCleaned items in $CSV_TOOLS_FILE"
+	else
+		echo "WARNING: $CSV_TOOLS_FILE does not exist"
+	fi
+	if [ -f $CSV_WEBS_FILE ]; then
+		csvWebRows=`cat $CSV_WEBS_FILE | wc -l`
+		csvWebRowsCleaned=$(($csvWebRows - $CSV_WEB_FILE_USELESS_ROWS))
+		echo "Items as WEB THINGS.....: $csvWebRowsCleaned items in $CSV_WEBS_FILE"
+	else
+		echo "WARNING: $CSV_WEBS_FILE does not exist"
+	fi
+	if [ -f $CSV_DEVICES_FILE ]; then
+		csvDevicesRows=`cat $CSV_DEVICES_FILE | wc -l`
+		csvDevicesRowsCleaned=$(($csvDevicesRows - $CSV_DEVICES_FILE_USELESS_ROWS))
+		echo "Items in DEVICES........: $csvDevicesRowsCleaned items in $CSV_DEVICES_FILE"
+	else
+		echo "WARNING: $CSV_DEVICES_FILE does not exist"
+	fi
+	if [ -f $CSV_SOC_FILE ]; then
+		csvSoczRows=`cat $CSV_SOC_FILE | wc -l`
+		csvSoczRowsCleaned=$(($csvSoczRows - $CSV_SOC_FILE_USELESS_ROWS))
+		echo "Items in SoC............: $csvSoczRowsCleaned items in $CSV_SOC_FILE"
+	else
+		echo "WARNING: $CSV_SOC_FILE does not exist"
+	fi
+	
 }
 
 # \fn fCheckForNotFound
@@ -397,9 +423,10 @@ fCheckForNotFound(){
 	urlsToTest=`cat $fileName | awk -F ';' '{print $5}'`
 
 	# While loop runs in sub-shell, so modified variables will lost their new states once the subshell of the loop exits
-	# Thus the URL to test parsed wuth sed will be inhected with <<<
+	# Thus the URL to test parsed with sed will be inhected with <<<
 	#echo $urlsToTest | sed 's/ /\n/g' | while read -r item; do
-	parsedUrlToTest=`echo $urlsToTest | sed 's/ /\n/g'`
+	# parsedUrlToTest=`echo $urlsToTest | sed 's/ /\n/g'` # For GNU/Linux
+	parsedUrlToTest=`echo $urlsToTest | sed 's/ /\'$'\n/g'` # For macOS
 	while read item; do
 		#echo "Checking item at rank $cpt: $item..."
 		httpStatus=`curl -Is $item | cut -d' ' -f2 | head -1`
