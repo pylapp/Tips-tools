@@ -2024,7 +2024,7 @@
 {"platform": "DevTool", "name": "scancode", "description": "ScanCode detects licenses, copyrights, package manifests & dependencies and more by scanning code ... to discover and inventory open source and third-party packages used in your code.", "keywords": "FLOSS , analyis , dependencies , copyrights , third-party", "url": "https://github.com/nexB/scancode-toolkit"},
 {"platform": "Design", "name": "OpenDyslexic", "description": "A typeface for Dyslexia", "keywords": "UI , UX , fonts , typeface , dyslexia , a11y", "url": "https://www.opendyslexic.org/"},
 {"platform": "/", "name": "Metalsmith", "description": "Web site generator", "keywords": "Markdown , web site , static , generator", "url": "https://metalsmith.io/"},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
+{"platform": "CryptoCurrency", "name": "WalletExplorer.com", "description": "Bitcoin block explorer with address grouping and wallet labeling", "keywords": "Bitcoin , block , explorer , address , wallet", "url": "https://www.walletexplorer.com/"},
 {"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
 {"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
 {"platform": "", "name": "", "description": "", "keywords": "", "url": ""},

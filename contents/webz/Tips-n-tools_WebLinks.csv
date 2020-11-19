@@ -1399,10 +1399,10 @@ DevTool;How to create and apply a patch with Git;;Git , patch , diff;https://gee
 DevTool;SSPDX License List;;SPDX , licenses , headers , FLOSS;https://spdx.org/licenses/;;;;;;;;;;;;;;;;;;;;;
 /;Bien utilier Git merge et rebase;;Git , merge , rebase , conflicts , branches , features , fixe , history;https://delicious-insights.com/fr/articles/bien-utiliser-git-merge-et-rebase/;;;;;;;;;;;;;;;;;;;;;
 iOS;iOS Ref;iOS version by device;iOS , Apple , fragmentation , versions , OS;https://iosref.com/ios;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+Humanism;Librairies Indépendantes;;books , livres , librairies;https://www.librairiesindependantes.com/;;;;;;;;;;;;;;;;;;;;;
+Android;7+1 tips about [Android] App Modularization;;Android , apps , modularization , tips , modules , pattern , architecture;https://speakerdeck.com/prof18/7-plus-1-tips-about-android-app-modularization-droidcon-americas;;;;;;;;;;;;;;;;;;;;;
+Android;Why We Need Clean Architecture;;Android , clean code , clean , architecture , pattern , quality;https://speakerdeck.com/igorwojda/droidcon-americas-2020-why-we-need-clean-architecture;;;;;;;;;;;;;;;;;;;;;
+Android;Android Complexity;;Android , complexity , UX , l10n , i18n , animations , theme , platform , screens;https://speakerdeck.com/zsmb/android-complexity;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;

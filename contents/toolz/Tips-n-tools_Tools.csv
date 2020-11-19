@@ -2029,7 +2029,7 @@ DevTool;SSPDX;The Software Package Data Exchange® (SPDX®);Linux , licenses , f
 DevTool;scancode;ScanCode detects licenses, copyrights, package manifests & dependencies and more by scanning code ... to discover and inventory open source and third-party packages used in your code.;FLOSS , analyis , dependencies , copyrights , third-party;https://github.com/nexB/scancode-toolkit;;;;;;;;;;;;;;;;;;;;;
 Design;OpenDyslexic;A typeface for Dyslexia;UI , UX , fonts , typeface , dyslexia , a11y;https://www.opendyslexic.org/;;;;;;;;;;;;;;;;;;;;;
 /;Metalsmith;Web site generator;Markdown , web site , static , generator;https://metalsmith.io/;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+CryptoCurrency;WalletExplorer.com;Bitcoin block explorer with address grouping and wallet labeling;Bitcoin , block , explorer , address , wallet;https://www.walletexplorer.com/;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
