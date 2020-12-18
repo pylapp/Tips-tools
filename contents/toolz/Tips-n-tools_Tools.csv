@@ -2034,9 +2034,9 @@ Web;Measure;;Web , UI , performances , measures , metrics , quality , audit , a1
 /;GSM55;Boutique d'accessoires mobiles (commerce françaiss);produits , accesssoire , boutique , matos , coque , protections;https://www.gsm55.com/;;;;;;;;;;;;;;;;;;;;;
 /;Rhinohield;;shields , protections , hardware;https://rhinoshield.fr/;;;;;;;;;;;;;;;;;;;;;
 Humanism;2FAuth-iOS;One-Time Password Generator;FLOSS , OTP , 2FA , generator , security , iO;https://github.com/2FAuth/2FAuth-iOS;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+/;QR Code Generator;;QR Code , fflash , email , QR;https://fr.qr-code-generator.com/;;;;;;;;;;;;;;;;;;;;;
+Humanism;GitHub Blokada;The official repo for Blokada for Android and iOS.;Blokada , Android , iOS , analytics , trackers , ads, privacy;https://github.com/blokadaorg/blokada;;;;;;;;;;;;;;;;;;;;;
+Security;Depix;Recovers passwords from pixelized screenshots;Python , tool , passwords , piwels , screenshots;https://github.com/beurtschipper/Depix;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
