@@ -1423,9 +1423,9 @@ Humanism;Quelques pistes pour sortir de la dépendance aux GAFAM…;;GAFAM , web
 Humanism;Un smartphone Android sans compte Google ni données personnelles chez Google, ça vous dit ?!;;GAFAM , Android , Google , data , contacts , agenda , Chapril , CHATONS , NextCloud , DAV , CALDAV , CARDDAV , cloud , Drive;https://www.hygiene-numerique.com/dossiers/proteger-ses-donnees-personnelles-de-google-sous-android/;;;;;;;;;;;;;;;;;;;;;
 Android;Unpacking an Android malware with Dexcalibur + JEB;;Android , JEB , Dexcalibur , DEX , hack , reverse engineering;https://www.youtube.com/watch?v=YaIFuOqPwow;;;;;;;;;;;;;;;;;;;;;
 /;Combien faut-il d'utilisateurs de GNU/Linux pour changer une ampoule ?;;GN/Linux , ampoule , 1297 , FSF;https://www.gnu.org/fun/jokes/users-lightbulb.html;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+/;Lichess;;Chess , FLOSS , game;https://lichess.org/;;;;;;;;;;;;;;;;;;;;;
+Android;Android applications security — part 1, reverse engineering and token storage problems;;Android , security , NDK , database , code , keys , tokens , reverse engineering , smali , dex , adb;https://medium.com/skyrise/android-applications-security-part-1-2782d73771e0;;;;;;;;;;;;;;;;;;;;;
+Security;Règles pour développer du code critique sécurisé;;code source , sécurité , instructionss , flow , mémoire , assertions , pointeurs , overflow;https://programmation.developpez.com/tutoriel/dix-regles-pour-ecrire-du-code-securise/;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;

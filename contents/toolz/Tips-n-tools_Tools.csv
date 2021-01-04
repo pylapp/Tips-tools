@@ -2037,11 +2037,11 @@ Humanism;2FAuth-iOS;One-Time Password Generator;FLOSS , OTP , 2FA , generator , 
 /;QR Code Generator;;QR Code , fflash , email , QR;https://fr.qr-code-generator.com/;;;;;;;;;;;;;;;;;;;;;
 Humanism;GitHub Blokada;The official repo for Blokada for Android and iOS.;Blokada , Android , iOS , analytics , trackers , ads, privacy;https://github.com/blokadaorg/blokada;;;;;;;;;;;;;;;;;;;;;
 Security;Depix;Recovers passwords from pixelized screenshots;Python , tool , passwords , piwels , screenshots;https://github.com/beurtschipper/Depix;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+Android;Universal Android Debloater;Bash script using ADB to debloat non-rooted android devices. Improve your privacy, the security and battery life of your device.;Android , ADB , devices , privacy , battery , apps;https://gitlab.com/W1nst0n/universal-android-debloater;;;;;;;;;;;;;;;;;;;;;
+DevTool;Cauldron;Cauldron allows project managers, analysts, and developers to understand more about the community and processes involved in software development;DevOps , community , forge , developers , metrics , dashboards;https://cauldron.io/;;;;;;;;;;;;;;;;;;;;;
+Design;PhotoDemon;Fast, free and portable photo editor;PhotoFiltre , PhotoShop , paint , photos , brushes;https://photodemon.org/;;;;;;;;;;;;;;;;;;;;;
+Security;KeyDecoder;KeyDecoder app lets you use your smartphone or tablet to decode your mechanical keys in seconds.;Red Team , keys , security , OpenCV;https://github.com/MaximeBeasse/KeyDecoder;;;;;;;;;;;;;;;;;;;;;
+DevTool;Gitea;Gitea is a community managed lightweight code hosting solution written in Go. It is published under the MIT license.;Git , forge , self-hosted , platform , solution;https://gitea.io/;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
