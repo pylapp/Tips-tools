@@ -2042,10 +2042,10 @@ DevTool;Cauldron;Cauldron allows project managers, analysts, and developers to u
 Design;PhotoDemon;Fast, free and portable photo editor;PhotoFiltre , PhotoShop , paint , photos , brushes;https://photodemon.org/;;;;;;;;;;;;;;;;;;;;;
 Security;KeyDecoder;KeyDecoder app lets you use your smartphone or tablet to decode your mechanical keys in seconds.;Red Team , keys , security , OpenCV;https://github.com/MaximeBeasse/KeyDecoder;;;;;;;;;;;;;;;;;;;;;
 DevTool;Gitea;Gitea is a community managed lightweight code hosting solution written in Go. It is published under the MIT license.;Git , forge , self-hosted , platform , solution;https://gitea.io/;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+Humanism;Mollyim-android;A fork of Signal for Android with passphrase lock;Signal , fork , messaging , IM , FLOSS;https://github.com/mollyim/mollyim-android;;;;;;;;;;;;;;;;;;;;;
+Swift;Cuckoo;Boilerplate-free mocking framework for Swift!;Swift , iOS , mocks , tests , TDD , clean code;https://github.com/Brightify/Cuckoo;;;;;;;;;;;;;;;;;;;;;
+Web;Fathom;Your website analytics should be simple, fast and privacy-focused;websites , anaytics , tracking , privacy;https://usefathom.com/;;;;;;;;;;;;;;;;;;;;;
+DevTool;iTerm2;Terminal emulator for macOS;macOS , console , terminal;https://iterm2.com/;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
