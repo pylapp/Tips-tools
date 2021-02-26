@@ -418,6 +418,7 @@ fCheckForNotFound(){
 
 	DIFF=6 # There are $DIFF useless rows in base ODT file, so if a CSV line is not convenient, if may be the line+DIFF rows in the ODT file
 	cpt=$DIFF
+	currentCpt=1
 
 	echo "This operation can take a lot of time..."
 
@@ -431,36 +432,39 @@ fCheckForNotFound(){
 	# parsedUrlToTest=`echo $urlsToTest | sed 's/ /\n/g'` # For GNU/Linux
 	parsedUrlToTest=`echo $urlsToTest | sed 's/ /\'$'\n/g'` # For macOS
 	while read item; do
-		#echo "Checking item at rank $cpt: $item..."
-		httpStatus=`curl -Is $item | cut -d' ' -f2 | head -1`
-		if [ "$httpStatus" ]; then
-			checkedUrls=$((checkedUrls+1))
-			if [ "$httpStatus" -ge 100 -a "$httpStatus" -le 199 ]; then
-				code1xx=$((code1xx+1))
-			elif [ "$httpStatus" -ge 200 -a "$httpStatus" -le 299 ]; then
-				code2xx=$((code2xx+1))
-			elif [ "$httpStatus" -ge 300 -a "$httpStatus" -le 399 ]; then
-				code3xx=$((code3xx+1))
-			elif [ "$httpStatus" -ge 400 -a "$httpStatus" -le 499 ]; then
-				code4xx=$((code4xx+1))
-				if [ "$httpStatus" -eq "404" ]; then
+		if [ $currentCpt -gt $DIFF ]; then # FIXME: It seems CURL failed and make script crash on macOS for non-URL items (e.g. on linges in the $DIFFth)
+			echo "Checking item at rank $cpt: $item..."
+			httpStatus=`curl -Is $item | cut -d' ' -f2 | head -1`
+			if [ "$httpStatus" ]; then
+				checkedUrls=$((checkedUrls+1))
+				if [ "$httpStatus" -ge 100 -a "$httpStatus" -le 199 ]; then
+					code1xx=$((code1xx+1))
+				elif [ "$httpStatus" -ge 200 -a "$httpStatus" -le 299 ]; then
+					code2xx=$((code2xx+1))
+				elif [ "$httpStatus" -ge 300 -a "$httpStatus" -le 399 ]; then
+					code3xx=$((code3xx+1))
+				elif [ "$httpStatus" -ge 400 -a "$httpStatus" -le 499 ]; then
+					code4xx=$((code4xx+1))
+					if [ "$httpStatus" -eq "404" ]; then
+						echo "The line $cpt has a URL ($item) returning $httpStatus HTTP status code"
+					fi
+				elif [ "$httpStatus" -ge "500" -a "$httpStatus" -le "599" ]; then
 					echo "The line $cpt has a URL ($item) returning $httpStatus HTTP status code"
+					code5xx=$((code5xx+1))
+				else
+					echo "WARNING: What is this HTTP status code (O_o)\" $httpStatus"
 				fi
-			elif [ "$httpStatus" -ge "500" -a "$httpStatus" -le "599" ]; then
-				echo "The line $cpt has a URL ($item) returning $httpStatus HTTP status code"
-				code5xx=$((code5xx+1))
 			else
-				echo "WARNING: What is this HTTP status code (O_o)\" $httpStatus"
+				echo "WARNING: It seems it is not a URL at row $cpt: \"$item\""
+				notUrlObject=$((notUrlObject+1))
 			fi
-		else
-			echo "WARNING: It seems it is not a URL at row $cpt: \"$item\""
-			notUrlObject=$((notUrlObject+1))
+			cpt=$((cpt+1))
+			# Display a message each 50 items to say to the user the task is still running
+			if [ "$((cpt%50))" -eq "0" ]; then
+				echo "Task still running... $cpt items checked"
+			fi
 		fi
-		cpt=$((cpt+1))
-		# Display a message each 50 items to say to the user the task is still running
-		if [ "$((cpt%50))" -eq "0" ]; then
-			echo "Task still running... $cpt items checked"
-		fi
+		currentCpt=$((currentCpt+1))
 	done <<< "$(echo "$parsedUrlToTest")"
 
 	# Some metrics
