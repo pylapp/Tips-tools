@@ -126,4 +126,7 @@ In this case you should have a look on the CSV files you exported ; maybe there 
 
 In addition, if you isntall the web app on your computer, you may have different behaviors if you choose Brave, Chrome or Firefox :-/
 
-More details on the [issues tracker](https://github.com/pylapp/Tips-n-tools/issues).
+
+Some features may fail, like the _--check_ feature which will check if URL are still available or not.
+In fact some commands like _CURL_ may fail if the website does not respond.
+Thus in this case we may have to comment the _set -euxo pipefail_ mine in the main script to let the script check URL even if CURL fails.
