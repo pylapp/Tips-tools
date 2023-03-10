@@ -1,4 +1,15 @@
-![Image of Tips and Tools](https://github.com/pylapp/Tips-n-tools/blob/master/picture.png)
+[![Opened issues](https://img.shields.io/github/issues-raw/pylapp/Tips-tools?style=for-the-badge)](https://github.com/pylapp/Tips-tools/issues)
+[![MIT license](https://img.shields.io/github/license/pylapp/Tips-tools?style=for-the-badge)](https://github.com/pylapp/Tips-tools/blob/master/LICENSE.txt)
+[![Versions](https://img.shields.io/github/v/release/pylapp/Tips-tools?label=Last%20version&style=for-the-badge)](https://github.com/pylapp/Tips-tools/releases)
+[![Still maintained](https://img.shields.io/maintenance/yes/2023?style=for-the-badge)](https://github.com/pylapp/Tips-tools/issues?q=is%3Aissue+is%3Aclosed)
+
+[![Code size](https://img.shields.io/github/languages/code-size/pylapp/Tips-Tools?style=for-the-badge)](https://github.com/pylapp/Tips-tools/tree/content)
+
+[![Shell](https://img.shields.io/badge/-Shell-89e051?style=for-the-badge)](https://github.com/pylapp/Tips-tools/search?l=shell)
+[![Ruby](https://img.shields.io/badge/-Ruby-701516?style=for-the-badge)](https://github.com/pylapp/Tips-tools/search?l=ruby)
+[![HTML, CSS, JavaScript](https://img.shields.io/badge/-Web-563d7c?style=for-the-badge)](https://github.com/pylapp/Tips-tools/search?l=html)
+
+![Image of Tips and Tools](https://github.com/pylapp/Tips-tools)
 
 # Tips'n'tools (v14.3.3)
 
@@ -113,7 +124,7 @@ In fact numerous commands like _truncate_, _sed_, and MD5 or SHA1 checksums are 
 
 Thus for macOS users **you must use** the v14.3.3 release, and for GNU/Linux users **you have to use** the v14.3.0 release.
 
-Have a look on the [release note](https://github.com/pylapp/Tips-n-tools/blob/master/CHANGELOG.md) to get more details.
+Have a look on the [release note](https://github.com/pylapp/Tips-tools/blob/master/CHANGELOG.md) to get more details.
 
 ## Know issues
 
@@ -126,4 +137,12 @@ In this case you should have a look on the CSV files you exported ; maybe there 
 
 In addition, if you isntall the web app on your computer, you may have different behaviors if you choose Brave, Chrome or Firefox :-/
 
-More details on the [issues tracker](https://github.com/pylapp/Tips-n-tools/issues).
+More details on the [issues tracker](https://github.com/pylapp/Tips-tools/issues).
+
+Some features may fail, like the _--check_ feature which will check if URL are still available or not.
+In fact some commands like _CURL_ may fail if the website does not respond.
+Thus in this case we may have to comment the _set -euxo pipefail_ mine in the main script to let the script check URL even if CURL fails.
+
+## Funny notice
+
+Several years ago, I noticed the Git history was crappy and fucked up. Thee were some data leaks, wrong email address was used, got a lot of spam, commits links to the GitHub account's were not created because of bad pseudo... No DCO, no GPG-signing... It was a big mess. Trials to clean the history failed, that is the reason why the project was delete and created again and all the Git history lost until 2020. Learned of that!
