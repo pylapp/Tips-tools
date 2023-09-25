@@ -20,7 +20,7 @@
 #
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 14.1.0
+# Version.............: 15.0.0
 # Since...............: 05/10/2016
 # Description.........: Provides some features about this update/technical watch/... project: find some elements or build HTML files from CSV files to update another file
 #
@@ -103,11 +103,11 @@ fUsageAndExit(){
 	echo -e "\t --check (-ch)....................: check for not found URL, i.e. not anymore reachable content (404 error code)"
 	echo -e "\t --stats (-st)....................: compute some metrics about the subject or category of each row"
 	echo -e "\t --full (-f)......................: get all the data, without filter, returns JSON objects"
-	echo -e "\t --findAll (-a) yourRegexp........: find in all the CSV source files the rows which contain elements matching yourRegexp"
-	echo -e "\t --findWeb (-w) yourRegexp........: find in the web links CSV source file the rows which contain elements matching yourRegexp"
-	echo -e "\t --findTools (-t) yourRegexp......: find in the tools CSV source file the rows which contain elements matching yourRegexp"
-	echo -e "\t --findDevices (-d) yourRegexp....: find in the devices CSV source file the rows which contain elements matching yourRegexp"
-	echo -e "\t --findSocs (-s) yourRegexp.......: find in the SoC CSV source file the rows which contain elements matching yourRegexp"
+	echo -e "\t --findAll (-a) yourRegexp........: [--json or --csv needed] find in all the CSV source files the rows which contain elements matching yourRegexp"
+	echo -e "\t --findWeb (-w) yourRegexp........: [--json or --csv needed] find in the web links CSV source file the rows which contain elements matching yourRegexp"
+	echo -e "\t --findTools (-t) yourRegexp......: [--json or --csv needed] find in the tools CSV source file the rows which contain elements matching yourRegexp"
+	echo -e "\t --findDevices (-d) yourRegexp....: [--json or --csv needed] find in the devices CSV source file the rows which contain elements matching yourRegexp"
+	echo -e "\t --findSocs (-s) yourRegexp.......: [--json or --csv needed] find in the SoC CSV source file the rows which contain elements matching yourRegexp"
 	echo -e "\t --json (-json)...................: for 'find' commands, produce results in JSON format, not plain text"
 	echo -e "\t --csv (-csv).....................: for 'find' commands, produce results in CSV format, not plain text"
 	exit 0
@@ -289,66 +289,75 @@ fFindInJsonFile(){
 
 # \fn fMd5sum
 # \brief Make an MD5 checksum for each file and display them in the standard ouput
-# WARNING: For GNU/Linux, the command is 'md5sum', for macOS the command is 'md5'
 fMd5sum(){
+	if [ $(DoesRunOnGNULinux) == "yes" ]; then
+		command="md5sum"
+	else
+		command="md5"
+	fi
 	echo "******************"
 	echo "* MD5 checksums"
 	echo "******************"
 	# Utils folder...
-	echo -e "\tMD5 checksum for .sh files:\\n`md5 utils/core/*.sh`"
+	echo -e "\tMD5 checksum for .sh files:\\n`$command utils/core/*.sh`"
 	echo "---------------------------"
 	# CSV files
-	echo -e "\tMD5 checksum for .csv files:\\n`md5 contents/*/*.csv`"
+	echo -e "\tMD5 checksum for .csv files:\\n`$command contents/*/*.csv`"
 	echo "---------------------------"
 	# HTML files
-	echo -e "\tMD5 checksum for .html files:\\n`md5 contents/*/*.html`"
+	echo -e "\tMD5 checksum for .html files:\\n`$command contents/*/*.html`"
 	echo "---------------------------"
 	# JSON files
-	echo -e "\tMD5 checksum for .json files:\\n`md5 contents/*/*.json`"
+	echo -e "\tMD5 checksum for .json files:\\n`$command contents/*/*.json`"
 	echo "---------------------------"
 	# Assets files
-	echo -e "\tMD5 checksum for pictures:\\n`md5 utils/web/webapp/pictures/*`"
+	echo -e "\tMD5 checksum for pictures:\\n`$command utils/web/webapp/pictures/*`"
 	echo "---------------------------"
-	echo -e "\tMD5 checksum for stylesheets:\\n`md5 utils/web/webapp/styles/*`"
+	echo -e "\tMD5 checksum for stylesheets:\\n`$command utils/web/webapp/styles/*`"
 	echo "---------------------------"
-	echo -e "\tMD5 checksum for JavaScript glue:\\n`md5 utils/web/webapp/logic/*`"
+	echo -e "\tMD5 checksum for JavaScript glue:\\n`$command utils/web/webapp/logic/*`"
 	echo "---------------------------"
-	echo -e "\tMD5 checksum for HTML patterns:\\n`md5 utils/web/webapp/patterns/*`"
+	echo -e "\tMD5 checksum for HTML patterns:\\n`$command utils/web/webapp/patterns/*`"
 	echo "---------------------------"
 	# Main script, readme file and sheet file
-	echo -e "\tMD5 checksum for main files:\\n`md5 *.*`"
+	echo -e "\tMD5 checksum for main files:\\n`$command *.*`"
 }
 
 # \fn fSha1sum
 # \brief Make a SHA1 checksum for each file and display them in the standard ouput
 # WARNING: For GNU/Linux, the command is 'sha1sum', for macOS the command is 'shasum'
 fSha1sum(){
+	if [ $(DoesRunOnGNULinux) == "yes" ]; then
+		command="sha1sum"
+	else
+		command="shasum"
+	fi	
 	echo "*******************"
 	echo "* SHA1 checksums..."
 	echo "*******************"
 	# Utils folder...
-	echo -e "\tSHA1 checksum for .sh files:\\n`shasum utils/core/*.sh`"
+	echo -e "\tSHA1 checksum for .sh files:\\n`$command utils/core/*.sh`"
 	echo "---------------------------"
 	# CSV files
-	echo -e "\tSHA1 checksum for .csv files:\\n`shasum contents/*/*.csv`"
+	echo -e "\tSHA1 checksum for .csv files:\\n`$command contents/*/*.csv`"
 	echo "---------------------------"
 	# HTML files
-	echo -e "\tSHA1 checksum for .html files:\\n`shasum contents/*/*.html`"
+	echo -e "\tSHA1 checksum for .html files:\\n`$command contents/*/*.html`"
 	echo "---------------------------"
 	# JSON files
-	echo -e "\tSHA1 checksum for .json files:\\n`shasum contents/*/*.json`"
+	echo -e "\tSHA1 checksum for .json files:\\n`$command contents/*/*.json`"
 	echo "---------------------------"
 	# Assets files
-	echo -e "\tSHA1 checksum for pictures:\\n`shasum utils/web/webapp/pictures/*`"
+	echo -e "\tSHA1 checksum for pictures:\\n`$command utils/web/webapp/pictures/*`"
 	echo "---------------------------"
-	echo -e "\tSHA1 checksum for stylesheets:\\n`shasum utils/web/webapp/styles/*`"
+	echo -e "\tSHA1 checksum for stylesheets:\\n`$command utils/web/webapp/styles/*`"
 	echo "---------------------------"
-	echo -e "\tSHA1 checksum for JavaScript glue:\\n`shasum utils/web/webapp/logic/*`"
+	echo -e "\tSHA1 checksum for JavaScript glue:\\n`$command utils/web/webapp/logic/*`"
 	echo "---------------------------"
-	echo -e "\tSHA1 checksum for HTML patterns:\\n`shasum utils/web/webapp/patterns/*`"
+	echo -e "\tSHA1 checksum for HTML patterns:\\n`$command utils/web/webapp/patterns/*`"
 	echo "---------------------------"
 	# Main script, readme file and sheet file
-	echo -e "\tSHA1 checksum for main files:\\n`shasum *.*`"
+	echo -e "\tSHA1 checksum for main files:\\n`$command *.*`"
 }
 
 # \fn fCountItems
