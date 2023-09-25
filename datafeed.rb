@@ -20,7 +20,7 @@
 #
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 1.0.0
+# Version.............: 2.0.0
 # Since...............: 21/03/2018
 # Description.........: Receives HTTP requests and parse them so as to feed with data.
 #                       Uses the core's Shell script to make the queries.
@@ -120,7 +120,7 @@ class FeedServlet < WEBrick::HTTPServlet::AbstractServlet
         puts "Should filter all data"
         filter = request.query[KEY_FILTER]
         if filter && filter.length > 0
-          results = processCommand("./tipsntools.sh --findAll "+filter)
+          results = processCommand("./tipsntools.sh --findAll " + filter + " --json")
           response.body = results.to_s
         else
           response.body = '{"error": "The filter to apply is missing"}'
@@ -132,7 +132,7 @@ class FeedServlet < WEBrick::HTTPServlet::AbstractServlet
         puts "Should filter only tools"
         filter = request.query[KEY_FILTER]
         if filter && filter.length > 0
-          results = processCommand("./tipsntools.sh --findTools "+filter)
+          results = processCommand("./tipsntools.sh --findTool " + filter + " --json")
           response.body = results.to_s
         else
           response.body = '{"error": "The filter to apply is missing"}'
@@ -144,7 +144,7 @@ class FeedServlet < WEBrick::HTTPServlet::AbstractServlet
         puts "Should filter only web references"
         filter = request.query[KEY_FILTER]
         if filter && filter.length > 0
-          results = processCommand("./tipsntools.sh --findWeb "+filter)
+          results = processCommand("./tipsntools.sh --findWeb " + filter + " --json")
           response.body = results.to_s
         else
           response.body = '{"error": "The filter to apply is missing"}'
@@ -156,7 +156,7 @@ class FeedServlet < WEBrick::HTTPServlet::AbstractServlet
         puts "Should filter only devices specifications"
         filter = request.query[KEY_FILTER]
         if filter && filter.length > 0
-          results = processCommand("./tipsntools.sh --findDevices "+filter)
+          results = processCommand("./tipsntools.sh --findDevices " + filter + " --json")
           response.body = results.to_s
         else
           response.body = '{"error": "The filter to apply is missing"}'
@@ -168,7 +168,7 @@ class FeedServlet < WEBrick::HTTPServlet::AbstractServlet
         puts "Should filter only SoCs specifications"
         filter = request.query[KEY_FILTER]
         if filter && filter.length > 0
-          results = processCommand("./tipsntools.sh --findSocs "+filter)
+          results = processCommand("./tipsntools.sh --findSocs " + filter + " --json")
           response.body = results.to_s
         else
           response.body = '{"error": "The filter to apply is missing"}'
