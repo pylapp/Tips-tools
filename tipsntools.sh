@@ -91,7 +91,6 @@ fUsageAndExit(){
 	echo "*********************"
 	echo "Tips-n-tools (macOS) $VERSION"
 	echo "*********************"
-	echo "Feel free to get the version 14.3.3 for macOS usages"
 	echo "USAGE:"
 	echo "bash tipsntools.sh {--help | --version | --count | --md5 | sha1 | --update | --check | --stats | --full | {--findAll | --findWeb | --findTools | --findDevices | --findSocs} yourRegexp [--json | --csv]}"
 	echo "bash tipsntools.sh {-h | -v | -c | -m | -s1 | -u | -ch | -st | -f | {-a | -w | -t | -d | -s} yourRegexp [-json | -csv]}"
@@ -99,7 +98,7 @@ fUsageAndExit(){
 	echo -e "\t --version (-v)...................: display the verison of this tool"
 	echo -e "\t --count (-c).....................: count the number of items"
 	echo -e "\t --md5 (-m).......................: compute the MD5 checksum"
-	echo -e "\t --sha1 (-s)......................: compute the SHA1 checksum"
+	echo -e "\t --sha1 (-s1).....................: compute the SHA1 checksum"
 	echo -e "\t --update (-u) ...................: update the defined result file with HTML files built thanks to CSV files and scripts in .utils/ folder"
 	echo -e "\t --check (-ch)....................: check for not found URL, i.e. not anymore reachable content (404 error code)"
 	echo -e "\t --stats (-st)....................: compute some metrics about the subject or category of each row"
@@ -294,21 +293,29 @@ fFindInJsonFile(){
 # WARNING: For GNU/Linux, the command is 'md5sum', for macOS the command is 'md5'
 fMd5sum(){
 	echo "******************"
-	echo "* MD5 checksums..."
+	echo "* MD5 checksums"
 	echo "******************"
 	# Utils folder...
 	echo -e "\tMD5 checksum for .sh files:\\n`md5 utils/core/*.sh`"
+	echo "---------------------------"
 	# CSV files
 	echo -e "\tMD5 checksum for .csv files:\\n`md5 contents/*/*.csv`"
+	echo "---------------------------"
 	# HTML files
 	echo -e "\tMD5 checksum for .html files:\\n`md5 contents/*/*.html`"
+	echo "---------------------------"
 	# JSON files
 	echo -e "\tMD5 checksum for .json files:\\n`md5 contents/*/*.json`"
+	echo "---------------------------"
 	# Assets files
 	echo -e "\tMD5 checksum for pictures:\\n`md5 utils/web/webapp/pictures/*`"
+	echo "---------------------------"
 	echo -e "\tMD5 checksum for stylesheets:\\n`md5 utils/web/webapp/styles/*`"
+	echo "---------------------------"
 	echo -e "\tMD5 checksum for JavaScript glue:\\n`md5 utils/web/webapp/logic/*`"
+	echo "---------------------------"
 	echo -e "\tMD5 checksum for HTML patterns:\\n`md5 utils/web/webapp/patterns/*`"
+	echo "---------------------------"
 	# Main script, readme file and sheet file
 	echo -e "\tMD5 checksum for main files:\\n`md5 *.*`"
 }
@@ -322,17 +329,25 @@ fSha1sum(){
 	echo "*******************"
 	# Utils folder...
 	echo -e "\tSHA1 checksum for .sh files:\\n`shasum utils/core/*.sh`"
+	echo "---------------------------"
 	# CSV files
 	echo -e "\tSHA1 checksum for .csv files:\\n`shasum contents/*/*.csv`"
+	echo "---------------------------"
 	# HTML files
 	echo -e "\tSHA1 checksum for .html files:\\n`shasum contents/*/*.html`"
+	echo "---------------------------"
 	# JSON files
 	echo -e "\tSHA1 checksum for .json files:\\n`shasum contents/*/*.json`"
+	echo "---------------------------"
 	# Assets files
 	echo -e "\tSHA1 checksum for pictures:\\n`shasum utils/web/webapp/pictures/*`"
+	echo "---------------------------"
 	echo -e "\tSHA1 checksum for stylesheets:\\n`shasum utils/web/webapp/styles/*`"
+	echo "---------------------------"
 	echo -e "\tSHA1 checksum for JavaScript glue:\\n`shasum utils/web/webapp/logic/*`"
+	echo "---------------------------"
 	echo -e "\tSHA1 checksum for HTML patterns:\\n`shasum utils/web/webapp/patterns/*`"
+	echo "---------------------------"
 	# Main script, readme file and sheet file
 	echo -e "\tSHA1 checksum for main files:\\n`shasum *.*`"
 }
