@@ -289,9 +289,9 @@ fi
 
 echo "Dealing with web references..."
 if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
-	COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5sum $CSV_WEB_FILE | awk '{ print $1}'`
+	COMPUTED_CHECKSUM_CSV_WEBZ_FILE=`md5sum $CSV_WEB_FILE | awk '{ print $1}'`
 else # macOS
-	COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5 $CSV_WEB_FILE | awk '{ print $4 }'`
+	COMPUTED_CHECKSUM_CSV_WEBZ_FILE=`md5 $CSV_WEB_FILE | awk '{ print $4 }'`
 fi
 
 if [ -e $META_DATA_FILE ]; then
@@ -323,9 +323,9 @@ fi
 
 echo "Dealing with devices..."
 if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
-	COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5sum $CSV_DEVICE_FILE | awk '{ print $1}'`
+	COMPUTED_CHECKSUM_CSV_DEVZ_FILE=`md5sum $CSV_DEVICE_FILE | awk '{ print $1}'`
 else # macOS
-	COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5 $CSV_DEVICE_FILE | awk '{ print $4 }'`
+	COMPUTED_CHECKSUM_CSV_DEVZ_FILE=`md5 $CSV_DEVICE_FILE | awk '{ print $4 }'`
 fi
 
 if [ -e $META_DATA_FILE ]; then
@@ -358,9 +358,9 @@ fi
 
 echo "Dealing with SoC..."
 if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
-	COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5sum $CSV_SOC_FILE | awk '{ print $1}'`
+	COMPUTED_CHECKSUM_CSV_SOCZ_FILE=`md5sum $CSV_SOC_FILE | awk '{ print $1}'`
 else # macOS
-	COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5 $CSV_SOC_FILE | awk '{ print $4 }'`
+	COMPUTED_CHECKSUM_CSV_SOCZ_FILE=`md5 $CSV_SOC_FILE | awk '{ print $4 }'`
 fi
 
 if [ -e $META_DATA_FILE ]; then

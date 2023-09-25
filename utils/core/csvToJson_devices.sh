@@ -46,6 +46,18 @@ NUMBER_OF_LINES_TO_IGNORE=6
 # Temporary file containing the JSON outputs
 TEMP_FILE_FOR_OUTPUTS="./.outputs.temp.json"
 
+# ##### #
+# Utils #
+# ##### #
+
+DoesRunOnGNULinux(){
+    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+        echo "yes"
+    else
+        echo "no"
+    fi
+}
+
 # ######### #
 # MAIN CODE #
 # ######### #

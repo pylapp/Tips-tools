@@ -43,6 +43,18 @@ CSV_SEPARATOR=';'
 # Empty or useless rows
 NUMBER_OF_LINES_TO_IGNORE=6
 
+# ##### #
+# Utils #
+# ##### #
+
+DoesRunOnGNULinux(){
+    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+        echo "yes"
+    else
+        echo "no"
+    fi
+}
+
 # ######### #
 # MAIN CODE #
 # ######### #

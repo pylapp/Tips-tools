@@ -33,6 +33,18 @@
 #set -euxo pipefail
 set -euo pipefail
 
+# ##### #
+# Utils #
+# ##### #
+
+DoesRunOnGNULinux(){
+    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+        echo "yes"
+    else
+        echo "no"
+    fi
+}
+
 # ###### #
 # CONFIG #
 # ###### #
