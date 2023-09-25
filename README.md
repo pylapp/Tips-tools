@@ -9,7 +9,11 @@
 [![Ruby](https://img.shields.io/badge/-Ruby-701516?style=for-the-badge)](https://github.com/pylapp/Tips-tools/search?l=ruby)
 [![HTML, CSS, JavaScript](https://img.shields.io/badge/-Web-563d7c?style=for-the-badge)](https://github.com/pylapp/Tips-tools/search?l=html)
 
-![Image of Tips and Tools](https://github.com/pylapp/Tips-tools/blob/master/picture.png)
+<img 
+src="https://github.com/pylapp/Tips-tools/blob/dev/doc/screenshot.png" 
+alt="Screenshot of the PWA on macOS showing here only some results (here web sites hyperlinks of publications and blogs) for the keyword 'iOS'" 
+title="Screenshot of the PWA on macOS showing here only some results (here web sites hyperlinks of publications and blogs) for the keyword 'iOS'" 
+width="500"/>
 
 # Tips'n'tools (v15.0.0)
 
