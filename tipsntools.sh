@@ -20,7 +20,7 @@
 #
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 14.0.0
+# Version.............: 14.1.0
 # Since...............: 05/10/2016
 # Description.........: Provides some features about this update/technical watch/... project: find some elements or build HTML files from CSV files to update another file
 #
@@ -32,7 +32,7 @@
 #set -euxo pipefail
 set -euo pipefail
 
-VERSION="14.3.3"
+VERSION="15.0.0"
 SHELL_TO_USE="bash"
 
 # WARNING
@@ -408,6 +408,7 @@ fCheckForNotFound(){
 
 	fileName="$1"
 
+	code000=0
 	code1xx=0
 	code2xx=0
 	code3xx=0
@@ -433,28 +434,33 @@ fCheckForNotFound(){
 	while read item; do
 		#echo "Checking item at rank $cpt: $item..."
 		httpStatus=`curl --write-out '%{http_code}' --silent --output /dev/null $item` # Deal with failed CURL commands
-		if [ "$httpStatus" ]; then
-			checkedUrls=$((checkedUrls+1))
-			if [ "$httpStatus" -ge 100 -a "$httpStatus" -le 199 ]; then
-				code1xx=$((code1xx+1))
-			elif [ "$httpStatus" -ge 200 -a "$httpStatus" -le 299 ]; then
-				code2xx=$((code2xx+1))
-			elif [ "$httpStatus" -ge 300 -a "$httpStatus" -le 399 ]; then
-				code3xx=$((code3xx+1))
-			elif [ "$httpStatus" -ge 400 -a "$httpStatus" -le 499 ]; then
-				code4xx=$((code4xx+1))
-				if [ "$httpStatus" -eq "404" ]; then
+		if [ "$httpStatus" == "000" ]; then
+			echo "The line $cpt has a URL ($item) returning undefined HTTP status code"
+			code5xx=$((code000+1))
+		else		
+			if [ "$httpStatus" ]; then
+				checkedUrls=$((checkedUrls+1))
+				if [ "$httpStatus" -ge 100 -a "$httpStatus" -le 199 ]; then
+					code1xx=$((code1xx+1))
+				elif [ "$httpStatus" -ge 200 -a "$httpStatus" -le 299 ]; then
+					code2xx=$((code2xx+1))
+				elif [ "$httpStatus" -ge 300 -a "$httpStatus" -le 399 ]; then
+					code3xx=$((code3xx+1))
+				elif [ "$httpStatus" -ge 400 -a "$httpStatus" -le 499 ]; then
+					code4xx=$((code4xx+1))
+					if [ "$httpStatus" -eq "404" ]; then
+						echo "The line $cpt has a URL ($item) returning $httpStatus HTTP status code"
+					fi
+				elif [ "$httpStatus" -ge "500" -a "$httpStatus" -le "599" ]; then
 					echo "The line $cpt has a URL ($item) returning $httpStatus HTTP status code"
+					code5xx=$((code5xx+1))
+				else
+					echo "WARNING: What is this HTTP status code (O_o)\" $httpStatus"
 				fi
-			elif [ "$httpStatus" -ge "500" -a "$httpStatus" -le "599" ]; then
-				echo "The line $cpt has a URL ($item) returning $httpStatus HTTP status code"
-				code5xx=$((code5xx+1))
 			else
-				echo "WARNING: What is this HTTP status code (O_o)\" $httpStatus"
+				echo "WARNING: It seems it is not a URL at row $cpt: \"$item\""
+				notUrlObject=$((notUrlObject+1))
 			fi
-		else
-			echo "WARNING: It seems it is not a URL at row $cpt: \"$item\""
-			notUrlObject=$((notUrlObject+1))
 		fi
 		cpt=$((cpt+1))
 		# Display a message each 50 items to say to the user the task is still running
