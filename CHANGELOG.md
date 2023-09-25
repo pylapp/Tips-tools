@@ -10,6 +10,7 @@
 
 - [#15](https://github.com/pylapp/Tips-tools/issues/15) Add dry-run script 
 - [#10](https://github.com/pylapp/Tips-tools/issues/10) Deal with GNU/Linux and macOS primitives
+- Improve check of URL in CSV files
 
 ## v14.3.3
 

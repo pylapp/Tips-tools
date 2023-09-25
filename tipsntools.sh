@@ -28,9 +28,9 @@
 # Usage: bash tipsntools.sh {-h | -v | -c | -m | -s1 | -u | -st | -ch | -f | {-a | -w | -t | -d | -s } yourRegexp [-json | -csv] }
 #
 
-# Debug purposes
+# Debug purposes (beware with UCRL: if a request fails because of DNS issue or other stuff, script will fail)
 #set -euxo pipefail
-set -euo pipefail
+#set -euo pipefail
 
 VERSION="15.0.0"
 
@@ -419,13 +419,12 @@ fCheckForNotFound(){
 	checkedUrls=0
 	notUrlObject=0;
 
-	DIFF=6 # There are $DIFF useless rows in base ODT file, so if a CSV line is not convenient, if may be the line+DIFF rows in the ODT file
-	cpt=$DIFF
-
-	echo "This operation can take a lot of time..."
+	DIFF=6 # There are $DIFF useless rows in base ODT/ODS/XLSX file
+	cpt=1
+	echo "⏲️  This operation can take a lot of time..."
 
 	# Processing URL in tools
-	echo "Processing $fileName..."
+	echo "🔎 Processing $fileName..."
 	urlsToTest=`cat $fileName | awk -F ';' '{print $5}'`
 
 	# While loop runs in sub-shell, so modified variables will lost their new states once the sub-shell of the loop exits
@@ -435,36 +434,38 @@ fCheckForNotFound(){
 	else # macOS
 		regex="s/ /\'$'\n/g"
 	fi
-	parsedUrlToTest=`echo $urlsToTest | sed $regex`
+	parsedUrlToTest=`echo $urlsToTest | sed 's/ /\'$'\n/g'`
 	while read item; do
-		#echo "Checking item at rank $cpt: $item..."
-		httpStatus=`curl --write-out '%{http_code}' --silent --output /dev/null $item` # Deal with failed CURL commands
-		if [ "$httpStatus" == "000" ]; then
-			echo "The line $cpt has a URL ($item) returning undefined HTTP status code"
-			code5xx=$((code000+1))
-		else		
-			if [ "$httpStatus" ]; then
-				checkedUrls=$((checkedUrls+1))
-				if [ "$httpStatus" -ge 100 -a "$httpStatus" -le 199 ]; then
-					code1xx=$((code1xx+1))
-				elif [ "$httpStatus" -ge 200 -a "$httpStatus" -le 299 ]; then
-					code2xx=$((code2xx+1))
-				elif [ "$httpStatus" -ge 300 -a "$httpStatus" -le 399 ]; then
-					code3xx=$((code3xx+1))
-				elif [ "$httpStatus" -ge 400 -a "$httpStatus" -le 499 ]; then
-					code4xx=$((code4xx+1))
-					if [ "$httpStatus" -eq "404" ]; then
-						echo "The line $cpt has a URL ($item) returning $httpStatus HTTP status code"
+		if [ $cpt -gt $DIFF ]; then
+			echo "Checking item at rank $cpt: $item..."
+			httpStatus=`curl --write-out '%{http_code}' --silent --output /dev/null $item` # Deal with failed CURL commands
+			if [ "$httpStatus" == "000" ]; then
+				echo "⚠️  The line $cpt has a URL ($item) returning undefined HTTP status code"
+				code5xx=$((code000+1))
+			else		
+				if [ "$httpStatus" ]; then
+					checkedUrls=$((checkedUrls+1))
+					if [ "$httpStatus" -ge 100 -a "$httpStatus" -le 199 ]; then
+						code1xx=$((code1xx+1))
+					elif [ "$httpStatus" -ge 200 -a "$httpStatus" -le 299 ]; then
+						code2xx=$((code2xx+1))
+					elif [ "$httpStatus" -ge 300 -a "$httpStatus" -le 399 ]; then
+						code3xx=$((code3xx+1))
+					elif [ "$httpStatus" -ge 400 -a "$httpStatus" -le 499 ]; then
+						code4xx=$((code4xx+1))
+						if [ "$httpStatus" -eq "404" ]; then
+							echo "⚠️  The line $cpt has a URL ($item) returning $httpStatus HTTP status code"
+						fi
+					elif [ "$httpStatus" -ge "500" -a "$httpStatus" -le "599" ]; then
+						echo "⚠️  The line $cpt has a URL ($item) returning $httpStatus HTTP status code"
+						code5xx=$((code5xx+1))
+					else
+						echo "⚠️  WARNING: What is this HTTP status code (O_o)\" $httpStatus"
 					fi
-				elif [ "$httpStatus" -ge "500" -a "$httpStatus" -le "599" ]; then
-					echo "The line $cpt has a URL ($item) returning $httpStatus HTTP status code"
-					code5xx=$((code5xx+1))
 				else
-					echo "WARNING: What is this HTTP status code (O_o)\" $httpStatus"
+					echo "⚠️  WARNING: It seems it is not a URL at row $cpt: \"$item\""
+					notUrlObject=$((notUrlObject+1))
 				fi
-			else
-				echo "WARNING: It seems it is not a URL at row $cpt: \"$item\""
-				notUrlObject=$((notUrlObject+1))
 			fi
 		fi
 		cpt=$((cpt+1))
@@ -475,12 +476,12 @@ fCheckForNotFound(){
 	done <<< "$(echo "$parsedUrlToTest")"
 
 	# Some metrics
-	echo "NOTE: For file $fileName - HTTP 1xx status: $code1xx"
-	echo "NOTE: For file $fileName - HTTP 2xx status: $code2xx"
-	echo "NOTE: For file $fileName - HTTP 3xx status: $code3xx"
-	echo "NOTE: For file $fileName - HTTP 4xx status: $code4xx"
-	echo "NOTE: For file $fileName - HTTP 5xx status: $code5xx"
-
+	echo "👉 NOTE: For file $fileName - HTTP 1xx status: $code1xx"
+	echo "👉 NOTE: For file $fileName - HTTP 2xx status: $code2xx"
+	echo "👉 NOTE: For file $fileName - HTTP 3xx status: $code3xx"
+	echo "👉 NOTE: For file $fileName - HTTP 4xx status: $code4xx"
+	echo "👉 NOTE: For file $fileName - HTTP 5xx status: $code5xx"
+	echo -e "\n"
 }
 
 # \fn fComputeMetrics
