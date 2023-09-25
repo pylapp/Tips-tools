@@ -11,7 +11,7 @@
 
 ![Image of Tips and Tools](https://github.com/pylapp/Tips-tools)
 
-# Tips'n'tools (v14.3.3)
+# Tips'n'tools (v15.0.0)
 
   <em>Keep time and be faster with your own cache of references, tools and specifications useful for developers.</em>
 

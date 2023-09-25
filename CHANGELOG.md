@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v15.0.0
+
+### Bugs
+
+[#7](https://github.com/pylapp/Tips-tools/issues/7) Pick hard-coded fixes and improve versions
+
 ## v14.3.3
 
 _This version is dedicated to macOS users, and is based on v14.3.2_
