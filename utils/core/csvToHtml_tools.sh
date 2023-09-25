@@ -33,18 +33,6 @@
 #set -euxo pipefail
 set -euo pipefail
 
-# ##### #
-# Utils #
-# ##### #
-
-DoesRunOnGNULinux(){
-    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-        echo "yes"
-    else
-        echo "no"
-    fi
-}
-
 # ###### #
 # CONFIG #
 # ###### #
@@ -80,11 +68,7 @@ while read -r line; do
 		if [ $currentRowIndex -eq $(($NUMBER_OF_LINES_TO_IGNORE - 1)) ]; then
 			echo -e "\t<thead>"
 			echo -e "\t\t<tr>"
-			if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
-				regex="s/;/\n/g"
-			else # macOS
-				regex="s/;/\'$'\n/g"
-			fi				
+			regex="s/;/\n/g" # Should work well both on macOS and GNU/Linux		
 			echo $line | sed $regex | while read -r item; do
 				echo -e "\t\t\t<td class=\"header\">" $item "</td>"
 			done
@@ -101,11 +85,7 @@ while read -r line; do
 
 	# ***** Step 4: Split the line and replace ; by \n, and delete useless "
 	fieldIndex=0
-	if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
-		regex="s/;/\n/g"
-	else # macOS
-		regex="s/;/\'$'\n/g"
-	fi	
+	regex="s/;/\n/g" # Should work well both on macOS and GNU/Linux
 	echo $line | sed $regex | while read -r item; do
 		cleanItem=`echo $item | sed 's/\"//g'`
 		# Add an good CSS class
