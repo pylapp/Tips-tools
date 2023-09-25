@@ -13,6 +13,8 @@
 - [#14](https://github.com/pylapp/Tips-tools/issues/14) Add CC-BY license for generated and ODS file
 - Improve check of URL in CSV files
 - Update sources headers
+- Refactor file tree
+- Add DCO, codes of conduct and conflict, security and citation files
 
 ## v14.3.3
 
