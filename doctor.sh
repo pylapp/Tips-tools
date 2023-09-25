@@ -10,6 +10,8 @@
 #
 # Usage: bash dry-run.sh
 #
+# ✿✿✿✿ ʕ •ᴥ•ʔ/ ︻デ═一
+#
 
 set -euo pipefail # set -euxo pipefail
 
