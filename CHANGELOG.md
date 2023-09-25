@@ -4,7 +4,11 @@
 
 ### Bugs
 
-[#7](https://github.com/pylapp/Tips-tools/issues/7) Pick hard-coded fixes and improve versions
+- [#7](https://github.com/pylapp/Tips-tools/issues/7) Pick hard-coded fixes and improve versions
+
+### Changes
+
+- [#15](https://github.com/pylapp/Tips-tools/issues/15) Add dry-run script 
 
 ## v14.3.3
 

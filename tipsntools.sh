@@ -33,15 +33,6 @@
 set -euo pipefail
 
 VERSION="15.0.0"
-SHELL_TO_USE="bash"
-
-# WARNING
-# IF YOU ARE USING macOS YOU SHOULD COMMENT THE 3 FOLLOWING LINES
-#if ! grep -q "$SHELL_TO_USE" /proc/$$/cmdline ; then
-#		echo "This script must be run with $SHELL_TO_USE shell"
-#		exit 1
-#fi
-
 
 # ############# #
 # CONFIGURATION #
@@ -707,5 +698,3 @@ elif [ "$1" = "--full" -o "$1" = "-f" ]; then
 else
 	fUsageAndExit
 fi
-
-#echo "✿✿✿✿ ʕ •ᴥ•ʔ/ ︻デ═一	tipsntools.sh	TERMINATED !"
