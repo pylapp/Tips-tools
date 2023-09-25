@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+title: >-
+  tips'n'tools: Project to compile references of publications, devices, SoC and tools for technical watch.
+  Provides CLI tool, web page, Ruby server and kind of PWA to read data and search inside corpora.
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - affiliation: pylapersonne.info
+    given-names: Pierre-Yves
+    family-names: Lapersonne
+repository-code: 'https://github.com/pylapp/Tips-tools'
+url: 'https://github.com/pylapp/Tips-tools'
+abstract: >-
+  Tips'n'tools is a project which has the aim of making searches faster and improving technical watch.
+  Indeed, sometimes you need to share usefull web links and cool libraries to your colleagues, 
+  but which platform to use?
+
+  Your company's inner social network? Lost time if you move from your job. 
+  A public social media? Lost time if this medium is closed.
+  Fill your web browser's bookmarks? Yeah, got stolen or reinitialized your computer and you are done.
+
+  Tips'n'tools allows you to fill a spreadsheet (.ods file) and then export its sheets to CSV files. Then you can:
+  use the main Shell script to make queries so as to find a thing you have listed, 
+  build a little Progressive Web App which allows you to make queries with a more user-friendly UI, 
+  update a global web page if you cannot use the web app, run the server-side feed script, written in Ruby, so as to expose an HTTP API to make the queries from everywhere.
+
+  This tool has been developed so as to help people to store and get useful data for their jobs.
+
+  The project is under permissive non-copyleft open source MIT license for sources, and CC-BY or generated content.
+keywords:
+  - watch
+  - data
+  - tools
+  - publications
+  - devices
+  - SoC
+  - Shell
+  - Ruby
+  - PWA
+license: MIT
+version: 15.0.0
+date-released: '2023-09-25'
