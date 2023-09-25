@@ -432,7 +432,7 @@ fCheckForNotFound(){
 	parsedUrlToTest=`echo $urlsToTest | sed 's/ /\'$'\n/g'` # For macOS
 	while read item; do
 		#echo "Checking item at rank $cpt: $item..."
-		httpStatus=`curl -Is $item | cut -d' ' -f2 | head -1`
+		httpStatus=`curl --write-out '%{http_code}' --silent --output /dev/null $item` # Deal with failed CURL commands
 		if [ "$httpStatus" ]; then
 			checkedUrls=$((checkedUrls+1))
 			if [ "$httpStatus" -ge 100 -a "$httpStatus" -le 199 ]; then
