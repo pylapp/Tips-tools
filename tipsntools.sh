@@ -242,7 +242,7 @@ fFindInCsvFile(){
 			if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
 				regex="s/;/\'$'\n/g"
 			else # macOS
-				regex="s/;/\'$'\n/g"
+				regex="s/;/\n/g"
 			fi
 			echo $line | sed $regex | while read -r item; do
 				if [ "$item" = "" ]; then
@@ -263,7 +263,6 @@ fFindInCsvFile(){
 # \param file - The file to use
 # \param regex - The regex to use
 # \brief Find in dedicated JSON file items which match the regex
-# WARNING: Not working on macOS, truncate command is not available. Love apples.
 fFindInJsonFile(){
 	file=$1
 	regex=$2
