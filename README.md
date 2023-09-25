@@ -9,7 +9,7 @@
 [![Ruby](https://img.shields.io/badge/-Ruby-701516?style=for-the-badge)](https://github.com/pylapp/Tips-tools/search?l=ruby)
 [![HTML, CSS, JavaScript](https://img.shields.io/badge/-Web-563d7c?style=for-the-badge)](https://github.com/pylapp/Tips-tools/search?l=html)
 
-![Image of Tips and Tools](https://github.com/pylapp/Tips-tools)
+![Image of Tips and Tools](https://github.com/pylapp/Tips-tools/blob/master/picture.png)
 
 # Tips'n'tools (v15.0.0)
 
@@ -36,19 +36,19 @@ Never rely on social networks or corporate heavy tools, make your own cache and 
 
  Run
 ```shell
-	bash tipsntools.sh --help
+bash tipsntools.sh --help
 ```
  to get some help about the commands ;-)
 
  Run
 ```shell
-	bash tipsntools.sh {--findAll | --findWeb | --findDevices | --findTools | --findSocs} yourRegex {--json | --csv}
+bash tipsntools.sh {--findAll | --findWeb | --findDevices | --findTools | --findSocs} yourRegex {--json | --csv}
 ```
  to make some searches in files with a regular expression as a filter. The _--json_ flag after the regex makes the script produce JSON-based data.
 
  Run
 ```shell
-	bash tipsntools.sh --update
+bash tipsntools.sh --update
 ```
  to build HTML and JSON files from your CSV files, and build a global web page and the little web app (to see as a Progressive Web App or Single Page Application if you like buzzwords)
 
@@ -58,7 +58,7 @@ You can fill the _.ods_ spreadsheet file with new data you want to save.
 You should keep the columns order.
 Then run
 ```shell
-	bash tipsntools.sh --update
+bash tipsntools.sh --update
 ```
 to update the _.html_ and _.json_ files.
 
@@ -92,9 +92,9 @@ _If you saw newbie things I did, feel free to submit a pull request!_
 
 For macOS users, you should install the _truncate_ command:
 ```shell
-  brew install coreutils
-  brew install truncate
-  # Maybe you should after run `brew link truncate`
+brew install coreutils
+brew install truncate
+# Maybe you should after run `brew link truncate`
 ```
 
 ## Deploy it
