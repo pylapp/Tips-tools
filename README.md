@@ -135,7 +135,7 @@ https://stackoverflow.com/questions/19242275/re-error-illegal-byte-sequence-on-m
 You may also have in the wepp app error like _"An error occured with the JSON data gotten from the feed Web API. The degraded mode is still available"_. By looking in the developer console, you may find there is unexpected error in the JSON data returned by the script.
 In this case you should have a look on the CSV files you exported ; maybe there are not well formatted and make the produced JSON bad.
 
-In addition, if you isntall the web app on your computer, you may have different behaviors if you choose Brave, Chrome or Firefox :-/
+In addition, if you install the web app on your computer, you may have different behaviors if you choose Brave, Chrome or Firefox :-/
 
 More details on the [issues tracker](https://github.com/pylapp/Tips-tools/issues).
 
@@ -145,4 +145,4 @@ Thus in this case we may have to comment the _set -euxo pipefail_ mine in the ma
 
 ## Funny notice
 
-Several years ago, I noticed the Git history was crappy and fucked up. Thee were some data leaks, wrong email address was used, got a lot of spam, commits links to the GitHub account's were not created because of bad pseudo... No DCO, no GPG-signing... It was a big mess. Trials to clean the history failed, that is the reason why the project was delete and created again and all the Git history lost until 2020. Learned of that!
+Several years ago, I noticed the Git history was crappy and fucked up. Thee were some data leaks, wrong email address was used, got a lot of spam, commits links to the GitHub account's were not created because of bad pseudo... No DCO, no GPG-signing... It was a big mess. Trials to clean the history failed, that is the reason why the project was deleted and created again and all the Git history lost until 2020. Learned of that!
