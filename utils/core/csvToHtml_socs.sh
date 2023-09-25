@@ -20,7 +20,7 @@
 #
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 12.0.0
+# Version.............: 13.0.0
 # Since...............: 28/11/2016
 # Description.........: Process a file/an input (mainly in CSV format) to HTML with CSS if needed
 #			This file must contain several columns: Constructor, Target, Name, Gravure, Modem, Peak download speed, Peak upload speed, Bluetooth, NFC, USB, Camera support max., Video capture max., Video playback max., Display max., CPU, CPU cores number, CPU clock speed max., CPU architecture, GPU, GPU API support, AI support
@@ -68,10 +68,12 @@ while read -r line; do
 		if [ $currentRowIndex -eq $(($NUMBER_OF_LINES_TO_IGNORE - 1)) ]; then
 			echo -e "\t<thead>"
 			echo -e "\t\t<tr>"
-			# For GNU/Linux (good and best) systems
-			#echo $line | sed 's/;/\n/g' | while read -r item; do
-			# For macOS (not so best) systems	
-			echo $line | sed 's/;/\'$'\n/g' | while read -r item; do
+			if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
+				regex="s/;/\n/g"
+			else # macOS
+				regex="s/;/\'$'\n/g"
+			fi		
+			echo $line | sed $regex | while read -r item; do
 				echo -e "\t\t\t<td class=\"header\">" $item "</td>"
 			done
 			echo -e "\t\t</tr>"
@@ -86,11 +88,13 @@ while read -r line; do
 	echo -e "\t\t<tr>"
 
 	# ***** Step 4: Split the line and replace ; by \n, and delete useless "
-	fieldIndex=0;
-	# For GNU/Linux (good and best) systems
-	#echo $line | sed 's/;/\n/g' | while read -r item; do
-	# For macOS (not so best) systems	
-	echo $line | sed 's/;/\'$'\n/g' | while read -r item; do
+	fieldIndex=0
+	if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
+		regex="s/;/\n/g"
+	else # macOS
+		regex="s/;/\'$'\n/g"
+	fi	
+	echo $line | sed $regex | while read -r item; do
 		cleanItem=`echo $item | sed 's/\"//g'`
 		# Add a good CSS class
 		case "$fieldIndex" in

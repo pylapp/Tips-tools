@@ -130,7 +130,7 @@
       return true;
    }
 
-   // WARNING: It seems Firefox 58 on Linux and Android has bugs with IndexedDB O_ô
+   // WARNING: It seems Firefox 58 on Linux and Android have bugs with IndexedDB O_ô; or maybe it's the guy in front of the keyboard
    if ( (navigator.appVersion.indexOf("Linux") != -1)
       || (navigator.appVersion.indexOf("X11") != -1) ){
      return false

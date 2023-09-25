@@ -20,7 +20,7 @@
 #
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 2.0.0
+# Version.............: 3.0.0
 # Since...............: 06/03/2018
 # Description.........: Process a file/an input (mainly in CSV format) to JSON
 #			This file must contain several columns: Constructor, Target, Name, Gravure, Modem, Peak download speed, Peak upload speed, Bluetooth, NFC, USB, Camera support max., Video capture max., Video playback max., Display max., CPU, CPU cores number, CPU clock speed max., CPU architecture, GPU, GPU API support, AI support
@@ -76,11 +76,13 @@ while read -r line; do
 	echo -e "{\c" >> $TEMP_FILE_FOR_OUTPUTS;
 
 	# ***** Step 4: Split the line and replace ; by \n, and delete useless "
-	fieldIndex=0;
-	# For GNU/Linux (good and best) systems
-	#echo $line | sed 's/;/\n/g' | while read -r item; do
-	# For macOS (not so best) systems	
-	echo $line | sed 's/;/\'$'\n/g' | while read -r item; do
+	fieldIndex=0
+	if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
+		regex="s/;/\n/g"
+	else # macOS
+		regex="s/;/\'$'\n/g"
+	fi	
+	echo $line | sed $regex | while read -r item; do
 		cleanItem=`echo $item | sed 's/\"//g'`
 		# Update entry
 		case "$fieldIndex" in
@@ -157,10 +159,12 @@ while read -r line; do
 done
 
 # ***** Step 6: Prepare the footer of the output
-# For GNU/Linux
-#truncate -s-2 $TEMP_FILE_FOR_OUTPUTS;
-# For macOS
-truncate -s -2 $TEMP_FILE_FOR_OUTPUTS;
+if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
+	truncate -s-2 $TEMP_FILE_FOR_OUTPUTS;
+else # macOS
+	truncate -s -2 $TEMP_FILE_FOR_OUTPUTS;
+fi	
+
 echo -e "\n]" >> $TEMP_FILE_FOR_OUTPUTS
 
 # ***** Step 7: Display content

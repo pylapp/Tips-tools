@@ -20,7 +20,7 @@
 #
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 13.0.0
+# Version.............: 14.0.0
 # Since...............: 28/09/2017
 # Description.........: Parses the CSV files (previously generated from the ODS file) to HTML and JSON files,
 #	and concatenate them to the global web page file, and update the web app.
@@ -104,6 +104,18 @@ WEBPAGE_ASSETS_HTML_LINKS="$WEBPAGE_ASSETS_FOLDER/patterns/includes.html"
 WEBPAGE_ASSETS_HTML_HEADER="$WEBPAGE_ASSETS_FOLDER/patterns/header.html"
 WEBPAGE_ASSETS_HTML_NAVIGATION="$WEBPAGE_ASSETS_FOLDER/patterns/navigationButtons.html"
 WEBPAGE_ASSETS_HTML_END="$WEBPAGE_ASSETS_FOLDER/patterns/end.html"
+
+# ##### #
+# Utils #
+# ##### #
+
+DoesRunOnGNULinux(){
+    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+        echo "yes"
+    else
+        echo "no"
+    fi
+}
 
 # ######### #
 # MAIN CODE #
@@ -241,9 +253,11 @@ fi
 # #############################
 
 echo "Dealing with tools..."
-# WARNING: Change the command if using GNU/Linux or macOS (md5sum / md5, $1 / $4)
-# COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5sum $CSV_TOOLS_FILE | awk '{ print $1}'`
-COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5 $CSV_TOOLS_FILE | awk '{ print $4 }'`
+if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
+	COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5sum $CSV_TOOLS_FILE | awk '{ print $1}'`
+else # macOS
+	COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5 $CSV_TOOLS_FILE | awk '{ print $4 }'`
+fi
 
 if [ -e $META_DATA_FILE ]; then
 
@@ -274,9 +288,11 @@ fi
 # ##################################
 
 echo "Dealing with web references..."
-# WARNING: Change the command if using GNU/Linux or macOS (md5sum / md5, $1 / $4)
-# COMPUTED_CHECKSUM_CSV_WEBZ_FILE=`md5sum $CSV_WEB_FILE | awk '{ print $1}'`
-COMPUTED_CHECKSUM_CSV_WEBZ_FILE=`md5 $CSV_WEB_FILE | awk '{ print $4 }'`
+if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
+	COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5sum $CSV_WEB_FILE | awk '{ print $1}'`
+else # macOS
+	COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5 $CSV_WEB_FILE | awk '{ print $4 }'`
+fi
 
 if [ -e $META_DATA_FILE ]; then
 
@@ -306,9 +322,11 @@ fi
 # ###############################
 
 echo "Dealing with devices..."
-# WARNING: Change the command if using GNU/Linux or macOS (md5sum / md5, $1 / $4)
-# COMPUTED_CHECKSUM_CSV_DEVZ_FILE=`md5sum $CSV_DEVICE_FILE | awk '{ print $1 }'`
-COMPUTED_CHECKSUM_CSV_DEVZ_FILE=`md5 $CSV_DEVICE_FILE | awk '{ print $4 }'`
+if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
+	COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5sum $CSV_DEVICE_FILE | awk '{ print $1}'`
+else # macOS
+	COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5 $CSV_DEVICE_FILE | awk '{ print $4 }'`
+fi
 
 if [ -e $META_DATA_FILE ]; then
 
@@ -339,9 +357,11 @@ fi
 # ###########################
 
 echo "Dealing with SoC..."
-# WARNING: Change the command if using GNU/Linux or macOS (md5sum / md5, $1 / $4)
-# COMPUTED_CHECKSUM_CSV_SOCZ_FILE=`md5sum $CSV_SOC_FILE | awk '{ print $1 }'`
-COMPUTED_CHECKSUM_CSV_SOCZ_FILE=`md5 $CSV_SOC_FILE | awk '{ print $4 }'`
+if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
+	COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5sum $CSV_SOC_FILE | awk '{ print $1}'`
+else # macOS
+	COMPUTED_CHECKSUM_CSV_TOOLZ_FILE=`md5 $CSV_SOC_FILE | awk '{ print $4 }'`
+fi
 
 if [ -e $META_DATA_FILE ]; then
 

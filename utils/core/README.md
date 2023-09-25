@@ -12,14 +12,6 @@ brew install truncate
 brew link truncate
 ```
 
-## sed on macOS and GNU/Linux
-
-The 'sed' command is ued to as to processs the CSV lines and prepare them for HTML.
-In fact each line will be given to 'sed' with will replace ';' par '\n'. Thus read loops will process the outputs to generate HTML code.
-However the syntax is slightly different between sytems.
-For macOS, 'sed' command should be `sed 's/;/\'$'\n/g'` and for GNU/Linux `sed 's/;/\n/g'`.
-
 ## sed on macOS
 
-If you get errors like _sed: RE error: illegal byte sequence_, please refer to 
-https://stackoverflow.com/questions/19242275/re-error-illegal-byte-sequence-on-mac-os-x
+If you get errors like _sed: RE error: illegal byte sequence_, please refer to [this post on Stack Overflow](https://stackoverflow.com/questions/19242275/re-error-illegal-byte-sequence-on-mac-os-x).

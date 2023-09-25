@@ -70,6 +70,30 @@ CheckIfDirectoryExists(){
     fi
 }
 
+IsCommandAvailable(){
+    if ! command -v $1 &> /dev/null ; then
+        return "yes"
+    else
+        return "no"
+    fi
+}
+
+DoesRunOnGNULinux(){
+    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+        echo "yes"
+    else
+        echo "no"
+    fi
+}
+
+DoesRunOnMacOS(){
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+        echo "yes"
+    else
+        echo "no"
+    fi
+}
+
 # Metrics
 # -------
 
@@ -249,6 +273,24 @@ CheckIfDirectoryExistsOrWarning "contents/socz"
 CheckIfFileExistsOrWarning "contents/socz/Tips-n-tools_SoC.csv"
 CheckIfFileExistsOrWarning "contents/socz/Tips-n-tools_SoC.json"
 
+# Check commands
+# --------------
+
+# Check OS
+# --------
+
+onGNULinux=$(DoesRunOnGNULinux)
+
+onMacOS=$(DoesRunOnMacOS)
+
+if [ $onGNULinux != "yes" -a $onMacOS != "yes" ]; then
+    echo "⚠️  WARNING: Not sure your operating system is supported (nether GNU/Linux nor macOS)"
+    warningPointsCount=$(($warningPointsCount + 1))
+else
+    echo "✅  Cool! It seems your operating system is supported"
+    goodPointsCount=$(($goodPointsCount + 1))
+fi
+
 # Conclusion
 # ----------
 
@@ -262,3 +304,5 @@ echo -e "\tNumber of controls.......: $globalCount"
 echo -e "\tNumber of success........: $goodPointsCount"
 echo -e "\tNumber of warnings.......: $warningPointsCount"
 echo -e "\tNumber of errors.........: $badPointsCount"
+
+exit $NORMAL_EXIT

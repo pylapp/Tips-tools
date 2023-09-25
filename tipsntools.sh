@@ -24,11 +24,11 @@
 # Since...............: 05/10/2016
 # Description.........: Provides some features about this update/technical watch/... project: find some elements or build HTML files from CSV files to update another file
 #
-# Usage: bash tipsntools.sh {--help | --version |--count | --md5 | --sha1 | --update | --stats | --check | --full | {--findAll | --findWeb | --findTools | --findDevices | --findSocs} yourRegexp [--json]}
-# Usage: bash tipsntools.sh {-h | -v | -c | -m | -s1 | -u | -st | -ch | -f | {-a | -w | -t | -d | -s } yourRegexp [-json] }
+# Usage: bash tipsntools.sh {--help | --version |--count | --md5 | --sha1 | --update | --stats | --check | --full | {--findAll | --findWeb | --findTools | --findDevices | --findSocs} yourRegexp [--json | --csv]}
+# Usage: bash tipsntools.sh {-h | -v | -c | -m | -s1 | -u | -st | -ch | -f | {-a | -w | -t | -d | -s } yourRegexp [-json | -csv] }
 #
 
-# Debug purposses
+# Debug purposes
 #set -euxo pipefail
 set -euo pipefail
 
@@ -69,6 +69,18 @@ JSON_SOC_FILE="$SOC_DIR/Tips-n-tools_SoC.json"
 # The folder where the HTML pages (web app / pwa / spa and global page) are
 BUILD_DIR="build"
 
+# ##### #
+# Utils #
+# ##### #
+
+DoesRunOnGNULinux(){
+    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+        echo "yes"
+    else
+        echo "no"
+    fi
+}
+
 # ######### #
 # FUNCTIONS #
 # ######### #
@@ -81,38 +93,24 @@ fUsageAndExit(){
 	echo "*********************"
 	echo "Feel free to get the version 14.3.3 for macOS usages"
 	echo "USAGE:"
-	echo "bash tipsntools.sh {--help | --version | --count | --md5 | sha1 | --update | --check | --stats | --full | {--findAll | --findWeb | --findTools | --findDevices | --findSocs} yourRegexp [--json]}"
-	echo "bash tipsntools.sh {-h | -v | -c | -m | -s1 | -u | -ch | -st | -f | {-a | -w | -t | -d | -s} yourRegexp [-json]}"
-	echo -e "\t --help....................: display the help, i.e. this usage"
-	echo -e "\t -h.........................: display the help, i.e. this usage"
-	echo -e "\t --version..................: display the verison of this tool"
-	echo -e "\t -v.........................: display the version of this tool"
-	echo -e "\t --count....................: count the number of items"
-	echo -e "\t -c.........................: count the number of items"
-	echo -e "\t --md5......................: compute the MD5 checksum"
-	echo -e "\t -m ........................: compute the MD5 checksum"
-	echo -e "\t --sha1.....................: compute the SHA1 checksum"
-	echo -e "\t -s1........................: compute the SHA1 checksum"
-	echo -e "\t --update ..................: update the defined result file with HTML files built thanks to CSV files and scripts in .utils/ folder"
-	echo -e "\t -u.........................: update the defined result file with HTML files built thanks to CSV files and scripts in .utils/ folder"
-	echo -e "\t --check....................: check for not found URL, i.e. not anymore reachable content (404 error code)"
-	echo -e "\t -ch........................: check for not found URL, i.e. not anymore reachable content (404 error code)"
-	echo -e "\t --stats....................: compute some metrics about the subject or category of each row"
-	echo -e "\t -st........................: compute some metrics about the subject or category of each row"
-	echo -e "\t --full.....................: get all the data, without filter, returns JSON objects"
-	echo -e "\t -f.........................: get all the data, without filter, returns JSON objects"
-	echo -e "\t --findAll yourRegexp.......: find in all the CSV source files the rows which contain elements matching yourRegexp"
-	echo -e "\t -a yourRegexp..............: find in all the CSV source files the rows which contain elements matching yourRegexp"
-	echo -e "\t --findWeb yourRegexp.......: find in the web links CSV source file the rows which contain elements matching yourRegexp"
-	echo -e "\t -w yourRegexp..............: find in the web links CSV source file the rows which contain elements matching yourRegexp"
-	echo -e "\t --findTools yourRegexp.....: find in the tools CSV source file the rows which contain elements matching yourRegexp"
-	echo -e "\t -t yourRegexp..............: find in the tools CSV source file the rows which contain elements matching yourRegexp"
-	echo -e "\t --findDevices yourRegexp...: find in the devices CSV source file the rows which contain elements matching yourRegexp"
-	echo -e "\t -d yourRegexp..............: find in the devices CSV source file the rows which contain elements matching yourRegexp"
-	echo -e "\t --findSocs yourRegexp......: find in the SoC CSV source file the rows which contain elements matching yourRegexp"
-	echo -e "\t -s yourRegexp..............: find in the devices CSV source file the rows which contain elements matching yourRegexp"
-	echo -e "\t --json.....................: for 'find' commands, produce results in JSON format, not plain text"
-	echo -e "\t -json......................: for 'find' commands, produce results in JSON format, not plain text"
+	echo "bash tipsntools.sh {--help | --version | --count | --md5 | sha1 | --update | --check | --stats | --full | {--findAll | --findWeb | --findTools | --findDevices | --findSocs} yourRegexp [--json | --csv]}"
+	echo "bash tipsntools.sh {-h | -v | -c | -m | -s1 | -u | -ch | -st | -f | {-a | -w | -t | -d | -s} yourRegexp [-json | -csv]}"
+	echo -e "\t --help (-h)......................: display the help, i.e. this usage"
+	echo -e "\t --version (-v)...................: display the verison of this tool"
+	echo -e "\t --count (-c).....................: count the number of items"
+	echo -e "\t --md5 (-m).......................: compute the MD5 checksum"
+	echo -e "\t --sha1 (-s)......................: compute the SHA1 checksum"
+	echo -e "\t --update (-u) ...................: update the defined result file with HTML files built thanks to CSV files and scripts in .utils/ folder"
+	echo -e "\t --check (-ch)....................: check for not found URL, i.e. not anymore reachable content (404 error code)"
+	echo -e "\t --stats (-st)....................: compute some metrics about the subject or category of each row"
+	echo -e "\t --full (-f)......................: get all the data, without filter, returns JSON objects"
+	echo -e "\t --findAll (-a) yourRegexp........: find in all the CSV source files the rows which contain elements matching yourRegexp"
+	echo -e "\t --findWeb (-w) yourRegexp........: find in the web links CSV source file the rows which contain elements matching yourRegexp"
+	echo -e "\t --findTools (-t) yourRegexp......: find in the tools CSV source file the rows which contain elements matching yourRegexp"
+	echo -e "\t --findDevices (-d) yourRegexp....: find in the devices CSV source file the rows which contain elements matching yourRegexp"
+	echo -e "\t --findSocs (-s) yourRegexp.......: find in the SoC CSV source file the rows which contain elements matching yourRegexp"
+	echo -e "\t --json (-json)...................: for 'find' commands, produce results in JSON format, not plain text"
+	echo -e "\t --csv (-csv).....................: for 'find' commands, produce results in CSV format, not plain text"
 	exit 0
 }
 
@@ -242,17 +240,19 @@ fFindInCsvFile(){
 	cat $file | while read -r line; do
 		case "$line" in
 			*$regex*)
-				# Running on GNU/Linux
-				# echo $line | sed 's/;/\n/g' | while read -r item; do
-				# Runnning on macOS
-				echo $line | sed 's/;/\'$'\n/g' | while read -r item; do
-					if [ "$item" = "" ]; then
-						echo -e "\t <null>"
-					else
-						echo -e "\t" $item
-					fi
-				done
-				echo -e "\n"
+			if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
+				regex="s/;/\'$'\n/g"
+			else # macOS
+				regex="s/;/\'$'\n/g"
+			fi
+			echo $line | sed $regex | while read -r item; do
+				if [ "$item" = "" ]; then
+					echo -e "\t <null>"
+				else						
+					echo -e "\t" $item
+				fi
+			done
+			echo -e "\n"
 			;;
 			*)
 			;;
@@ -263,31 +263,27 @@ fFindInCsvFile(){
 # \fn fFindInJsonFile
 # \param file - The file to use
 # \param regex - The regex to use
-# \brief Find a dedicated JSON file items wich match the regex
+# \brief Find in dedicated JSON file items which match the regex
 # WARNING: Not working on macOS, truncate command is not available. Love apples.
 fFindInJsonFile(){
 	file=$1
 	regex=$2
 	tempFile="./.results.temp.json"
 	touch $tempFile
-	currentRowIndex=0;
+	currentRowIndex=0
 	echo "[" > $tempFile
 	cat $file | while read -r line; do
 		case "$line" in
 			*$regex*)
-				if [ $currentRowIndex -eq 0 ]
-				then
-					echo "$line" >> $tempFile
-				else
-					echo ", $line" >> $tempFile
-				fi
+				echo "$line" >> $tempFile
 				currentRowIndex=$(($currentRowIndex + 1))
-				truncate -s-2 $tempFile
+				truncate -s -1 $tempFile # Remove last polluting symbol, useless for last JSON item
 			;;
 			*)
 			;;
 		esac
 	done
+	truncate -s -1 $tempFile
 	echo -e "\n]" >> $tempFile
 	cat $tempFile
 	rm $tempFile
@@ -417,11 +413,14 @@ fCheckForNotFound(){
 	echo "Processing $fileName..."
 	urlsToTest=`cat $fileName | awk -F ';' '{print $5}'`
 
-	# While loop runs in sub-shell, so modified variables will lost their new states once the subshell of the loop exits
-	# Thus the URL to test parsed with sed will be inhected with <<<
-	#echo $urlsToTest | sed 's/ /\n/g' | while read -r item; do
-	# parsedUrlToTest=`echo $urlsToTest | sed 's/ /\n/g'` # For GNU/Linux
-	parsedUrlToTest=`echo $urlsToTest | sed 's/ /\'$'\n/g'` # For macOS
+	# While loop runs in sub-shell, so modified variables will lost their new states once the sub-shell of the loop exits
+	# Thus the URL to test parsed with sed will be injected with <<<
+	if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
+		regex="s/ /\n/g"
+	else # macOS
+		regex="s/ /\'$'\n/g"
+	fi
+	parsedUrlToTest=`echo $urlsToTest | sed $regex`
 	while read item; do
 		#echo "Checking item at rank $cpt: $item..."
 		httpStatus=`curl --write-out '%{http_code}' --silent --output /dev/null $item` # Deal with failed CURL commands
@@ -577,13 +576,15 @@ elif [ "$1" = "--full" -o "$1" = "-f" ]; then
 		fi
 	# Find some data in all files?
 	elif [ "$1" = "--findAll" -o "$1" = "-a" ]; then
-		if [ "$2" ]; then
-			regexp="$2"
-			if [ "$3" = "--json" -o "$3" = "-json" ]; then
-				fFindInAllJsonFiles $regexp
-			else
-				fFindInAllCsvFiles $regexp
-			fi
+		if [ "$#" -ne 3 ]; then
+			errBadCommand
+			fUsageAndExit
+		fi
+		regexp="$2"
+		if [ "$3" = "--json" -o "$3" = "-json" ]; then
+			fFindInAllJsonFiles $regexp
+		elif [ "$3" = "--csv" -o "$3" = "-csv" ]; then
+			fFindInAllCsvFiles $regexp
 		else
 			errBadCommand
 			fUsageAndExit
