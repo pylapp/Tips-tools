@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## v15.0.0
+
+### Bugs
+
+- [#7](https://github.com/pylapp/Tips-tools/issues/7) Pick hard-coded fixes and improve versions
+
+### Changes
+
+- [#15](https://github.com/pylapp/Tips-tools/issues/15) Add dry-run script 
+- [#10](https://github.com/pylapp/Tips-tools/issues/10) Deal with GNU/Linux and macOS primitives
+- [#14](https://github.com/pylapp/Tips-tools/issues/14) Add CC-BY license for generated and ODS file
+- Improve check of URL in CSV files
+- Update sources headers
+- Refactor file tree
+- Add DCO, codes of conduct and conflict, security and citation files
+
 ## v14.3.3
 
 _This version is dedicated to macOS users, and is based on v14.3.2_
