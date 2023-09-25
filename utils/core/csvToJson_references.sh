@@ -26,7 +26,7 @@
 #			This file must contain several columns: Plateform, Name, Description, Keywords, URL
 #
 # Usage: bash csvToJson_references.sh --help
-# Usage: cat myFileToProcess.csv | bash csvToJson_references.sh > myOutputFile.html
+# Usage: cat myFileToProcess.csv | bash csvToJson_references.sh > myOutputFile.json
 
 # Debug purposses
 #set -euxo pipefail
@@ -89,12 +89,8 @@ while read -r line; do
 
 	# ***** Step 4: Split the line and replace ; by \n, and delete useless "
 	fieldIndex=0
-	if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
-		regex="s/;/\n/g"
-	else # macOS
-		regex="s/;/\'$'\n/g"
-	fi	
-	echo $line | sed '$regex' | while read -r item; do
+	regex="s/;/\n/g" # Should work well both on macOS and GNU/Linux	
+	echo $line | sed $regex | while read -r item; do
 		cleanItem=`echo $item | sed 's/\"//g'`
 		# Update entry
 		case "$fieldIndex" in
