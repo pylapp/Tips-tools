@@ -28,7 +28,7 @@ width="500"/>
 </tr>
 </table>
 
-# Tips'n'tools (v15.1.0)
+# Tips'n'tools
 
 <em>Keep time and be faster with your own cache of references, tools and specifications useful for developers!</em>
 
