@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: MIT
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 15.0.0
+# Version.............: 15.1.0
 # Since...............: 05/10/2016
 # Description.........: Provides some features about this update/technical watch/... project: find some elements or build HTML files from CSV files to update another file
 #
