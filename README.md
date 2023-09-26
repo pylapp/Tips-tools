@@ -28,7 +28,7 @@ width="500"/>
 </tr>
 </table>
 
-# Tips'n'tools (v15.1.0)
+# Tips'n'tools
 
 <em>Keep time and be faster with your own cache of references, tools and specifications useful for developers!</em>
 
@@ -48,6 +48,16 @@ Then you can:
 
 **_Tips'n'tools_ may be useful if you want to compile, in one place, plenty of references and data interesting for your projects.
 Never rely on social networks or corporate heavy tools, make your own cache and bring it everywhere!**
+
+You can get more detials [in the wiki](https://github.com/pylapp/Tips-tools/wiki).
+
+## The doctor
+
+A _doctor_ script is available to let you check if prerequisites are all filled
+
+```shell
+bash doctor.sh
+```
 
 ## The main script
 

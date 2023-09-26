@@ -145,15 +145,22 @@ fi
 # Step 2 - Check files
 # --------------------
 
-CheckIfFileExists "AUTHORS.txt"
-CheckIfFileExists "CHANGELOG.md"
-CheckIfFileExists "CODEOWNERS"
-CheckIfFileExists "CONTRIBUTORS.txt"
-CheckIfFileExists "CREDITS.md"
+CheckIfFileExists "../AUTHORS.txt"
+CheckIfFileExists "../CHANGELOG.md"
+CheckIfFileExists "../CODEOWNERS"
+CheckIfFileExists "../CONTRIBUTORS.txt"
+CheckIfFileExists "../CREDITS.md"
+CheckIfFileExists "../CITATION.cff"
+CheckIfFileExists "../CODE_OF_CONDUCT.md"
+CheckIfFileExists "../CODE_OF_CONFLICT.md"
+CheckIfFileExists "../CREDITS.md"
+CheckIfFileExists "../DCO.txt"
+CheckIfFileExists "../LICENSE.txt"
+CheckIfFileExists "../picture.png"
+CheckIfFileExists "../README.md"
+CheckIfFileExists "../SECURITY.md"
+
 CheckIfFileExists "datafeed.rb"
-CheckIfFileExists "LICENSE.txt"
-CheckIfFileExists "picture.png"
-CheckIfFileExists "README.md"
 CheckIfFileExists "template.ods"
 CheckIfFileExists "tipsntools.sh"
 
@@ -259,7 +266,7 @@ CheckIfFileExists "utils/web/manifest.json"
 CheckIfFileExists "utils/web/serviceworker.js"
 
 CheckIfDirectoryExistsOrWarning "contents"
-CheckIfFileExistsOrWarning "contents/toolz"
+CheckIfDirectoryExistsOrWarning "contents/toolz"
 CheckIfFileExistsOrWarning "contents/toolz/Tips-n-tools_Tools.csv"
 CheckIfFileExistsOrWarning "contents/toolz/Tips-n-tools_Tools.json"
 

@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v15.1.0
+
+### Bugs
+
+- Fix doctor script
+
+### Changes
+
+- Update documentation (doctor, licenses, support, wiki)
+
 ## v15.0.0
 
 ### Bugs
