@@ -9,9 +9,26 @@
 [![Ruby](https://img.shields.io/badge/-Ruby-701516?style=for-the-badge)](https://github.com/pylapp/Tips-tools/search?l=ruby)
 [![HTML, CSS, JavaScript](https://img.shields.io/badge/-Web-563d7c?style=for-the-badge)](https://github.com/pylapp/Tips-tools/search?l=html)
 
-![Image of Tips and Tools](https://github.com/pylapp/Tips-tools/blob/master/picture.png)
+<table>
+<tr>
+<td>
+<img 
+src="https://github.com/pylapp/Tips-tools/blob/dev/doc/screenshot_pwa_macOS.png" 
+alt="Screenshot of the PWA on macOS showing here only some results (here web sites hyperlinks of publications and blogs) for the keyword 'iOS'" 
+title="Screenshot of the PWA on macOS showing here only some results (here web sites hyperlinks of publications and blogs) for the keyword 'iOS'" 
+width="500"/>
+</td>
+<td>
+<img 
+src="https://github.com/pylapp/Tips-tools/blob/dev/doc/video_cli.gif" 
+alt="GIF video of CLI tool which make assets updates, metrics computations and provides data" 
+title="GIF video of CLI tool which make assets updates, metrics computations and provides data" 
+width="500"/>
+</td>
+</tr>
+</table>
 
-# Tips'n'tools (v15.0.0)
+# Tips'n'tools (v15.1.0)
 
 <em>Keep time and be faster with your own cache of references, tools and specifications useful for developers!</em>
 
@@ -148,4 +165,22 @@ There were some data leaks, wrong email address was used, got a lot of spam, com
 ## Licenses
 
 All the sources (Shell, JavaScript, CSS, HTML, Ruby, etc.) are under **MIT** license.
-The ODS template and any HTML, CSS and JSON generated files are under [Crrate Commons With Attribution](https://creativecommons.org/licenses/by/4.0/).
+The ODS template and any HTML, CSS and JSON generated files are under [Creative Commons With Attribution](https://creativecommons.org/licenses/by/4.0/).
+
+## Support
+
+If you want to support this project, feel free to submit [issues](https://github.com/pylapp/Tips-tools/issues) and [pull requests](https://github.com/pylapp/Tips-tools/pulls)!
+
+You can also feed the developer by using some of the tools bellow or <a href="https://pylapersonne.info/donate" title="Go to website with support mediums">other mediums</a> 🫶
+
+<a href="https://www.buymeacoffee.com/pylapp" title="Go to Buy Me a Coffee profile">
+    <img src="https://pylapersonne.info/data/donate/resources/logo-bmc.webp" alt="Bye Me A Coffee logo" width="50" style>
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.paypal.com/paypalme/pylapp" title="Go to PayPal profile">
+    <img src="https://pylapersonne.info/data/donate/resources/logo-ppl.webp" alt="PayPal logo" width="50">
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://pylapersonne.info/donate" title="Use cryptocurrencies or Ğ1">
+    <img src="https://pylapersonne.info/data/donate/resources/logo-g1.webp" alt="Ğ1 logo" width="50">
+</a>
