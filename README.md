@@ -9,11 +9,24 @@
 [![Ruby](https://img.shields.io/badge/-Ruby-701516?style=for-the-badge)](https://github.com/pylapp/Tips-tools/search?l=ruby)
 [![HTML, CSS, JavaScript](https://img.shields.io/badge/-Web-563d7c?style=for-the-badge)](https://github.com/pylapp/Tips-tools/search?l=html)
 
+<table>
+<tr>
+<td>
 <img 
-src="https://github.com/pylapp/Tips-tools/blob/dev/doc/screenshot.png" 
+src="https://github.com/pylapp/Tips-tools/blob/dev/doc/screenshot_pwa_macOS.png" 
 alt="Screenshot of the PWA on macOS showing here only some results (here web sites hyperlinks of publications and blogs) for the keyword 'iOS'" 
 title="Screenshot of the PWA on macOS showing here only some results (here web sites hyperlinks of publications and blogs) for the keyword 'iOS'" 
 width="500"/>
+</td>
+<td>
+<img 
+src="https://github.com/pylapp/Tips-tools/blob/dev/doc/video_cli.gif" 
+alt="GIF video of CLI tool which make assets updates, metrics computations and provides data" 
+title="GIF video of CLI tool which make assets updates, metrics computations and provides data" 
+width="500"/>
+</td>
+</tr>
+</table>
 
 # Tips'n'tools (v15.1.0)
 
