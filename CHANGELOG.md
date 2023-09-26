@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v15.1.0
+
+### Changes
+
+- Just update documentation
+
 ## v15.0.0
 
 ### Bugs
