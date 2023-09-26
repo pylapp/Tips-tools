@@ -150,7 +150,7 @@ You ask why Shell and Ruby are used instead of full cross-platforms languages? P
 
 Have a look on the [release note](https://github.com/pylapp/Tips-tools/blob/master/CHANGELOG.md) to get more details.
 
-## Know issues
+## Known issues
 
 If you get errors like _sed: RE error: illegal byte sequence_, please refer to the hyperklink bellow.
 It seems some files (like CSV files) you produce contain special characters '�' making `sed` fail.
