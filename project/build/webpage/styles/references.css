@@ -1,0 +1,179 @@
+/*
+ * Software Name: Tips'n'tools
+ * SPDX-FileCopyrightText: Copyright (c) 2016-2023 Pierre-Yves Lapersonne
+ * SPDX-License-Identifier: MIT
+ */
+/*
+✿✿✿✿ ʕ •ᴥ•ʔ/ ︻デ═一
+*/
+
+/**
+* @file references.css
+* @brief Style sheet contaning styles for things related to references, articles, threads, blogs...
+* @author Pierre-Yves Lapersonne
+* @version 5.1.0
+* @since 10/12/2017
+*/
+
+/* ******** */
+/* Subjects */
+/* ******** */
+
+.subjectReferencesOther {
+	background-color: #9e9e9e;
+	font-weight: bold;
+}
+
+.subjectReferencesAndroid {
+	background-color: #8bc34a;
+	font-weight: bold;
+}
+
+.subjectReferencesDesign {
+	background-color: #e91e63;
+	font-weight: bold;
+}
+
+.subjectReferencesJavaScript {
+	background-color: #ffeb3b;
+	font-weight: bold;
+}
+
+.subjectReferencesJava {
+	background-color: #ff9800;
+	font-weight: bold;
+}
+
+.subjectReferencesKotlin {
+	background-color: #3f51b5;
+	font-weight: bold;
+}
+
+.subjectReferencesWeb {
+	background-color: #795548;
+	font-weight: bold;
+}
+
+.subjectReferencesSwift {
+	background-color: #ff5722;
+	font-weight: bold;
+}
+
+.subjectReferencesGo {
+	background-color: #2196f3;
+	font-weight: bold;
+}
+
+.subjectReferencesScala {
+	background-color: #f44336;
+	font-weight: bold;
+}
+
+.subjectReferencesGroovy {
+	background-color: #bbdefb;
+	font-weight: bold;
+}
+
+.subjectReferencesPython {
+	background-color: #ffd600;
+	font-weight: bold;
+}
+
+.subjectReferencesDevTool {
+	background-color: #000000;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.subjectReferencesBots {
+	background-color: #000000;
+	color: #ff0000;
+	font-weight: bold;
+}
+
+.subjectReferencesRust {
+	background-color: #424242;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.subjectReferencesDart {
+	background-color: #64ffda;
+	font-weight: bold;
+}
+
+.subjectReferencesAi {
+	background-color: #000000;
+	color: #00bcd4;
+	font-weight: bold;
+}
+
+.subjectReferencesHumanism {
+	background-color: #9c27b0;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.subjectReferencesFuchsia {
+	background-color: #f48fb1;
+	font-weight: bold;
+}
+
+.subjectReferencesCryptoCurrency {
+	background-color: #ffff00;
+	font-weight: bold;
+}
+
+.subjectReferencesAgile {
+	background-color: #00796b;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.subjectReferencesBlockchain {
+	background-color: #a7ffeb;
+	font-weight: bold;
+}
+
+.subjectReferencesDapp {
+	background-color: #b2dfdb;
+	font-weight: bold;
+}
+
+.subjectReferencesData {
+	background-color: #795548;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.subjectReferencesTest {
+	background-color: #90A4AE;
+	color: #000000;
+	font-weight: bold;
+}
+
+.subjectReferencesSecurity {
+	background-color: #616161;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.subjectReferencesRuby {
+	background-color: #ff1600;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* ************** */
+/* Other elements */
+/* ************** */
+
+.nameReferences, .descriptionReferences {
+	text-align: center;
+	font-weight: normal;
+}
+
+.keywordsReferences {
+	font-style: italic;
+	font-weight: normal;
+}

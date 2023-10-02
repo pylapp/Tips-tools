@@ -2287,8 +2287,8 @@
 {"platform": "Humanism", "name": "Onion share", "description": "🧅 OnionShare is an open source tool that lets you securely and anonymously share files, host websites, and chat with friends using the Tor network.", "keywords": "TOR , onion , files , share", "url": "https://onionshare.org/"},
 {"platform": "Humanism", "name": "Choose a licence table aray comparisons", "description": "", "keywords": "licenses , comparison", "url": "https://choosealicense.com/appendix/"},
 {"platform": "/", "name": "iTorrent", "description": "", "keywords": "P2P , torrent , iOS , app", "url": "https://github.com/XITRIX/iTorrent"},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
+{"platform": "/", "name": "Emoticons", "description": "", "keywords": "emojicons , table , flipping , meh , emoticons", "url": "https://fsymbols.com/emoticons/"},
+{"platform": "Security", "name": "Trivy", "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more", "keywords": "scanner , security , secrets , OS , components , Docker , containers , K8S", "url": "https://github.com/aquasecurity/trivy"},
 {"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
 {"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
 {"platform": "", "name": "", "description": "", "keywords": "", "url": ""}
