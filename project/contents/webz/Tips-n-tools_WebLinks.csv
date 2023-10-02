@@ -1671,11 +1671,11 @@ iOS;iOS design patterns — Part 1 (MVC, MVP, MVVM);;iOS , design patterns , MVC
 /;Quel développeur fullstack êtes-vous ?;;fullstack , strip ;https://www.commitstrip.com/fr/2016/11/07/which-full-stack-developer-are-you;;;;;;;;;;;;;;;;;;;;;
 /;Comparatif des différentes méthodes agiles;;méthodes , agiles , gesion , projets , Scrum, Kanban, Scrumban, XP , Safe, Spotify, Less, Nexus.;https://blog.erlem.fr/comparatif-des-differentes-methodes-agiles/;;;;;;;;;;;;;;;;;;;;;
 Web;Why does JavaScript suck;;JavaScript , web , troll;https://whydoesitsuck.com/why-does-javascript-suck/;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+Security;10 GitHub Security Best Practices;;Snyk , security, tips , guidelines , Git , GitHub , GitLab;https://snyk.io/fr/blog/ten-git-hub-security-best-practices/;;;;;;;;;;;;;;;;;;;;;
+Security;A Deep Dive into 70 Layers of Obfuscated Info-Stealer Malware;;checkmarx , security , audits , code , malware;https://checkmarx.com/blog/a-deep-dive-into-70-layers-of-obfuscated-info-stealer-malware/;;;;;;;;;;;;;;;;;;;;;
+Swift;Closures Vs. Combine Vs. Async Await;;Closures , Combine , Async , Await , threads , coroutines , iOS , Swift;https://medium.com/@GetInRhythm/closures-vs-combine-vs-async-await-993eb1da4d44;;;;;;;;;;;;;;;;;;;;;
+Swift;Swift Combine Operators: the Core Ones and When Apply;;Swift , Combine , operators , stream;https://betterprogramming.pub/swift-combine-operators-the-core-ones-and-when-apply-82d6dd310aa5;;;;;;;;;;;;;;;;;;;;;
+Swift;Exploring Combine’s Publisher: An In-Depth Look at One of the Core Concepts of Apple’s Reactive Framework;;Swift , Reactive , Combine ;https://ahmadgsufi.medium.com/exploring-combines-publisher-an-in-depth-look-at-one-of-the-core-concepts-of-apple-s-reactive-cd5bd84e3ffe;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;

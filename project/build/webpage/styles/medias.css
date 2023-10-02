@@ -1,0 +1,53 @@
+/*
+ * Software Name: Tips'n'tools
+ * SPDX-FileCopyrightText: Copyright (c) 2016-2023 Pierre-Yves Lapersonne
+ * SPDX-License-Identifier: MIT
+ */
+/*
+✿✿✿✿ ʕ •ᴥ•ʔ/ ︻デ═一
+*/
+
+/**
+* @file medias.css
+* @brief Style sheet contaning definitions for media properties
+* @author Pierre-Yves Lapersonne
+* @version 2.0.0
+* @since 10/12/2017
+*/
+
+@media screen and (max-width: 900px) {
+
+  #mainHeader {
+    display: none;
+  }
+  #padder {
+    visibility: visible;
+  }
+
+  body, p {
+    font-size: 1rem !important;
+  }
+  h1 {
+    font-size: 1.5rem !important;
+  }
+  td {
+    font-size: 0.8rem !important;
+  }
+
+  .headerPhoto {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  #padder .headerTextSummary {
+    display: none;
+  }
+
+  .navigationButton {
+    height: 3rem !important;
+    width: 3rem !important;
+    bottom: 10px !important;
+    right: 15px !important;
+  }
+
+}

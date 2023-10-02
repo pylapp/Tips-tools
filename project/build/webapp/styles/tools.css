@@ -1,0 +1,180 @@
+/*
+ * Software Name: Tips'n'tools
+ * SPDX-FileCopyrightText: Copyright (c) 2016-2023 Pierre-Yves Lapersonne
+ * SPDX-License-Identifier: MIT
+ */
+/*
+✿✿✿✿ ʕ •ᴥ•ʔ/ ︻デ═一
+*/
+
+/**
+* @file tools.css
+* @brief Style sheet contaning styles for things related to tools, libraries, frameworks...
+* @author Pierre-Yves Lapersonne
+* @version 5.1.0
+* @since 10/12/2017
+*/
+
+/* ******** */
+/* Subjects */
+/* ******** */
+
+.subjectToolsOther {
+	background-color: #9e9e9e;
+	font-weight: bold;
+}
+
+.subjectToolsAndroid {
+	background-color: #8bc34a;
+	font-weight: bold;
+}
+
+.subjectToolsDesign {
+	background-color: #e91e63;
+	font-weight: bold;
+}
+
+.subjectToolsJavaScript {
+	background-color: #ffeb3b;
+	font-weight: bold;
+}
+
+.subjectToolsJava {
+	background-color: #ff9800;
+	font-weight: bold;
+}
+
+.subjectToolsKotlin {
+	background-color: #3f51b5;
+	font-weight: bold;
+}
+
+.subjectToolsWeb {
+	background-color: #795548;
+	font-weight: bold;
+}
+
+.subjectToolsSwift {
+	background-color: #ff5722;
+	font-weight: bold;
+}
+
+.subjectToolsGo {
+	background-color: #2196f3;
+	font-weight: bold;
+}
+
+.subjectToolsScala {
+	background-color: #f44336;
+	font-weight: bold;
+}
+
+.subjectToolsGroovy {
+	background-color: #bbdefb;
+	font-weight: bold;
+}
+
+.subjectToolsPython {
+	background-color: #ffd600;
+	font-weight: bold;
+}
+
+.subjectToolsDevTool {
+	background-color: #000000;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.subjectToolsBots {
+	background-color: #000000;
+	color: #ff0000;
+	font-weight: bold;
+}
+
+.subjectToolsRust {
+	background-color: #424242;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.subjectToolsDart {
+	background-color: #64ffda;
+	font-weight: bold;
+}
+
+.subjectToolsAi {
+	background-color: #000000;
+	color: #00bcd4;
+	font-weight: bold;
+}
+
+.subjectToolsHumanism {
+	background-color: #9c27b0;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.subjectToolsFuchsia {
+	background-color: #f48fb1;
+	font-weight: bold;
+}
+
+.subjectToolsCryptoCurrency {
+	background-color: #ffff00;
+	font-weight: bold;
+}
+
+.subjectToolsAgile {
+	background-color: #00796b;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.subjectToolsBlockchain {
+	background-color: #a7ffeb;
+	font-weight: bold;
+}
+
+.subjectToolsDapp {
+	background-color: #b2dfdb;
+	font-weight: bold;
+}
+
+.subjectToolsData {
+	background-color: #795548;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.subjectToolsTest {
+	background-color: #90A4AE;
+	color: #000000;
+	font-weight: bold;
+}
+
+.subjectToolsSecurity {
+	background-color: #616161;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.subjectToolsRuby {
+	background-color: #ff1600;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+
+/* ************** */
+/* Other elements */
+/* ************** */
+
+.nameTools, .descriptionTools {
+	text-align: center;
+	font-weight: normal;
+}
+
+.keywordsTools {
+	font-style: italic;
+	font-weight: normal;
+}

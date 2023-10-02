@@ -1,0 +1,79 @@
+/*
+ * Software Name: Tips'n'tools
+ * SPDX-FileCopyrightText: Copyright (c) 2016-2023 Pierre-Yves Lapersonne
+ * SPDX-License-Identifier: MIT
+ */
+/*
+✿✿✿✿ ʕ •ᴥ•ʔ/ ︻デ═一
+*/
+
+/**
+* @file filter.css
+* @brief Style sheet contaning definitions of styles for the filter form
+* @author Pierre-Yves Lapersonne
+* @version 3.0.0
+* @since 10/12/2017
+*/
+
+.filterBar {
+  font-family: sans-serif;
+  font-weight: normal;
+  background-color: #616161;
+  margin: auto auto 3rem auto;
+  border-width: 1px;
+  border-color: #616161;
+}
+
+.filter {
+  height: 5%;
+  width: 15%;
+  text-align: center;
+}
+
+.keywords {
+  height: 5%;
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  caret-color: white;
+  border: none;
+  color: white;
+  outline: none;
+  font-size: 25px;
+  margin: 10px 0px 10px 0px;
+}
+
+.output {
+  font-style: italic;
+  text-align: center;
+  font-size: 15px;
+  margin: 0px;
+  color: white;
+  padding: 0px 0px 10px 0px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: white;
+   opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: white;
+   opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: white;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color: white;
+}
