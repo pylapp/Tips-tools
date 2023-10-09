@@ -1676,9 +1676,9 @@ Security;A Deep Dive into 70 Layers of Obfuscated Info-Stealer Malware;;checkmar
 Swift;Closures Vs. Combine Vs. Async Await;;Closures , Combine , Async , Await , threads , coroutines , iOS , Swift;https://medium.com/@GetInRhythm/closures-vs-combine-vs-async-await-993eb1da4d44;;;;;;;;;;;;;;;;;;;;;
 Swift;Swift Combine Operators: the Core Ones and When Apply;;Swift , Combine , operators , stream;https://betterprogramming.pub/swift-combine-operators-the-core-ones-and-when-apply-82d6dd310aa5;;;;;;;;;;;;;;;;;;;;;
 Swift;Exploring Combine’s Publisher: An In-Depth Look at One of the Core Concepts of Apple’s Reactive Framework;;Swift , Reactive , Combine ;https://ahmadgsufi.medium.com/exploring-combines-publisher-an-in-depth-look-at-one-of-the-core-concepts-of-apple-s-reactive-cd5bd84e3ffe;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+/;The Absolute Minimum Every Software Developer Must Know About Unicode in 2023 (Still No Excuses!);;Unicode , UTF8 , ISO , symbols , text;https://tonsky.me/blog/unicode/;;;;;;;;;;;;;;;;;;;;;
+/;Notations Grand O (Big O) : Performance et complexité temporelle des algorithmes;;Big O , notation , O , complexité;https://loud-technology.com/blog/notation-grand-o-performance-complexite-algorithmique/;;;;;;;;;;;;;;;;;;;;;
+/;How Much Are GitHub Stars Worth to You?;;GitHub , stars , bots , fake;https://the-guild.dev/blog/judging-open-source-by-github-stars;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
