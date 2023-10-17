@@ -2302,12 +2302,12 @@ Humanism;OISD;;blocklist , tracking , adbloks , proxy , firewall;https://oisd.nl
 /;radioc-active;;console , radio , player;https://github.com/deep5050/radio-active;;;;;;;;;;;;;;;;;;;;;
 /;Astronomer; A tool to detect illegitimate stars from bot accounts on GitHub projects ;GitHub , bots , fake , stars;https://github.com/Ullaakut/astronomer;;;;;;;;;;;;;;;;;;;;;
 /;Reprise ordi;;ordi , recup , recyclage , reprise;https://repriseordi.fr/;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+/;Vinegar;;YouTube , privacy , Safari , extension , PIP , no ads;https://apps.apple.com/fr/app/vinegar-tube-cleaner/id1591303229;;;;;;;;;;;;;;;;;;;;;
+iOS;EllipticCurveKeyPair; Sign, verify, encrypt and decrypt using the Secure Enclave ;Apple , SoC , Secure Enclave , cryptography , secrets , storage , data;https://github.com/agens-no/EllipticCurveKeyPair;;;;;;;;;;;;;;;;;;;;;
+iOS;CertificateSigningRequest; Generate a certificate signing request (CSR) programmatically on iOS/macOS/watchOS/tvOS devices ;CSR , certificates , macOS , iOS , programatically , generation;https://github.com/cbaker6/CertificateSigningRequest;;;;;;;;;;;;;;;;;;;;;
+/;Mermaid Layout;;GitLab , UML , charts , markdown , display , diagrams;https://handbook.gitlab.com/handbook/tools-and-tips/mermaid/;;;;;;;;;;;;;;;;;;;;;
+/;Tracy;;frame , profilter , CPU;https://github.com/wolfpld/tracy;;;;;;;;;;;;;;;;;;;;;
+/;Sherloq; An open-source digital image forensic toolset ;images , pictures , data , forensic , fake , toolset , tool;https://github.com/GuidoBartoli/sherloq;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
