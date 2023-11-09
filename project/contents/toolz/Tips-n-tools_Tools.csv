@@ -2308,12 +2308,12 @@ iOS;CertificateSigningRequest; Generate a certificate signing request (CSR) prog
 /;Mermaid Layout;;GitLab , UML , charts , markdown , display , diagrams;https://handbook.gitlab.com/handbook/tools-and-tips/mermaid/;;;;;;;;;;;;;;;;;;;;;
 /;Tracy;;frame , profilter , CPU;https://github.com/wolfpld/tracy;;;;;;;;;;;;;;;;;;;;;
 /;Sherloq; An open-source digital image forensic toolset ;images , pictures , data , forensic , fake , toolset , tool;https://github.com/GuidoBartoli/sherloq;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+Humanism;mlem;;Lemmy , iOS , app , fediverse , reader , Reddit;https://github.com/mlemgroup/mlem;;;;;;;;;;;;;;;;;;;;;
+Humanism;Fediverse observer;;Fediverse , observer , instances , Lemmy , Diaspora , Friendica , Hubzilla , Funkwhale , Mastodon , PeerTube , Pixelfed , servers;https://fediverse.observer/;;;;;;;;;;;;;;;;;;;;;
+DevTool;YAML Lint;;YAML , online , linter , validator;https://www.yamllint.com/;;;;;;;;;;;;;;;;;;;;;
+Humanism;Green software Foundation;;green , foundation;https://greensoftware.foundation/;;;;;;;;;;;;;;;;;;;;;
+iOS;Kin;Kin is a minimalistic tool to check whether your project.pbxproj file is correct.;Xcode , pbxproj , linter;https://github.com/Serchinastico/Kin;;;;;;;;;;;;;;;;;;;;;
+/;localsend; An open source cross-platform alternative to AirDrop ;AirDrop , file , transfert;https://github.com/localsend/localsend;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
