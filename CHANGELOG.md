@@ -1,22 +1,31 @@
-# CHANGELOG
+# Tips'n'tools library changelog
 
-## v15.1.0
+All notable changes to this project will be documented in this file.
+This project adheres to [Semantic Versioning](http://semver.org/).
 
-### Bugs
+## [Unreleased](https://github.com/pylapp/Tips-tools/compare/15.1.0...dev)
+
+### Changed
+
+- Semver for CHANGELOG
+
+## [15.1.0] - 2023-09-26
+
+### Fixed
 
 - Fix doctor script
 
-### Changes
+### Changed
 
 - Update documentation (doctor, licenses, support, wiki)
 
-## v15.0.0
+## [15.0.0] - 2023-09-25
 
-### Bugs
+### Fixed
 
 - [#7](https://github.com/pylapp/Tips-tools/issues/7) Pick hard-coded fixes and improve versions
 
-### Changes
+### Changed
 
 - [#15](https://github.com/pylapp/Tips-tools/issues/15) Add dry-run script 
 - [#10](https://github.com/pylapp/Tips-tools/issues/10) Deal with GNU/Linux and macOS primitives
@@ -26,113 +35,160 @@
 - Refactor file tree
 - Add DCO, codes of conduct and conflict, security and citation files
 
-## v14.3.3
+## [14.3.3] - 2023-08-28
 
 _This version is dedicated to macOS users, and is based on v14.3.2_
 
-New bug fixes:
+### Changed
 
-	* More details in help message and documentation
-	* More logs in case of errors for web app logic
-	* More logs during scripts executions
-	* Add controls for script executions and failures
+- More details in help message and documentation
+- More logs in case of errors for web app logic
+- More logs during scripts executions
+- Add controls for script executions and failures
 
-Related issues:
-
-	* #5
-
-## v14.3.2
+## [14.3.2] - 2023-08-28
 
 _This version is dedicated to macOS users, and is based on v14.3.1_
 
-Some bug fixes and improvements have been brought to make the project working on macOS:
+### Changed
 
-	* Resume the macOS migration for the other scripts (uses of 'sed' command to produce HTML files)
+- Resume the macOS migration for the other scripts (uses of 'sed' command to produce HTML files)
+- In _tipsntools.sh_ script: refactor of "count" feature
+- In _tipsntools.sh_ script: improve help
 
-_However following improvements can be brought for GNU/Linux users_ 
-
-	* In _tipsntools.sh_ script: refactor of "count" feature
-	* In _tipsntools.sh_ script: improve help
-
-## v14.3.1
+## [14.3.1]
 
 _This version is dedicated to macOS users, and is based on v14.3.0_
 
-Some bug fixes and improvements have been brought to make the project working on macOS:
+### Changed
 
-	* Refactor functions based on 'sed' command
-	* Refactor functions based on MD5 and SHA1 checksums commands
-	* Refactor functions based on 'truncate' commands
-	* Check if metadata file exist before dealing with it
+- Refactor functions based on 'sed' command
+- Refactor functions based on MD5 and SHA1 checksums commands
+- Refactor functions based on 'truncate' commands
+- Check if metadata file exist before dealing with it
 
-## v14.3.0
+## [14.3.0] - 2023-08-28
 
 _This version id dedicated to GNU/Linux users_
 
-Data generation time may be faster:
+### Changed
 
-	* HTML and JSON files are updated if and only if their original content has been changed
-	* to do so, checksums are registered in a metadata file to check if produced data (in CSV) have been updated or not
+- HTML and JSON files are updated if and only if their original content has been changed
+- The data generation time is computed and displayed.
 
-The data generation time is computed and displayed.
+## [14.2.0]
 
-## v14.2.0
-  - Feat: Deal with Ruby-related items
+### Added
 
-## v14.1.1
-  - Fix: Cache and manifest so as to make the web app installable
+- Deal with Ruby-related items
 
-## v14.1.0
-  - Feature: now use local database's contents if feed Web API unreachable. More offline.
-  - Refactor: icons
-  - Style: cleaner sources
+## [14.1.1]
 
-## v14.0.0
-  - Feature: generate JSON files besides HTML files based from CSV files
-  - Feature: Progressive Web App (PWA) / Single Page Application (SPA) / Web App (WA) / shiny-buzzword-web-app-from-hell (SBWAFH) to make queries
-  - Chore: controls to checks browsers in both web app and global web page
-  - Note: cooler, smarter, more beautiful
+### Added
 
-## v13.0.0
-  - Feature: elapsed time is displyaed after each request
-  - Feature: "help" feature when typing '?' in the web view's search bar
-  - Feature: "show all" feature when typing '\*' in the web view's search bar
-  - Feature: filter contents by sections
-  - Documentation: whatsnew
+- Cache and manifest so as to make the web app installable
 
-## v12.3.0
-  - Feature: "Test" topic is now referenced  
-  - Feature: "Security" topic is now referenced
+## [14.1.0]
 
-## v12.2.0
-  - Feature: "Data" topic is now referenced
+### Added
 
-## v12.1.0
-  - Chore: optimized HTML code
-  - Feature: Small screens are managed with web view
-  - Feature: "Dapp" topic is now referenced
+Now use local database's contents if feed Web API unreachable. More offline.
 
-## v12.0.0  
-  - Refactor: file tree
-  - Refacor: web view with a more material design rendering
-  - Chore: improved source code
+### Changed
 
-## v11.0.0  
-  - Feature: better web view, more W3C compliant
+- Refactor icons
+- Cleaner sources
 
-## v10.0.0  
-  - Feature: web page providing search bar
+## [14.0.0]
 
-## v9.1.1  
-  - Documentation: improved README.md
+### Added
 
-## v9.1.0  
-  - Feature: controls of Shell  
+- Generate JSON files besides HTML files based from CSV files
+- Progressive Web App (PWA) / Single Page Application (SPA) / Web App (WA) / shiny-buzzword-web-app-from-hell (SBWAFH) to make queries
 
-## v9.0.3  
-  - Feature: better metrics / statistics
+### Changed
 
-## v9.0.2  
- - Feature: compute metrics / statistics about subjects
- - Feature: URL checking (if the content is still reachable)
- - Feature: move to bash
+- Controls to checks browsers in both web app and global web page
+
+## [13.0.0]
+
+### Added
+
+- Elapsed time is displayed after each request
+- "help" feature when typing '?' in the web view's search bar
+- "show all" feature when typing '\*' in the web view's search bar
+- filter contents by sections
+
+### Changed
+
+- whatsnew
+
+## [12.3.0]
+
+### Added
+
+- "Test" topic is now referenced  
+- "Security" topic is now referenced
+
+## [12.2.0]
+
+### Added
+
+- "Data" topic is now referenced
+
+## [12.1.0]
+
+### Added
+
+- Small screens are managed with web view
+- "Dapp" topic is now referenced
+
+### Changed
+
+- Optimized HTML code
+
+## [12.0.0]
+
+### Changed
+
+- File tree
+- Web view with a more material design rendering
+- Improved source code
+
+## [11.0.0]
+
+### Added
+
+- Better web view, more W3C compliant
+
+## [10.0.0]
+
+### Added
+
+- Web page providing search bar
+
+## [9.1.1]
+
+### Changed
+
+- Improved README.md
+
+## [9.1.0]
+
+### Added
+
+- Controls of Shell  
+
+## [9.0.3]
+
+### Added
+
+- Better metrics / statistics
+
+## [9.0.2]
+
+### Added
+
+- Compute metrics / statistics about subjects
+- URL checking (if the content is still reachable)
+- Move to bash
