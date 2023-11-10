@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Add FUNDING
 - Semver for CHANGELOG
 
 ## [15.1.0] - 2023-09-26
