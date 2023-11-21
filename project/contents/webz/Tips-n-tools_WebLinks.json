@@ -1365,7 +1365,6 @@
 {"platform": "/", "name": "Changement de licence open source : comment s’en prémunir", "description": "", "keywords": "FLOSS , open source , CLA , DCO , Elastic , ELK , shame , blame , licenses , update", "url": "https://www.lemagit.fr/conseil/Changement-de-licence-open-source-comment-sen-premunir"},
 {"platform": "CryptoCurrency", "name": "MobileCoin", "description": "", "keywords": "Signal , coin , privacy , token , green", "url": "https://www.mobilecoin.com/"},
 {"platform": "/", "name": "HTTP Status Dogs", "description": "", "keywords": "HTTP , dogs , WTF , status code", "url": "https://httpstatusdogs.com/"},
-{"platform": "/", "name": "HTTP Catss", "description": "", "keywords": "HTTP , cats , WTF , status code", "url": "https://http.cat/"},
 {"platform": "Humanism", "name": "Listes de blocage DNS", "description": "", "keywords": "DNS , filter , blocage , privacy , web , network , tracking", "url": "https://sebsauvage.net/wiki/doku.php?id=dns-blocklist"},
 {"platform": "iOS", "name": "Pulse: Network Inspector", "description": "", "keywords": "Pulse , iOS , macOS , network , inspector , framework", "url": "https://kean.blog/post/pulse"},
 {"platform": "/", "name": "Full Cycle Developers at Netflix — Operate What You Build", "description": "", "keywords": "Netflix , agile , full cycle , no rules rules", "url": "https://netflixtechblog.com/full-cycle-developers-at-netflix-a08c31f83249"},
@@ -1686,10 +1685,10 @@
 {"platform": "Web", "name": "The Slow We Initiative", "description": "", "keywords": "web , pure , clean , slow", "url": "https://www.slowweb.io"},
 {"platform": "/", "name": "The Open Book", "description": "An open hardware reading device that's easy to build, easy to manufacture, and easy to make your own.", "keywords": "open hardware , book , reader , epub", "url": "https://hackaday.io/project/192688-the-open-book"},
 {"platform": "Humanism", "name": "The Crypto Anarchist Manifesto", "description": "", "keywords": "crypto , anarchist , doers , makers , manifesto", "url": "https://nakamotoinstitute.org/crypto-anarchist-manifesto/"},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""}
+{"platform": "/", "name": "Gitcoin", "description": "", "keywords": "cryptocurrency , Gitcoin , communities", "url": "https://www.gitcoin.co/"},
+{"platform": "Humanism", "name": "Je n'ai rien à cacher", "description": "En fait si, et vous également !", "keywords": "privacy , surveillance , technopolice", "url": "https://jenairienacacher.fr/"},
+{"platform": "Humanism", "name": "Toulouse Hacker Space Factory", "description": "", "keywords": "THSF , technologie , rêveurs , hackers , Toulouse , Mix'Art , Myris", "url": "https://www.thsf.net/"},
+{"platform": "/", "name": "Wawacity.fit", "description": "", "keywords": "warrez , DD", "url": "https://www.wawacity.fit/"},
+{"platform": "/", "name": "10kclub", "description": "", "keywords": "web , optimiztion , pages , 10 KB", "url": "https://10kbclub.com/"},
+{"platform": "Web", "name": "Le Web est-il devenu trop compliqué ?", "description": "", "keywords": "web , navigation , merdification", "url": "https://framablog.org/2020/12/30/le-web-est-il-devenu-trop-complique/"}
 ]
