@@ -2334,11 +2334,11 @@ Humanism;ntfy;;notifications , pub , sub , Android , iOS , open source , free;ht
 /;GPTZero;;ChatGP , generative , IA , AI , detector , content , GPT4  , plagiarism , plagiat , Llama;https://gptzero.me/;;;;;;;;;;;;;;;;;;;;;
 /;Spaghettify;;spaghetti , code , bad smalls , troll , fun;https://www.spaghettify.dev/;;;;;;;;;;;;;;;;;;;;;
 Humanism;Fedipact;The instances blocking Zuckerberg's Threads.net;Fediverse , Threads , Meta , instances , censorship , domain;https://fedipact.veganism.social/;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+Test;UUV; Solution to facilitate the writing and execution of E2E tests understandable by any human ;E2E , a11y , tests , Cucumber , Cypress , Gherkin , TDD , BDD;https://github.com/Orange-OpenSource/uuv;;;;;;;;;;;;;;;;;;;;;
+Web;SOLID ;Solid is a specification that lets people store their data securely in decentralized data stores called Pods. Pods are like secure personal web servers for data. When data is stored in someone's Pod, they control which people and applications can access it. ;Tim , Berners-Lee , data , pod , privacy , digital self;https://solidproject.org/;;;;;;;;;;;;;;;;;;;;;
+DevTool;La Va11ydette;;a11y , RGAA , WCAG , audit , déclaration , score , conformité;https://la-va11ydette.orange.com/;;;;;;;;;;;;;;;;;;;;;
+Web;Asqatasun;Opensource website analyser;a11y , SEO , Tanaguru , web , analyzer;https://asqatasun.org/;;;;;;;;;;;;;;;;;;;;;
+DevTool;A11Y guidelines;;a11y , iOS , Android , web , print , WCAG , RGAA , guidelines;https://a11y-guidelines.orange.com;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
