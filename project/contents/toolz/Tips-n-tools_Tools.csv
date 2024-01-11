@@ -2339,9 +2339,9 @@ Web;SOLID ;Solid is a specification that lets people store their data securely i
 DevTool;La Va11ydette;;a11y , RGAA , WCAG , audit , déclaration , score , conformité;https://la-va11ydette.orange.com/;;;;;;;;;;;;;;;;;;;;;
 Web;Asqatasun;Opensource website analyser;a11y , SEO , Tanaguru , web , analyzer;https://asqatasun.org/;;;;;;;;;;;;;;;;;;;;;
 DevTool;A11Y guidelines;;a11y , iOS , Android , web , print , WCAG , RGAA , guidelines;https://a11y-guidelines.orange.com;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+Web;W3M;;CLI , terminal , console , browser , shell , web;https://w3m.sourceforge.net/;;;;;;;;;;;;;;;;;;;;;
+iOS;SwiftUI-Flow;;SwiftUI , Swift , layout , flow;https://github.com/tevelee/SwiftUI-Flow;;;;;;;;;;;;;;;;;;;;;
+Web;Dark visitors;A list of known AI agents on the internet;AI , scrapper , crawler , user agents;https://darkvisitors.com/;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
