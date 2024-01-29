@@ -1919,7 +1919,7 @@ Security;Grayshift;;InfoSec , data , evidence , extraction , devices , inspectio
 Security;Cellebrite;;InfoSec , data , evidence , extraction , devices , inspection , extract;https://www.cellebrite.com/;;;;;;;;;;;;;;;;;;;;;
 Humanism;LineageOS for microG;The full Android experience without Google Apps;Android , LineageOS , altOS , Google Apps , provacy , Google;https://lineage.microg.org/;;;;;;;;;;;;;;;;;;;;;
 iOS;acextract;A tool to list and extract content from Assets.car file.;iOS , Assets.car , resources , extract , content , xcarchive , IPA , app;https://github.com/bartoszj/acextract;;;;;;;;;;;;;;;;;;;;;
-DevTool;SSPDX;The Software Package Data Exchange® (SPDX®);Linux , licenses , format , copyrights , FLOSS , headers , licenses;https://spdx.dev/;;;;;;;;;;;;;;;;;;;;;
+DevTool;SPDX;The Software Package Data Exchange® (SPDX®);Linux , licenses , format , copyrights , FLOSS , headers , licenses;https://spdx.dev/;;;;;;;;;;;;;;;;;;;;;
 DevTool;scancode;ScanCode detects licenses, copyrights, package manifests & dependencies and more by scanning code ... to discover and inventory open source and third-party packages used in your code.;FLOSS , analyis , dependencies , copyrights , third-party;https://github.com/nexB/scancode-toolkit;;;;;;;;;;;;;;;;;;;;;
 Design;OpenDyslexic;A typeface for Dyslexia;UI , UX , fonts , typeface , dyslexia , a11y;https://www.opendyslexic.org/;;;;;;;;;;;;;;;;;;;;;
 /;Metalsmith;Web site generator;Markdown , web site , static , generator;https://metalsmith.io/;;;;;;;;;;;;;;;;;;;;;
@@ -2128,7 +2128,6 @@ CryptoCurrency;BraveBat;;Brave , BAT , Basic Attention Token , stats , metrics ,
 CryptoCurrency;Basic Attention Token Growth;;Brave , BAT , Basic Attention Token , stats , metrics , community;https://basicattentiontoken.org/growth/;;;;;;;;;;;;;;;;;;;;;
 Android;Paparazzi;An Android library to render your application screens without a physical device or emulator.;Android , screen rendering ,devices , preview , simulators , emulators , devices , golden;https://cashapp.github.io/paparazzi/;;;;;;;;;;;;;;;;;;;;;
 /;Cleanmymac;;macOS , MacBook , storage , disks , memory. ,HDD , SSD , hard drives;https://macpaw.com/fr/cleanmymac;;;;;;;;;;;;;;;;;;;;;
-/;pre-commit.com;A framework for managing and maintaining multi-language pre-commit hooks;git , commit , hook , precommit;https://pre-commit.com/;;;;;;;;;;;;;;;;;;;;;
 /;PunkinDev;;podcast , développeur , craftmanship , french;https://podcast.ausha.co/punkindev;;;;;;;;;;;;;;;;;;;;;
 /;Android leaks;;podcast , Android , english;https://androidleakspodcast.com/;;;;;;;;;;;;;;;;;;;;;
 /;Le Rendez-vous des Speakers;;podcast , développeurs , french;https://podcasts.apple.com/fr/podcast/le-rendez-vous-des-speakers/id1559843293;;;;;;;;;;;;;;;;;;;;;
@@ -2342,8 +2341,8 @@ DevTool;A11Y guidelines;;a11y , iOS , Android , web , print , WCAG , RGAA , guid
 Web;W3M;;CLI , terminal , console , browser , shell , web;https://w3m.sourceforge.net/;;;;;;;;;;;;;;;;;;;;;
 iOS;SwiftUI-Flow;;SwiftUI , Swift , layout , flow;https://github.com/tevelee/SwiftUI-Flow;;;;;;;;;;;;;;;;;;;;;
 Web;Dark visitors;A list of known AI agents on the internet;AI , scrapper , crawler , user agents;https://darkvisitors.com/;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+/;keygen;Keygen is an open, source-available software licensing and distribution API, built for developers, by developers. Self-host or try Keygen Cloud today.;API , keys , licences , entitlements , validation;https://keygen.sh/;;;;;;;;;;;;;;;;;;;;;
+iOS;Sourcery; Meta-programming for Swift, stop writing boilerplate code. ;Swift , code , generator , SwiftSyntax , boilerplate;https://github.com/krzysztofzablocki/Sourcery;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
