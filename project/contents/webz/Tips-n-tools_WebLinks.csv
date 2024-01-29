@@ -387,7 +387,7 @@ Android;Configure Build Variants with Flavors;;Gradle , build variants , flavor;
 Web;Angular vs React — the DEAL BREAKER;;Angular , React , Vue.js;https://hackernoon.com/angular-vs-react-the-deal-breaker-7d76c04496bc#.toybrih9g;;;;;;;;;;;;;;;;;;;;;
 Android;Writing your first Android Things driver;;Android Things , driver;https://www.novoda.com/blog/writing-your-first-android-things-driver-p1/;;;;;;;;;;;;;;;;;;;;;
 Design;Using @android:color/transparent in gradients;;Android , gradient , colors;https://android.jlelse.eu/android-dev-tip-3-99da754151ad;;;;;;;;;;;;;;;;;;;;;
-Design;FontShop;;fonts;https://www.fontshop.com/search;;;;;;;;;;;;;;;;;;;;;
+Design;FontShop;;fonts;https://www.fontshop.com/;;;;;;;;;;;;;;;;;;;;;
 Design;Kilm Type Foundry;;fonts;https://klim.co.nz;;;;;;;;;;;;;;;;;;;;;
 Android;Understanding Android Gradle build files;;Gradle;https://medium.com/@wasyl/understanding-android-gradle-build-files-e4b45b73cc4c;;;;;;;;;;;;;;;;;;;;;
 Android;3 Tips for Building Popular Android Instant Apps;;tips , instant apps;http://www.ironsrc.com/news/tips-build-android-instant-apps/;;;;;;;;;;;;;;;;;;;;;
@@ -505,8 +505,8 @@ Web;Motherfucking website;;web;http://motherfuckingwebsite.com/;;;;;;;;;;;;;;;;;
 /;Guidelines for Building Software that Will Make People Hate You;A practical approach to building bad software;software , tips , quality , bad software , donts;https://hackernoon.com/guidelines-for-building-software-that-will-make-people-hate-you-23049d7209af;;;;;;;;;;;;;;;;;;;;;
 Android;Android Developer Preview;;Android , developer , preview;https://developer.android.com/preview/index.html;;;;;;;;;;;;;;;;;;;;;
 Humanism;Goldie Blox;Awesome toys, games and entertainment for girls, designed to develop early interest in engineering and confidence in problem-solving.;toys , girls , problem solving , kids;https://www.goldieblox.com/;;;;;;;;;;;;;;;;;;;;;
-Humanism;Women Techmakers;Google's Women Techmakers program provides visibility, community, and resources for women in technology.;humanism , women , technology;https://www.womentechmakers.com/;;;;;;;;;;;;;;;;;;;;;
-Humanism;Duchess France;Women In Tech;Duchess , humanism , women , technology;http://www.duchess-france.org/;;;;;;;;;;;;;;;;;;;;;
+Humanism;Women Techmakers;Google's Women Techmakers program provides visibility, community, and resources for women in technology.;humanism , women , technology , Google;https://developers.google.com/womentechmakers;;;;;;;;;;;;;;;;;;;;;
+Humanism;Duchess France;Women In Tech;Duchess , humanism , women , technology;https://www.duchess-france.fr/;;;;;;;;;;;;;;;;;;;;;
 Humanism;Black girls code;;humanism , code , gender , women , girls , kids;http://www.blackgirlscode.com/;;;;;;;;;;;;;;;;;;;;;
 Humanism;Code.org;Anybody can learn;humanism , code , gender , women , girls , kids;https://code.org/;;;;;;;;;;;;;;;;;;;;;
 Humanism;Women who code;International nonprofit that develops programs to help engineers achieve their career goals;humanism , code , gender , women;https://www.womenwhocode.com/;;;;;;;;;;;;;;;;;;;;;
@@ -527,7 +527,6 @@ Web;Assembling WebAssembly;;WebAssembly , Webkit , JS , JavaScript , Web;https:/
 Web;Webkit;Open Source Web Browser Engine;WebKit , browser , engine;https://webkit.org/;;;;;;;;;;;;;;;;;;;;;
 Fuchsia;Fuchsia;Pink + Purple == Fuchsia;;https://github.com/fuchsia-mirror;;;;;;;;;;;;;;;;;;;;;
 Design;The A11Y Project;A community-driven effort to make web accessibility easier.;UI , UX , accessibility;http://a11yproject.com/;;;;;;;;;;;;;;;;;;;;;
-Security;The DevOps Security Checklist;;DevOps , security , check list;https://devops-security-checklist.sqreen.io/;;;;;;;;;;;;;;;;;;;;;
 Fuchsia;Little Kernel;;Fuchsia , LK , little kernel , embedded;https://github.com/littlekernel;;;;;;;;;;;;;;;;;;;;;
 Fuchsia;Little Kernel – LK;;Fuchsia , LK , little kernel , embedded;https://github.com/littlekernel/lk;;;;;;;;;;;;;;;;;;;;;
 Fuchsia;Little Kernel – Introduction;;Fuchsia , LK , little kernel , embedded;https://github.com/littlekernel/lk/wiki/Introduction;;;;;;;;;;;;;;;;;;;;;
@@ -627,7 +626,6 @@ CryptoCurrency;Bitcoin.fr;L’actualité du Bitcoin en français;BTC , Bitcoin ,
 CryptoCurrency;Life Inside a Secret Chinese Bitcoin Mine;YouTube video;Bitcoin , BTC , mine , farm , China;https://www.youtube.com/watch?v=K8kua5B5K3I;;;;;;;;;;;;;;;;;;;;;
 CryptoCurrency;What is Bitcoin Mining?;YouTube video;Bitcoin , BTC , how to , mining;https://www.youtube.com/watch?v=GmOzih6I1zs;;;;;;;;;;;;;;;;;;;;;
 /;The Coq Proof Assistant;Formal language to write mathematical definitions, executable algorithms and theorems together with an environment for semi-interactive development of machine-checked proofs;Coq , proof , maths , theorems , langages;https://coq.inria.fr/;;;;;;;;;;;;;;;;;;;;;
-CryptoCurrency;Bitcoin, sa blockchain et ses concepts, un monde d'opportunités !;;Bitcoin , BTC , block , mining , transactions , blockchain , slides;https://fr.slideshare.net/vincent63/introduction-a-bitcoin-while-42-vincent-gauthier-slideshare;;;;;;;;;;;;;;;;;;;;;
 CryptoCurrency;Introduction au Bitcoin;;Bitcoin , BTC , block , mining , transactions , blockchain , slides;https://fr.slideshare.net/hetic/hetic-event-bitcoin101victor-mertz20140328;;;;;;;;;;;;;;;;;;;;;
 CryptoCurrency;Bitcoin : comment ça marche et pourquoi c’est une révolution ?;;Bitcoin , BTC , block , mining , transactions , blockchain , slides;https://fr.slideshare.net/straumat/bitcoin-comment-a-marche-et-pourquoi-cest-une-rvolution;;;;;;;;;;;;;;;;;;;;;
 CryptoCurrency;Bitcoin Core GitHub;Bitcoin Core integration/staging tree;BTC , Bitcoin , core;https://github.com/bitcoin/bitcoin;;;;;;;;;;;;;;;;;;;;;
@@ -762,7 +760,6 @@ Humanism;Egoless Programming;;developer , ego , spirit , skills , human , narrow
 /;L’évaluation de la charge d’un projet : utilisation d’un abaque;;abaque , charge , jours , hommes;http://arnaud-brossard.fr/levaluation-charge-dun-projet-utilisation-dun-abaque/;;;;;;;;;;;;;;;;;;;;;
 /;Lambda: The Gathering;;cards;http://icfpc2011.blogspot.fr/2011/06/task-description-contest-starts-now.html;;;;;;;;;;;;;;;;;;;;;
 DevTool;Working with YAML in Gitlab CI from Android perspective;;YAML , Gitlab , CI , Android , build , DevOps , .yml;https://blog.undabot.com/working-with-yaml-in-gitlab-ci-from-android-perspective-b8cf54b5b911;;;;;;;;;;;;;;;;;;;;;
-Java;What's Cool in Java 8, and New in Java 9;;Java , Java 8 , Java 9;https://blogs.oracle.com/java/features-in-java-8-and-9;;;;;;;;;;;;;;;;;;;;;
 /;Accélérateur de Startup : la méthodologie LEAN STARTUP;;lean , startup , business , Eric Ries , entrepreneur , team , équipe , MVP ,  best guess , Get out of the Building , développement agile , minimal viable product , lean canvas , business model canvas , personas , interviews , post-its;https://medium.com/creative-wallonia-engine/acc%C3%A9l%C3%A9rateur-de-startup-la-m%C3%A9thodologie-lean-startup-71327c898200;;;;;;;;;;;;;;;;;;;;;
 /;Accélérateur de Startup : Méthode des PERSONAs — Visualisez vos clients !;;lean startup , conception , personas , post-its;https://medium.com/creative-wallonia-engine/acc%C3%A9l%C3%A9rateur-de-startup-m%C3%A9thode-des-personas-visualisez-vos-clients-d999a6794afd;;;;;;;;;;;;;;;;;;;;;
 /;Accélérateur de Startup : L’interview “découverte”;;lean startup , interview , customers;https://medium.com/creative-wallonia-engine/linterview-d%C3%A9couverte-86c8d63880f8;;;;;;;;;;;;;;;;;;;;;
@@ -882,7 +879,6 @@ Design;Color Contrast for Better Readability;;colors , contrast , palette , read
 Android;Android Memory: the Ultimate Metric Guide;;Android , memory , metrics , optimization , ecolog , greendev , greendesign , ecodesign;https://greenspector.com/en/articles/2017-12-05-Android-Memory-Ultimate-Metric-Guide/;;;;;;;;;;;;;;;;;;;;;
 Android;Android: Should you use HashMap or SparseArray?;;Android , data , HashMap , SparseArray  , optimization , ecolog , greendev , greedesign , ecodesign;https://greenspector.com/en/articles/2017-04-11-android-containers/;;;;;;;;;;;;;;;;;;;;;
 Android;Manage Your App's Memory;;RAM , app , memory , ecolog , greendev , greedesign , ecodesign;https://developer.android.com/topic/performance/memory.html;;;;;;;;;;;;;;;;;;;;;
-JavaScript;FapfapJS;;JS , troll , frameworks , bullshit;http://fapfapjs.io/;;;;;;;;;;;;;;;;;;;;;
 JavaScript;Days Since Last JavaScript Framework;;JS , troll , frameworks , bullshit;https://dayssincelastjavascriptframework.com/;;;;;;;;;;;;;;;;;;;;;
 Web;A beginner’s guide to making Progressive Web Apps;;PWA , tips , advices , start;https://medium.com/samsung-internet-dev/a-beginners-guide-to-making-progressive-web-apps-beb56224948e;;;;;;;;;;;;;;;;;;;;;
 Web;PWA Reference: Curated links for mastering PWA in 2018;;PWA , references , analytics , overviews;https://dev.to/wxyyxc1992/pwa-reference-curated-links-for-mastering-pwa-in-2018-4b9l;;;;;;;;;;;;;;;;;;;;;
@@ -910,7 +906,6 @@ Agile;RAD realities : beyond the hype to how RAD really works;;RAD , rapide app
 Agile; Adaptive Software Development;; Adaptive Software Development  , ADS , agile , method;http://adaptivesoftwaredevelopment.wikidot.com/;;;;;;;;;;;;;;;;;;;;;
 Agile;Lean Software Development: 7 principes fondateurs;;agile , method , lean , LSD , lean software development;http://www.qualitystreet.fr/2008/08/27/lean-software-development-7-principes-fondateurs/;;;;;;;;;;;;;;;;;;;;;
 Agile;Feature Driven Developement;;agile , method , FDD;http://www.featuredrivendevelopment.com/;;;;;;;;;;;;;;;;;;;;;
-Agile;The Aigle Unified Process;;agile , method , AUP;http://www.ambysoft.com/unifiedprocess/agileUP.html;;;;;;;;;;;;;;;;;;;;;
 Web;Guide de démarrage relatif à l'optimisation du référencement (SEO);;Web , SEO , optimization , ranking , indexation , web sites;https://support.google.com/webmasters/answer/7451184?hl=fr;;;;;;;;;;;;;;;;;;;;;
 Web;Liste complète des balises META;;Web , META , tags;http://www.codeshttp.com/balisem.htm;;;;;;;;;;;;;;;;;;;;;
 Android;Lint’s STOPSHIP can save you from pushing your buggy code to production;;Gradle , Lint , flag , debug , prod , release;https://medium.com/@iamnaveentp/lints-stopship-can-save-you-from-pushing-your-buggy-code-to-production-4fa0db40d9b1;;;;;;;;;;;;;;;;;;;;;
@@ -1101,7 +1096,7 @@ Security;Chao Computer Club;;conferences , keynotes , convention , talks , secu
 /;Web2Day;;Nantes , web , conferences , keynotes , convention , talks;https://web2day.co;;;;;;;;;;;;;;;;;;;;;
 /;Bdx.io;;Bordeaux , conferences , keynotes , convention , talks;https://www.bdx.io;;;;;;;;;;;;;;;;;;;;;
 /;DevFest Toulouse;;Toulouse , DevFest , conferences , keynotes , convention , talks;https://devfesttoulouse.fr/;;;;;;;;;;;;;;;;;;;;;
-/;Android Makers Paris;;Paris , Android , conferences , keynotes , convention , talks;https://androidmakers.fr;;;;;;;;;;;;;;;;;;;;;
+/;Android Makers Paris;;Paris , Android , conferences , keynotes , convention , talks;https://androidmakers.droidcon.com/;;;;;;;;;;;;;;;;;;;;;
 /;FOSDEM;;conferences , keynotes , convention , talks , FOSS , free , open source;https://fosdem.org/;;;;;;;;;;;;;;;;;;;;;
 Swift;dotswift;;conferences , keynotes , convention , talks , Swift;https://www.dotswift.io;;;;;;;;;;;;;;;;;;;;;
 Swift;FrenchKit;;conferences , keynotes , convention , talks , iOS;https://frenchkit.fr;;;;;;;;;;;;;;;;;;;;;
@@ -1234,7 +1229,7 @@ Humanism;The Ethical Source Movement;The Ethical Evolution of Open Source;FLOSS 
 /;Checklist ecoconception web;;IT , green label , green , ecologie , écoconception , greedesign , ecodesign;https://collectif.greenit.fr/ecoconception-web/2019-05-Ref-eco_web-checklist.v3.pdf;;;;;;;;;;;;;;;;;;;;;
 /;Cheat Sheets for AI, Neural Networks, Machine Learning, Deep Learning & Big Data;;IA , AI , neuralnet , neural networks , machine , learning , deep , big data;https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463;;;;;;;;;;;;;;;;;;;;;
 /;The Mistakes I Made As a Beginner Programmer;;ReX , baby , programmer , developer , junior;https://medium.com/edge-coders/the-mistakes-i-made-as-a-beginner-programmer-ac8b3e54c312;;;;;;;;;;;;;;;;;;;;;
-Humanism;Collapseos;;OS , end of the world , collapse;https://github.com/hsoft/collapseos;;;;;;;;;;;;;;;;;;;;;
+Humanism;Collapseos;;OS , end of the world , collapse;http://collapseos.org/;;;;;;;;;;;;;;;;;;;;;
 Android;Patchwork Plaid – A modularization story;;Android , modules , sogtware engineering;https://medium.com/androiddevelopers/a-patchwork-plaid-monolith-to-modularized-app-60235d9f212e;;;;;;;;;;;;;;;;;;;;;
 /;70 Years Of “Hello, World!” With 50 Programming Languages;;Hello World , samples , code;https://medium.com/javarevisited/70-years-of-hello-world-with-50-programming-languages-2400de893a97;;;;;;;;;;;;;;;;;;;;;
 /;MercuryOS;;Art Direction , OS , human;https://www.mercuryos.com/;;;;;;;;;;;;;;;;;;;;;
@@ -1249,7 +1244,6 @@ Security;Hacking macOS: How to Dump 1Password, KeePassX & LastPass Passwords in 
 /;10 Common Software Architectural Patterns in a nutshell;;software engineering , design pattern , modelization , architectures , patterns;https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013;;;;;;;;;;;;;;;;;;;;;
 /;S.O.L.I.D Principles Explained In Five Minutes;A guide to understandable, reusable, testable, maintanable and flexible codebase.;SOLID , best practices , code;https://medium.com/swlh/s-o-l-i-d-principles-explained-in-five-minutes-8d36b1da4f6b;;;;;;;;;;;;;;;;;;;;;
 /;KISS, DRY, and Code Principles Every Developer Should Follow;;SOLID , best practices , code , KISS , DRY;https://medium.com/better-programming/kiss-dry-and-code-principles-every-developer-should-follow-b77d89f51d74;;;;;;;;;;;;;;;;;;;;;
-/;These four “clean code” tips will dramatically improve your engineering team’s productivity;;clean code , best practices;https://engineering.videoblocks.com/these-four-clean-code-tips-will-dramatically-improve-your-engineering-teams-productivity-b5bd121dd150;;;;;;;;;;;;;;;;;;;;;
 /;OSS EN ENTREPRISE, KOSON BIEN !;;OSS , FLOSS , open source , free , libre , entreprises;https://ncomet.github.io/oss-koson-2020/;;;;;;;;;;;;;;;;;;;;;
 Humanism;Harry Potter and the Digital Fingerprints;;EFF , privacy , fingerprints , metadata , tracking;https://www.eff.org/deeplinks/2007/07/harry-potter-and-digital-fingerprints;;;;;;;;;;;;;;;;;;;;;
 /;Stop Covid 19;;INRIA , Covid , coronavirus , covid19 , gitlab , open source , contact tracing , ROBERT;https://gitlab.inria.fr/stopcovid19;;;;;;;;;;;;;;;;;;;;;
@@ -1329,7 +1323,6 @@ CryptoCurrency;77 Smart Contract Use Cases Enabled By Chainlink;;DeFi , decentra
 CryptoCurrency;Binance Smart Chain Successfully Integrated Chainlink’s Oracle Solution for Building DeFi;;Binance , DeFi , decentralized finance , Oracle , Chainlink;https://www.binance.org/en/blog/binance-smart-chain-successfully-integrated-chainlinks-oracle-solution-for-building-defi/;;;;;;;;;;;;;;;;;;;;;
 CryptoCurrency;Around the Block #3: analysis on the bZx attack, DeFi vulnerabilities, the state of debit cards in crypto, and other crypto news;;Coinbase , Oracle , DeFi , decentralized finance , bZx;https://blog.coinbase.com/around-the-block-analysis-on-the-bzx-attack-defi-vulnerabilities-the-state-of-debit-cards-in-1289f7f77137;;;;;;;;;;;;;;;;;;;;;
 CryptoCurrency;Synthetix suffers oracle attack, more than 37 million synthetic ether exposed;;Synthetix , Oracle , sETH , ether , attack;https://www.theblockcrypto.com/linked/28748/synthetix-suffers-oracle-attack-potentially-looting-37-million-synthetic-ether;;;;;;;;;;;;;;;;;;;;;
-CryptoCurrency;Why Proof of Stake (Nov 2020);;Ethereum , PoSs , Proof Of Stake , Vitalik Buterin;https://vitalik.ca/general/2020/11/06/pos2020.html;;;;;;;;;;;;;;;;;;;;;
 CryptoCurrency;Oracle Exploit Sees $89 Million Liquidated on Compound;;DAI , Coinbase Pro , Oracle , attack , Compound;https://decrypt.co/49657/oracle-exploit-sees-100-million-liquidated-on-compound;;;;;;;;;;;;;;;;;;;;;
 Blockchain;How I hacked the Tezos based voting dapp;;Tezos , smart contract , voting Dapp , hack;https://medium.com/@fxthoorens/how-i-hacked-the-tezos-based-voting-dapp-d3bdd8a9601c;;;;;;;;;;;;;;;;;;;;;
 Humanism;Faire Sa Part ? Pouvoir Et Responsabilité Des Individus, Des Entreprises Et De L’Etat Face À L’urgence Climatique;;Carbone 4 , écologie , green , climat;http://www.carbone4.com/publication-faire-sa-part/;;;;;;;;;;;;;;;;;;;;;
@@ -1374,7 +1367,6 @@ Humanism;Listes de blocage DNS;;DNS , filter , blocage , privacy , web , network
 iOS;Pulse: Network Inspector;;Pulse , iOS , macOS , network , inspector , framework;https://kean.blog/post/pulse;;;;;;;;;;;;;;;;;;;;;
 /;Full Cycle Developers at Netflix — Operate What You Build;;Netflix , agile , full cycle , no rules rules;https://netflixtechblog.com/full-cycle-developers-at-netflix-a08c31f83249;;;;;;;;;;;;;;;;;;;;;
 /;Bear plus snowflake equals polar bear;;Emoji , emoticones , bytes , text , encoding , polar bear , bear , snowflakes;https://andysalerno.com/posts/weird-emojis/;;;;;;;;;;;;;;;;;;;;;
-/;Liste de 52 biais cognitifs;Les biais cognitifs sont des mécanismes de pensée qui poussent le cerveau humain à tirer des conclusions incorrectes.;biais , cognitifs;https://uxinlux.github.io/cognitive-biases/52-liste-fr/;;;;;;;;;;;;;;;;;;;;;
 Security;Let’s Enhance! How we found @rogerkver’s $1,000 wallet obfuscated private key;;QrCode , private key , reverse engineering , bitcoin , key , security , wallet;https://medium.com/free-code-camp/lets-enhance-how-we-found-rogerkver-s-1000-wallet-obfuscated-private-key-8514e74a5433;;;;;;;;;;;;;;;;;;;;;
 Security;Développeurs: et si nous passions à la Yubikey ?;;Yukibey , GPG , 2FA , sign-off , commit , authentication;https://maelig-nantel.medium.com/d%C3%A9veloppeurs-et-si-nous-passions-%C3%A0-la-yubikey-dde879a913b4;;;;;;;;;;;;;;;;;;;;;
 Web;Terms and conditions games;;ToS , terms , conditions , rules , game , WTF, coockie , consent;https://termsandconditions.game/;;;;;;;;;;;;;;;;;;;;;
@@ -1559,7 +1551,6 @@ Design; How to pick the least wrong colors ;;colors , palettes , rendering;https
 /;Permacomputing;;permacomputing , permaculture , sustainable , green , resources , greedesign , ecodesign;https://permacomputing.net/;;;;;;;;;;;;;;;;;;;;;
 /; The engineering career triangle;;careers , engineers , jobs , works , path;https://www.gregbeech.com/2020/01/19/the-engineering-career-triangle/;;;;;;;;;;;;;;;;;;;;;
 /;Inversion of Control Containers and the Dependency Injection pattern;;DI , dependency , injection , flows , architecture;https://martinfowler.com/articles/injection.html;;;;;;;;;;;;;;;;;;;;;
-Security;Dalek.rs;A suite of cryptographic libraries and protocol implementations, written in the systems programming language Rust, for creating blazingly-fast, production-quality cryptographic applications. ;Rust , Dalek, cryptography , librairies;https://dalek.rs/;;;;;;;;;;;;;;;;;;;;;
 Security;Are Your Passwords in the Green?;;passwords , table , security , computations , bruteforce , rainbow;https://www.hivesystems.io/blog/are-your-passwords-in-the-green;;;;;;;;;;;;;;;;;;;;;
 /;Tri par couleur des drapeaux;;héraldique , drapeaux;https://touslesdrapeaux.xyz/couleurs.html;;;;;;;;;;;;;;;;;;;;;
 /;Socle interministériel de logiciels libres;;SILL , FLOSS , logiciels , libre , open source , etalab , minisètres , France , gouv;https://sill.etalab.gouv.fr/software?;;;;;;;;;;;;;;;;;;;;;

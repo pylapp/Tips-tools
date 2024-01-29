@@ -296,7 +296,7 @@ JavaScript;CommonJS;Defines modules format;JS , module;http://requirejs.org/docs
 JavaScript;Asynchronous Module Definition (AMD);Defines modules format;JS , module;http://requirejs.org/docs/whyamd.html;;;;;;;;;;;;;;;;;;;;;
 JavaScript;SystemJS;Universal dynamic module loader;JS , dependencies;https://github.com/systemjs/systemjs;;;;;;;;;;;;;;;;;;;;;
 JavaScript;TypeScript;Typed superset of JavaScript that compiles to plain JavaScript;JS , TypeScript , TS;https://www.typescriptlang.org/;;;;;;;;;;;;;;;;;;;;;
-JavaScript;Flow;Adds static typing to JavaScript to improve developer productivity and code quality;Flow , quality , JS;https://github.com/facebook/flow https://flowtype.org/;;;;;;;;;;;;;;;;;;;;;
+JavaScript;Flow;Adds static typing to JavaScript to improve developer productivity and code quality;Flow , quality , JS;https://github.com/facebook/flow ;;;;;;;;;;;;;;;;;;;;;
 JavaScript;Fetch;To fetch data from server;Fetch , JS;https://github.com/github/fetch https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch;;;;;;;;;;;;;;;;;;;;;
 JavaScript;Promises;Use Promises with JavaScript;JS;https://www.promisejs.org/;;;;;;;;;;;;;;;;;;;;;
 JavaScript;RamdaJS;A practical functional library for JavaScript programmers;JS;http://ramdajs.com/;;;;;;;;;;;;;;;;;;;;;
@@ -473,7 +473,6 @@ Android;Auto Fill Edit Text;;UI , view , edit text , autofill , autocompletion;h
 Android;Loupe;;UI , view , zoom , glass , loupe;https://github.com/xenione/loupe;;;;;;;;;;;;;;;;;;;;;
 Android;Tutors; A simple way to show the user interface tutorials;UI , UX , view , tuto , how to , indicator , app intro;https://github.com/Popalay/Tutors;;;;;;;;;;;;;;;;;;;;;
 Android;AnchorImageView;An ImageView that anchors points according to the pixels, locates the anchored area;UI , view , anchor , image view;https://github.com/jcodeing/AnchorImageView;;;;;;;;;;;;;;;;;;;;;
-JavaScript;Johnny Five;The JavaScript Robotics & IoT Platform;J5 , IoT , robotics , Firmata;http://johnny-five.io/ https://github.com/rwaldron/johnny-five;;;;;;;;;;;;;;;;;;;;;
 JavaScript;NodeJS;;Node JS , JS;https://nodejs.org/en/;;;;;;;;;;;;;;;;;;;;;
 JavaScript;EJS;Embedded JavaScriot;JS , template;http://www.embeddedjs.com/;;;;;;;;;;;;;;;;;;;;;
 Test;Tapster;A Robot on Every Desk;hardware , tobot , automation , Appium , NodeJS , Bitbeam , Lego techniks , 3D printed , tests , DIY;http://www.tapster.io/;;;;;;;;;;;;;;;;;;;;;
@@ -636,7 +635,6 @@ Humanism;Qubes OS;A reasonably secure operating system;OS  , security , privacy 
 Humanism;Tails;The amnesic incognito live system;OS , USB , security , privacy , FOSS;https://tails.boum.org/;;;;;;;;;;;;;;;;;;;;;
 /;GrandPerspective;Application for Mac that graphically shows the disk usage within a file system;storage usage;http://grandperspectiv.sourceforge.net/;;;;;;;;;;;;;;;;;;;;;
 Data;Public APIs;A collective list of free JSON APIs for use in web development.;API , data , public API;https://github.com/toddmotto/public-apis;;;;;;;;;;;;;;;;;;;;;
-Data;Programmable Web – API directory;Search the Largest API Directory on the Web;API , data , public API;https://www.programmableweb.com/apis/directory;;;;;;;;;;;;;;;;;;;;;
 Bots;Chatfuel; Build a Facebook bot without coding;smart bot , bot , chat bot;https://chatfuel.com/;;;;;;;;;;;;;;;;;;;;;
 Design;Dribble;;UI , design , layout;https://dribbble.com/;;;;;;;;;;;;;;;;;;;;;
 Design;Behance;Showcase & Discover Creative Work;UI , design , layout;https://www.behance.net/;;;;;;;;;;;;;;;;;;;;;
@@ -659,7 +657,6 @@ Android;PolygonDrawingUtil; An efficient Android utility class for drawing regul
 Android;PasscodeView; PasscodeView is an Android Library to easily and securely authenticate user with PIN code or using the fingerprint scanner.;UI , views , passcode , pin , fingerprint , security , login;https://github.com/kevalpatel2106/PasscodeView;;;;;;;;;;;;;;;;;;;;;
 Android;Android about box;;UI , about ,views;https://github.com/eggheadgames/android-about-box;;;;;;;;;;;;;;;;;;;;;
 Bots;Messenger Platform;;Facebook , bots , Messenger;https://developers.facebook.com/docs/messenger-platform;;;;;;;;;;;;;;;;;;;;;
-DevTool;Developer Circles from Facebook; Connecting communities to develop the future.;Facebook , communities , developers , circles;https://developers.facebook.com/developercircles;;;;;;;;;;;;;;;;;;;;;
 DevTool;GDG;Google Developer Group;Google , GDG;https://developers.google.com/groups/;;;;;;;;;;;;;;;;;;;;;
 /;Regex 101;Regular Expressions;regex;https://regex101.com/;;;;;;;;;;;;;;;;;;;;;
 DevTool;Yeoman;The Web’s scaffolding tool for modern webapps;generator , Angular , Backbone , React , Polymer;http://yeoman.io/;;;;;;;;;;;;;;;;;;;;;
@@ -689,7 +686,7 @@ Android;Oblique;With Oblique explore new styles of displaying images;UI , pictur
 Android;PersistentSearch;A clone of the Google Now/Maps/Play persistent search bar;UI , view , persistent , search bar;https://github.com/KieronQuinn/PersistentSearch;;;;;;;;;;;;;;;;;;;;;
 Android;Ultimate Android Reference;Ultimate Android Reference - Your Road to Become a Better Android Developer;Android , dev , tips;https://github.com/aritraroy/UltimateAndroidReference;;;;;;;;;;;;;;;;;;;;;
 Android;Dagger;Dagger is a fully static, compile-time dependency injection framework for both Java and Android;Dagger , Square , dependency injection;https://google.github.io/dagger/;;;;;;;;;;;;;;;;;;;;;
-/;Wallabag;;Tools , Pockets , keep articles;https://wallabag.org/fr;;;;;;;;;;;;;;;;;;;;;
+/;Wallabag;;Tools , Pockets , keep articles;https://wallabag.org/;;;;;;;;;;;;;;;;;;;;;
 JavaScript;Node compiler; Compiling your Node.js application into a single executable with dynamic require and all fs.* API support.;Node.js , executable;https://github.com/pmq20/node-compiler;;;;;;;;;;;;;;;;;;;;;
 Android;FloatingMenu;An orbit-like action button;UI , view , aciton button , menu;https://github.com/rjsvieira/floatingMenu;;;;;;;;;;;;;;;;;;;;;
 Android;MaterialDrawer;The flexible, easy to use, all in one drawer library for your Android project;UI , view , material , drawer , menu;https://github.com/mikepenz/MaterialDrawer;;;;;;;;;;;;;;;;;;;;;
@@ -766,7 +763,6 @@ Design;Favicon & App Icon Generator;;UI , icon , favicon;http://www.favicon-gene
 Android;Android slidr;;UI , widget , slider;https://github.com/florent37/android-slidr;;;;;;;;;;;;;;;;;;;;;
 Android;Kontinuous Speech Recognizer; A Kotlin Speech Recognizer that runs continuously and is triggered with an activation keyword;speech recognizer;https://github.com/StephenVinouze/KontinuousSpeechRecognizer;;;;;;;;;;;;;;;;;;;;;
 Android;Bridgefy;Bridgefy keeps people connected when Internet is unavailable.;Internet , mech , BLE , Bluetooth , direct , broadcast , bridge;https://www.bridgefy.me/;;;;;;;;;;;;;;;;;;;;;
-Android;Bridgefy Android Samples;;Internet , mech , BLE , Bluetooth , direct , broadcast , bridge;https://github.com/bridgefy/bridgefy-android-samples?;;;;;;;;;;;;;;;;;;;;;
 /;Raspberry Pi;;Raspberry , Pi , Raspberry Pi , DIY , Mr Robot , board;https://www.raspberrypi.org/;;;;;;;;;;;;;;;;;;;;;
 Humanism;CoderDojo;;teach , programming , code , kids;https://coderdojo.com/;;;;;;;;;;;;;;;;;;;;;
 Android;HueSeekBar;;UI , view , seek bar;https://github.com/iammert/HueSeekBar;;;;;;;;;;;;;;;;;;;;;
@@ -778,7 +774,6 @@ Android;MaterialShadows;;UI , shadows;https://github.com/harjot-oberai/MaterialS
 Android;Konfetti;;UI , view , particles , confetti;https://github.com/DanielMartinus/Konfetti;;;;;;;;;;;;;;;;;;;;;
 Android;ShimmerLayout;;UI , view , effects , shimmer;https://github.com/team-supercharge/ShimmerLayout;;;;;;;;;;;;;;;;;;;;;
 /;Pokemon-Terminal; Pokemon terminal themes for iTerm2;mac OS , iTerm , Pokemon;https://github.com/LazoCoder/Pokemon-Terminal;;;;;;;;;;;;;;;;;;;;;
-Web;HTML5 test;How well does your browser support HTML5?;HTML5 , browser , compat , compatibility , support;http://html5test.com/;;;;;;;;;;;;;;;;;;;;;
 Android;HorizontalPicker; A simple, customizable and easy to use picker where centre view is scaled up;UI , widget , picker;https://github.com/adityagohad/HorizontalPicker;;;;;;;;;;;;;;;;;;;;;
 Android;MusicIndicator;;UI , widget , music , charts;https://github.com/Taishi-Y/MusicIndicator;;;;;;;;;;;;;;;;;;;;;
 Android;Nitrite;;BDD , database , storage , document , NoSQL;https://github.com/dizitart/nitrite-database;;;;;;;;;;;;;;;;;;;;;
@@ -1075,7 +1070,6 @@ Android;CameraKit;;API , camera;https://github.com/wonderkiln/CameraKit-Android;
 JavaScript;Flow;Static type checker for JavaScript;JS , type , static , checker , code;https://flow.org/;;;;;;;;;;;;;;;;;;;;;
 JavaScript;ESLint;Pluggable linting utility for JavaScript and JSX;JS , JSX , JavaScrippt , Lint;https://eslint.org/;;;;;;;;;;;;;;;;;;;;;
 DevTool;J2ObjC;Open-source command-line tool from Google that translates Java source code to Objective-C for the iOS platform;Java , Objective-C , iOS , Android , translator;https://developers.google.com/j2objc/;;;;;;;;;;;;;;;;;;;;;
-Design;Poly;;3D , assets , VR , AR;https://poly.google.com/;;;;;;;;;;;;;;;;;;;;;
 CryptoCurrency;cpuminer;Multi-threaded CPU miner for Litecoin and Bitcoin;Litecoin , LTC , Bitcoin , BTC , miner , mining;https://github.com/pooler/cpuminer;;;;;;;;;;;;;;;;;;;;;
 Android;RecyclerView-FastScroll;A simple FastScroller for Android's RecyclerView;UI , views , fest scroll , recycler view , widget , list;https://github.com/timusus/RecyclerView-FastScroll;;;;;;;;;;;;;;;;;;;;;
 Android;PlayTabLayout;PlayTabLayout is a tab layout very similar to Google Play tab layout. The main feature is that ripple shows in a particular place where user taps.;UI , widget , tab , layout , tabs;https://github.com/armcha/PlayTabLayout;;;;;;;;;;;;;;;;;;;;;
@@ -1143,7 +1137,7 @@ Security;Kepass.info;;security , passwords , storage;https://keepass.info/;;;;;;
 Humanism;Twidere-Android;;Twitter , client , API , privacy;https://github.com/TwidereProject/Twidere-Android;;;;;;;;;;;;;;;;;;;;;
 Design;HTML color codes;Get HTML color codes, Hex color codes, RGB and HSL values with our color picker, color chart and HTML color names.;UI , UX , design , color , palette , codes;http://htmlcolorcodes.com/;;;;;;;;;;;;;;;;;;;;;
 Android;Daggraph; Dagger dependency graph generator for Android Developers;Dagger , dependency , dependencies , graph , injection , Android , app;https://github.com/dvdciri/daggraph;;;;;;;;;;;;;;;;;;;;;
-Data;Khiops;;Orange Labs , Predicsis , data mining , data , predictive analytics software , prediction;https://khiops.predicsis.com/;;;;;;;;;;;;;;;;;;;;;
+Data;Khiops;;Orange Labs , Predicsis , data mining , data , predictive analytics software , prediction;https://khiops.org/;;;;;;;;;;;;;;;;;;;;;
 Data;Kibana;;Elasticsearch , data mining;https://www.elastic.co/fr/products/kibana;;;;;;;;;;;;;;;;;;;;;
 Data;Logstash;;Elasticsearch , data mining , logs;https://www.elastic.co/fr/products/logstash;;;;;;;;;;;;;;;;;;;;;
 Humanism;F-Droid;F-Droid is an installable catalogue of FOSS (Free and Open Source Software) applications for the Android platform. The client makes it easy to browse, install, and keep track of updates on your device.;FOSS , Android , APK , applications;https://f-droid.org/en/;;;;;;;;;;;;;;;;;;;;;
@@ -1336,7 +1330,6 @@ DevTool;Proxmox;;VM , virtualization , virtual machines , LXC , server;https://w
 Ruby;Ruby on Rails;;RoR , Ruby , Rails , scripts , web , framework , gems;http://rubyonrails.org/;;;;;;;;;;;;;;;;;;;;;
 Ruby;Ruby;;Ruby , langage , scripts , gems;https://www.ruby-lang.org;;;;;;;;;;;;;;;;;;;;;
 DevTool;OpenVPN;;VPN , security , tools;https://openvpn.net;;;;;;;;;;;;;;;;;;;;;
-JavaScript;ECMAScript compatibility table;;ES , ECMASScript , table , compatibility , API;http://kangax.github.io/compat-table/es6/;;;;;;;;;;;;;;;;;;;;;
 Web;bowser;;Web , browsers , detections , user agent , agents , navigateur;https://github.com/lancedikson/bowser;;;;;;;;;;;;;;;;;;;;;
 Design;Dafont.com;;UI , fonts , font families , typo;https://www.dafont.com;;;;;;;;;;;;;;;;;;;;;
 Design;Fonts.net;;UI , fonts , font families , typo;https://fr.ffonts.net/;;;;;;;;;;;;;;;;;;;;;
@@ -1386,7 +1379,6 @@ Data;Warp 10;;database , time series , storage , sensors , IoT , big data , data
 Blockchain;DAOStack;The toolkit for exponential organizations;DAO , blockchains , Dapp , decentralized apps ,  Ðapps;https://daostack.io/;;;;;;;;;;;;;;;;;;;;;
 Blockchain;Web-of-trust;Rebooting Web-Of-Trust;decentralized , self-sovereign , identity;http://www.weboftrust.info/;;;;;;;;;;;;;;;;;;;;;
 Blockchain;Decentraland;A virtual world that runs on open standards;VR , virtual , reality , Ethereum , blockchains;https://decentraland.org/;;;;;;;;;;;;;;;;;;;;;
-Blockchain;Aragon;;DAO , decentralized , organisations;https://aragon.one/;;;;;;;;;;;;;;;;;;;;;
 Blockchain;PAI;;Avatar , personal , artificial , intelligence , 3D , sovereign , identity;https://projectpai.com/;;;;;;;;;;;;;;;;;;;;;
 Android;Custom Navigation Drawer;;UI , drawer , navigation , menu , screen;https://github.com/shrikanth7698/Custom-Navigation-Drawer;;;;;;;;;;;;;;;;;;;;;
 Blockchain;OpenZeppelin;Build Secure Smart Contracts in Solidity;Ethereum , cryptocurrencies , smart contract , Dapp , Solidity;https://openzeppelin.org/;;;;;;;;;;;;;;;;;;;;;
@@ -1949,7 +1941,6 @@ Humanism;CalyxOS;Your Phone Should Be Private.;Androi , AOSP , phone , privacy ,
 JavaScript;RxJS Marbles;Interactive diagrams of Rx Observables;JS , JavaScript , Rx , Observables , patterns , marbles , streams , flows;https://rxmarbles.com/;;;;;;;;;;;;;;;;;;;;;
 DevTool;ARX;Data Anonymization Tool;RGPD , data , privacy , anonymization;https://arx.deidentifier.org/;;;;;;;;;;;;;;;;;;;;;
 Design;Design Orange;;Orange , design , UI , UX , a11y , navigation , components;https://design.orange.com/;;;;;;;;;;;;;;;;;;;;;
-Swift;SwiftOnTap;Complete SwiftUI Docs with Examples.;SwiftUI , doc , samples;https://swiftontap.com/;;;;;;;;;;;;;;;;;;;;;
 Design;Coding Fonts;;UI , UX , fonts;https://coding-fonts.css-tricks.com/;;;;;;;;;;;;;;;;;;;;;
 /;AI Gahaku;;AI , Renaissance , masterpiece , photo , paints , peintures , tableau;https://ai-art.tokyo/;;;;;;;;;;;;;;;;;;;;;
 CryptoCurrency;Niftygateway;;NFT , tokens , art;https://niftygateway.com/;;;;;;;;;;;;;;;;;;;;;
@@ -2041,7 +2032,6 @@ DevTool;Proxyman;;HTTP , proxy , requests , responses , WireShark , network , MI
 Humanism;Lockdown iOS;;privacy , firewall , tracking , proxy;https://github.com/confirmedcode/Lockdown-iOS;;;;;;;;;;;;;;;;;;;;;
 /;Le Mémo du Numérique;;podcast , Orange , numérique , IT;https://play.acast.com/s/le-memo;;;;;;;;;;;;;;;;;;;;;
 /;Décryptualité;;podcast , April;https://www.april.org/category/type-de-publication/decryptualite;;;;;;;;;;;;;;;;;;;;;
-Android;Android Leaks;;pdocast , Android , news , english;https://androidleakspodcast.com/;;;;;;;;;;;;;;;;;;;;;
 /;ZDNet - RSS;;RSS , french , news , IT;https://www.zdnet.fr/services/rss/;;;;;;;;;;;;;;;;;;;;;
 /;Numerama - RSS;;RSS , french , news , IT;https://www.numerama.com/tag/rss/;;;;;;;;;;;;;;;;;;;;;
 /;The Verge - RSS;;RSS , english , IT , news;https://www.theverge.com/rss/index.xml;;;;;;;;;;;;;;;;;;;;;
@@ -2129,7 +2119,6 @@ CryptoCurrency;Basic Attention Token Growth;;Brave , BAT , Basic Attention Token
 Android;Paparazzi;An Android library to render your application screens without a physical device or emulator.;Android , screen rendering ,devices , preview , simulators , emulators , devices , golden;https://cashapp.github.io/paparazzi/;;;;;;;;;;;;;;;;;;;;;
 /;Cleanmymac;;macOS , MacBook , storage , disks , memory. ,HDD , SSD , hard drives;https://macpaw.com/fr/cleanmymac;;;;;;;;;;;;;;;;;;;;;
 /;PunkinDev;;podcast , développeur , craftmanship , french;https://podcast.ausha.co/punkindev;;;;;;;;;;;;;;;;;;;;;
-/;Android leaks;;podcast , Android , english;https://androidleakspodcast.com/;;;;;;;;;;;;;;;;;;;;;
 /;Le Rendez-vous des Speakers;;podcast , développeurs , french;https://podcasts.apple.com/fr/podcast/le-rendez-vous-des-speakers/id1559843293;;;;;;;;;;;;;;;;;;;;;
 Android;Mobius;A functional reactive framework for managing state evolution and side-effects.;Spotify , Mobius , reactive programming , framework , Kotlin;https://github.com/spotify/mobius;;;;;;;;;;;;;;;;;;;;;
 DevTool;Regexr;;regex , regular , expression , pattern , tester , matcher;https://regexr.com/;;;;;;;;;;;;;;;;;;;;;
