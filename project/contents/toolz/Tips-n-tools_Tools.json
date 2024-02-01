@@ -2327,7 +2327,7 @@
 {"platform": "Web", "name": "Dark visitors", "description": "A list of known AI agents on the internet", "keywords": "AI , scrapper , crawler , user agents", "url": "https://darkvisitors.com/"},
 {"platform": "/", "name": "keygen", "description": "Keygen is an open, source-available software licensing and distribution API, built for developers, by developers. Self-host or try Keygen Cloud today.", "keywords": "API , keys , licences , entitlements , validation", "url": "https://keygen.sh/"},
 {"platform": "iOS", "name": "Sourcery", "description": "Meta-programming for Swift, stop writing boilerplate code.", "keywords": "Swift , code , generator , SwiftSyntax , boilerplate", "url": "https://github.com/krzysztofzablocki/Sourcery"},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
+{"platform": "Web", "name": "Userway", "description": "Fix my code with AI", "keywords": "AI , LLM , generative , code , WCAG , a11y", "url": "https://userway.org/fixmycode/"},
+{"platform": "Web", "name": "11ty", "description": "Eleventy, a simpler static site generator", "keywords": "web , site , generator , static", "url": "https://www.11ty.dev/"},
 {"platform": "", "name": "", "description": "", "keywords": "", "url": ""}
 ]
