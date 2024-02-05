@@ -1730,7 +1730,7 @@
 {"platform": "/", "name": "The power of conventional commits", "description": "", "keywords": "commits , SCM , VCS , messages , quality", "url": "https://julien.ponge.org/blog/the-power-of-conventional-commits/"},
 {"platform": "iOS", "name": "WWDC Notes", "description": "", "keywords": "WWDC , scripts , transcripts , notes , Apple , videos", "url": "https://www.wwdcnotes.com/"},
 {"platform": "/", "name": "Languages and frameworks", "description": "", "keywords": "techradar , metrics , languages , frameworks", "url": "https://www.thoughtworks.com/radar/languages-and-frameworks"},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
+{"platform": "/", "name": "Panoramax", "description": "Panoramax est une ressource numérique permettant la mise en commun et l'exploitation de photos de terrain. Toute personne peut photographier des lieux visibles depuis la voie publique afin d’alimenter la base de données de Panoramax. Ces données sont ensuite librement accessibles et réutilisables", "keywords": "street view , maps , photos , rues , cartographies", "url": "https://panoramax.fr/"},
+{"platform": "/", "name": "Composable Architecture: Why It’s Important and How to Get Started", "description": "", "keywords": "TCA , design pattern , architecture , compsable", "url": "https://www.netsolutions.com/insights/composable-architecture-why-its-important/"},
 {"platform": "", "name": "", "description": "", "keywords": "", "url": ""}
 ]
