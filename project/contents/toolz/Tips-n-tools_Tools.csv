@@ -2336,7 +2336,7 @@ Web;Userway;Fix my code with AI;AI , LLM , generative , code , WCAG , a11y;https
 Web;11ty;Eleventy, a simpler static site generator;web , site , generator , static;https://www.11ty.dev/;;;;;;;;;;;;;;;;;;;;;
 /;xcodes; The best command-line tool to install and switch between multiple versions of Xcode. ;CLI , Xcode , versions;https://github.com/XcodesOrg/xcodes;;;;;;;;;;;;;;;;;;;;;
 /;REUSE tool; reuse is a tool for compliance with the REUSE recommendations. ;FSFE , REUSE , copyright , headers;https://github.com/fsfe/reuse-tool;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+/;CRONTAB Guru;The quick and simple editor for cron schedule expressions;CRON , schedule;https://crontab.guru/;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
