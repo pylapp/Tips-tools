@@ -2342,8 +2342,8 @@ Web;The Sustainable Web Manifesto;;Web , ecodesign , sustainable , manifesto;htt
 iOS;Codesigning Guide;;Fastlane , iOS , match , Apple , certificates , profiles , provisionning , Apple , CI/CD;https://codesigning.guide/;;;;;;;;;;;;;;;;;;;;;
 Design;Neurodiversity Design System;The NDS is a coherent set of standards and principles that combine neurodiversity and user experience design for Learning Management Systems. Design accessible learning interfaces to support success and achievement for everyone.;DS , design , system , neurodiversity , neuratypique , UI , UX;https://neurodiversity.design/;;;;;;;;;;;;;;;;;;;;;
 Web;Kastor.green;;ecodesign , a11y , greenit , web , audits , RGESN , RGAA;https://kastor.green/;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+DevTool;Binary Ninja;Binary Ninja is an interactive decompiler, disassembler, debugger, and binary analysis platform built by reverse engineers, for reverse engineers.;RI , reverse engineering , binaries , decompiling , tool , debug , analyze;https://binary.ninja/;;;;;;;;;;;;;;;;;;;;;
+Design;Asset generator;;Android , iOS , assets , versions , format , drawables , SVG , PNG;https://asset-generator.netlify.app;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
