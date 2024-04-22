@@ -2351,10 +2351,10 @@ DevTool;semantic release;Fully automated version management and package publishi
 /;yt-dlp; A feature-rich command-line audio/video downloader ;YouTube , DL , download , downloader;https://github.com/yt-dlp/yt-dlp;;;;;;;;;;;;;;;;;;;;;
 /;Slint;;GUI , embeded , desktop , app , IHM;https://slint.dev/;;;;;;;;;;;;;;;;;;;;;
 /;Titans;;freelances , platforms , seniors;https://www.titans-collective.com/;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+/;Beavernotes;;notes , notepad , open source , app;https://beavernotes.com/;;;;;;;;;;;;;;;;;;;;;
+Web;A11Y checklist;;WCAG , checklist , a11y;https://www.a11yproject.com/checklist/;;;;;;;;;;;;;;;;;;;;;
+Humanism;Privacy Guides;;privacy , guides , tools , resources;https://www.privacyguides.org;;;;;;;;;;;;;;;;;;;;;
+iOS;swifr-snapshot-testing;Delightful Swift snapshot testing.;UI , tests , GUI , screenshots , golden;https://github.com/pointfreeco/swift-snapshot-testing;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
