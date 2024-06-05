@@ -1621,7 +1621,7 @@ DevTool;Otoroshi;;MAIF , API , management, revser , proxy , layer , HTTP;https:/
 JavaScript;openpgpjs;OpenPGP implementation for JavaScript;JS , PGP , OpenPGP , encryption , privacy , data , security , web;https://github.com/openpgpjs/openpgpjs;;;;;;;;;;;;;;;;;;;;;
 CryptoCurrency;Bitcoin Paper Wallet;;Bitcoin , BTC , transactions , papers , cold storage , wallets;https://bitcoinpaperwallet.com/;;;;;;;;;;;;;;;;;;;;;
 Humanism;Node-RED;Flow-based programming for the Internet of Thnigs;Node.js, IoT , Internet , Thing , hardware , home , automation;https://nodered.org/;;;;;;;;;;;;;;;;;;;;;
-JavaScript;JavaScript Equality Table Game;;JS , game , == , ≡ , type , variables , langage , troll;https://slikts.github.io/js-equality-game/;;;;;;;;;;;;;;;;;;;;;
+JavaScript;JavaScript Equality Table Game;;JS , game , == , ≡ , type , variables , langage , troll , 🤡;https://slikts.github.io/js-equality-game/;;;;;;;;;;;;;;;;;;;;;
 Humanism;twitrssme GitHub;;Twitter , RSS , sources , feeds , share , data , watch;https://github.com/ciderpunx/twitrssme;;;;;;;;;;;;;;;;;;;;;
 Humanism;Solid;;Web , decentralization , Tim Berners-Lee , WWW , data;https://solid.mit.edu/;;;;;;;;;;;;;;;;;;;;;
 DevTool;repairnator;;Travis , bot , CI , continuous integration , failures , fixing , bugs;https://github.com/Spirals-Team/repairnator;;;;;;;;;;;;;;;;;;;;;
@@ -1935,7 +1935,7 @@ DevTool;iTerm2;Terminal emulator for macOS;macOS , console , terminal;https://it
 /;GreenIT;GreenIT.fr - la communauté des acteurs de la sobriété numérique et du numérique responsable (Green IT, low-tech numérique, écoconception web et de service numérique, etc.);GreenIT , low tech , numerique , web , écoconception , greedesign , ecodesign;https://www.greenit.fr/;;;;;;;;;;;;;;;;;;;;;
 /;GreenIT-analysis;Plugin du Collectif Conception Numérique Responsable;CCNUMR , plugin , web , green , score;https://github.com/cnumr/GreenIT-Analysis;;;;;;;;;;;;;;;;;;;;;
 /;Malt;;Patreon , freelances;https://www.malt.fr/;;;;;;;;;;;;;;;;;;;;;
-/;The Olognion;;news , tech , actualités , WTF , troll , gags;https://www.theolognion.com/;;;;;;;;;;;;;;;;;;;;;
+/;The Olognion;;news , tech , actualités , WTF , troll , gags , 🤡;https://www.theolognion.com/;;;;;;;;;;;;;;;;;;;;;
 /;Contribulle;;FLOSS , contributions , plateforme , help , aidde , projets , contact;https://contribulle.org/;;;;;;;;;;;;;;;;;;;;;
 Humanism;CalyxOS;Your Phone Should Be Private.;Androi , AOSP , phone , privacy , data , tracking , Google-free;https://calyxos.org/;;;;;;;;;;;;;;;;;;;;;
 JavaScript;RxJS Marbles;Interactive diagrams of Rx Observables;JS , JavaScript , Rx , Observables , patterns , marbles , streams , flows;https://rxmarbles.com/;;;;;;;;;;;;;;;;;;;;;
@@ -2320,7 +2320,7 @@ Android;Unified Push;UnifiedPush is a set of specifications and tools that lets 
 Humanism;ntfy;;notifications , pub , sub , Android , iOS , open source , free;https://ntfy.sh/;;;;;;;;;;;;;;;;;;;;;
 /;ZeroGPT;;ChatGP , generative , IA , AI , detector , content , GPT4  , plagiarism , plagiat;https://www.zerogpt.com/;;;;;;;;;;;;;;;;;;;;;
 /;GPTZero;;ChatGP , generative , IA , AI , detector , content , GPT4  , plagiarism , plagiat , Llama;https://gptzero.me/;;;;;;;;;;;;;;;;;;;;;
-/;Spaghettify;;spaghetti , code , bad smalls , troll , fun;https://www.spaghettify.dev/;;;;;;;;;;;;;;;;;;;;;
+/;Spaghettify;;spaghetti , code , bad smalls , troll , fun , 🤡;https://www.spaghettify.dev/;;;;;;;;;;;;;;;;;;;;;
 Humanism;Fedipact;The instances blocking Zuckerberg's Threads.net;Fediverse , Threads , Meta , instances , censorship , domain;https://fedipact.veganism.social/;;;;;;;;;;;;;;;;;;;;;
 Test;UUV; Solution to facilitate the writing and execution of E2E tests understandable by any human ;E2E , a11y , tests , Cucumber , Cypress , Gherkin , TDD , BDD;https://github.com/Orange-OpenSource/uuv;;;;;;;;;;;;;;;;;;;;;
 Web;SOLID ;Solid is a specification that lets people store their data securely in decentralized data stores called Pods. Pods are like secure personal web servers for data. When data is stored in someone's Pod, they control which people and applications can access it. ;Tim , Berners-Lee , data , pod , privacy , digital self;https://solidproject.org/;;;;;;;;;;;;;;;;;;;;;
@@ -2375,9 +2375,9 @@ iOS;Privacy Manifest generator;Conveniently generate your app PrivacyInfo.xcpriv
 /;Come Up;Plateforme wish de bouffons qui bradent tout, le Temu des palteformes de freelances;Wish , Temu , 5 euros , freelances , plateformes , 🤡;https://comeup.com;;;;;;;;;;;;;;;;;;;;;
 /;salaires.dev;Concours de kekettes pour des salaires, lsite subjective et non sourcée pour entretenir l'égo;salaires , dev , 🤡;https://salaires.dev/;;;;;;;;;;;;;;;;;;;;;
 Web;InAppBrowser;;webview , in app , browsers , JS , JavaScript , check;https://inappbrowser.com/;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+/;Omnivore;Omnivore is a complete, open source read-it-later solution for people who like reading.;reader , blog , newsletter , RSS , bookmarks , open source;https://omnivore.app/;;;;;;;;;;;;;;;;;;;;;
+Swift;Fakery;Swift fake data generator ;Swift , mocks , fakes , data , bouchons , stubs;https://github.com/vadymmarkov/Fakery;;;;;;;;;;;;;;;;;;;;;
+Swift;Mockery; Swift sample data generator ;Swift , mocks , fakes , data , bouchons , stubs;https://github.com/tonyarnold/Mockery;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;

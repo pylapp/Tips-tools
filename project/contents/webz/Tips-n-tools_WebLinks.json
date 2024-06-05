@@ -1790,5 +1790,16 @@
 {"platform": "DevTool", "name": "NetBSD Commit Guidelines", "description": "", "keywords": "NetBSD , commits , guidelines , history , VCS , SCM", "url": "https://www.netbsd.org/developers/commit-guidelines.html"},
 {"platform": "Humanism", "name": "Et si l’on travaillait ensemble, sans patron et sans hiérarchie ?", "description": "", "keywords": "héiérarchie , organisatio, autogestion, anarchie", "url": "https://theconversation.com/et-si-lon-travaillait-ensemble-sans-patron-et-sans-hierarchie-226076"},
 {"platform": "Humanism", "name": "UTM14", "description": "", "keywords": "Google , AI , LLM , bots , crawling , scrapping , anti-AI", "url": "https://udm14.com/"},
-{"platform": "Humanism", "name": "InterHop", "description": "Pour des communs en santé !", "keywords": "santé , outils , logiciels", "url": "https://interhop.org/"}
+{"platform": "Humanism", "name": "InterHop", "description": "Pour des communs en santé !", "keywords": "santé , outils , logiciels", "url": "https://interhop.org/"},
+{"platform": "Web", "name": "We Need To Rewild The Internet", "description": "", "keywords": "Internets , web , GAFAM", "url": "https://www.noemamag.com/we-need-to-rewild-the-internet/"},
+{"platform": "Web", "name": "How Standard Ebooks serves millions of requests per month with a 2GB VPS", "description": "or, a paean to the classic web", "keywords": "", "url": "Web , ecodesign , complexicity , simplicity"},
+{"platform": "Web", "name": "web-platform-tests dashboard", "description": "", "keywords": "web , browsers , tests , benchmarks", "url": "https://wpt.fyi/results/?label=stable&label=master&product=chrome&product=firefox&product=safari&aligned&q=safari%3Afail%20or%20firefox%3Afail%20or%20chrome%3Afail"},
+{"platform": "Design", "name": "The Component Galery", "description": "", "keywords": "DS , design desystems , UI , components", "url": "https://component.gallery/"},
+{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
+{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
+{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
+{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
+{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
+{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
+{"platform": "", "name": "", "description": "", "keywords": "", "url": ""}
 ]
