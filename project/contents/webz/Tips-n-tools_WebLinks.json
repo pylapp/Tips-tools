@@ -1795,11 +1795,11 @@
 {"platform": "Web", "name": "How Standard Ebooks serves millions of requests per month with a 2GB VPS", "description": "or, a paean to the classic web", "keywords": "", "url": "Web , ecodesign , complexicity , simplicity"},
 {"platform": "Web", "name": "web-platform-tests dashboard", "description": "", "keywords": "web , browsers , tests , benchmarks", "url": "https://wpt.fyi/results/?label=stable&label=master&product=chrome&product=firefox&product=safari&aligned&q=safari%3Afail%20or%20firefox%3Afail%20or%20chrome%3Afail"},
 {"platform": "Design", "name": "The Component Galery", "description": "", "keywords": "DS , design desystems , UI , components", "url": "https://component.gallery/"},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""}
+{"platform": "iOS", "name": "Creating a Pass Type ID & Pass Signing Certificate", "description": "", "keywords": "Apple , wallet , Pass , card , certificate , WWDR", "url": "https://www.walletthat.com/help/creating-a-pass-type-id-pass-signing-certificate/"},
+{"platform": "Design", "name": "UX Planet", "description": "One-stop resource for everything related to user experience", "keywords": "resources , UX , UI , design", "url": "https://uxplanet.org/"},
+{"platform": "/", "name": "Linefest", "description": "", "keywords": "web site , fest , festivals , lineup , running order , musics", "url": "https://www.linefest.app/"},
+{"platform": "/", "name": "Forensic analysis of open-source XMPP multi-client social networking apps on iOS devices", "description": "", "keywords": "XMPP , forensics , iOS , study", "url": "https://www.sciencedirect.com/science/article/abs/pii/S2666281721000196"},
+{"platform": "Humanism", "name": "Comparison of Instant Messengers", "description": "", "keywords": "https://julianoe.eu.org/notes/guide-antiautoritaire/", "url": "https://eylenburg.github.io/im_comparison.htm"},
+{"platform": "Humanism", "name": "Are we OMEMO yet?", "description": "", "keywords": "XMPP , OMEMO , encryption , apps , protocol", "url": "https://omemo.top/"},
+{"platform": "Humanism", "name": "Ressources à utiliser si vous deviez combattre un État Autoritaire", "description": "", "keywords": "manifestations , guide , utile , ressources", "url": "https://julianoe.eu.org/notes/guide-antiautoritaire/"}
 ]
