@@ -2387,9 +2387,9 @@
 {"platform": "DevTool", "name": "Store Maven", "description": "", "keywords": "apps , stores , screenshots : A/B , testing", "url": "https://www.storemaven.com/"},
 {"platform": "iOS", "name": "ObjectivePGP", "description": "", "keywords": "PGP , GPG , encryption , iOS , lib", "url": "https://github.com/krzyzanowskim/ObjectivePGP"},
 {"platform": "iOS", "name": "iTorrent", "description": "", "keywords": "torrent , app , P2P , iOS", "url": "https://github.com/XITRIX/iTorrent ,https://github.com/XITRIX/iTorrent-v2"},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""},
-{"platform": "", "name": "", "description": "", "keywords": "", "url": ""}
+{"platform": "iOS", "name": "Swift Polyglot", "description": "Check .xcstrings", "keywords": "l10n , i18n , translations , localizables , wordings , GitHub , Action", "url": "https://github.com/appdecostudio/SwiftPolyglot"},
+{"platform": "DevTool", "name": "GitHub Task List Completed", "description": "", "keywords": "GitHub , checkboxes , tasks , list , PR , merge", "url": "https://github.com/marketplace/task-list-completed"},
+{"platform": "DevTool", "name": "Weblate", "description": "", "keywords": "i18n , l10n , wordings , translations , localizables", "url": "https://hosted.weblate.org/"},
+{"platform": "DevTool", "name": "Crowdin", "description": "", "keywords": "i18n , l10n , wordings , translations , localizables", "url": "https://crowdin.com/"},
+{"platform": "DevTool", "name": "Git Cliff", "description": "", "keywords": "changelog , Git , history , semver , semrel , semantic , versioning , release , keep a changelog", "url": "https://github.com/orhun/git-cliff"}
 ]

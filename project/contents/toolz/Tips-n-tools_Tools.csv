@@ -2392,9 +2392,9 @@ DevTool;Flurry;The World’s Most Adopted App Analytics;apps , Android , iOS , a
 DevTool;Store Maven;;apps , stores , screenshots : A/B , testing;https://www.storemaven.com/;;;;;;;;;;;;;;;;;;;;;
 iOS;ObjectivePGP;;PGP , GPG , encryption , iOS , lib;https://github.com/krzyzanowskim/ObjectivePGP;;;;;;;;;;;;;;;;;;;;;
 iOS;iTorrent;;torrent , app , P2P , iOS;https://github.com/XITRIX/iTorrent ,https://github.com/XITRIX/iTorrent-v2;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+iOS;Swift Polyglot;Check .xcstrings;l10n , i18n , translations , localizables , wordings , GitHub , Action;https://github.com/appdecostudio/SwiftPolyglot;;;;;;;;;;;;;;;;;;;;;
+DevTool;GitHub Task List Completed;;GitHub , checkboxes , tasks , list , PR , merge;https://github.com/marketplace/task-list-completed;;;;;;;;;;;;;;;;;;;;;
+DevTool;Weblate;;i18n , l10n , wordings , translations , localizables;https://hosted.weblate.org/;;;;;;;;;;;;;;;;;;;;;
+DevTool;Crowdin;;i18n , l10n , wordings , translations , localizables;https://crowdin.com/;;;;;;;;;;;;;;;;;;;;;
+DevTool;Git Cliff;;changelog , Git , history , semver , semrel , semantic , versioning , release , keep a changelog;https://github.com/orhun/git-cliff;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
