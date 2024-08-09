@@ -1,10 +1,10 @@
 #!/bin/bash
 # Software Name: Tips'n'tools
-# SPDX-FileCopyrightText: Copyright (c) 2016-2023 Pierre-Yves Lapersonne
+# SPDX-FileCopyrightText: Copyright (c) 2016-2024 Pierre-Yves Lapersonne
 # SPDX-License-Identifier: MIT
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 13.0.0
+# Version.............: 13.0.1
 # Since...............: 28/11/2016
 # Description.........: Process a file/an input (mainly in CSV format) to HTML with CSS if needed
 #			This file must contain several columns: Constructor, Target, Name, Gravure, Modem, Peak download speed, Peak upload speed, Bluetooth, NFC, USB, Camera support max., Video capture max., Video playback max., Display max., CPU, CPU cores number, CPU clock speed max., CPU architecture, GPU, GPU API support, AI support
@@ -14,7 +14,7 @@
 #
 # ✿✿✿✿ ʕ •ᴥ•ʔ/ ︻デ═一
 
-# Debug purposses
+# Debug purposes
 #set -euxo pipefail
 set -euo pipefail
 
@@ -65,11 +65,11 @@ while read -r line; do
 		if [ $currentRowIndex -eq $(($NUMBER_OF_LINES_TO_IGNORE - 1)) ]; then
 			echo -e "\t<thead>"
 			echo -e "\t\t<tr>"
-			if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
+			#if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
 				regex="s/;/\n/g"
-			else # macOS
-				regex="s/;/\'$'\n/g"
-			fi		
+			#else # macOS
+			#	regex="s/;/\'$'\n/g"
+			#fi		
 			echo $line | sed $regex | while read -r item; do
 				echo -e "\t\t\t<td class=\"header\">" $item "</td>"
 			done
@@ -86,11 +86,11 @@ while read -r line; do
 
 	# ***** Step 4: Split the line and replace ; by \n, and delete useless "
 	fieldIndex=0
-	if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
+	#if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
 		regex="s/;/\n/g"
-	else # macOS
-		regex="s/;/\'$'\n/g"
-	fi	
+	#else # macOS
+	#	regex="s/;/\'$'\n/g"
+	#fi	
 	echo $line | sed $regex | while read -r item; do
 		cleanItem=`echo $item | sed 's/\"//g'`
 		# Add a good CSS class

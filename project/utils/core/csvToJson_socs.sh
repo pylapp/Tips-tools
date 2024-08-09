@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: MIT
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 3.0.0
+# Version.............: 3.0.2
 # Since...............: 06/03/2018
 # Description.........: Process a file/an input (mainly in CSV format) to JSON
 #			This file must contain several columns: Constructor, Target, Name, Gravure, Modem, Peak download speed, Peak upload speed, Bluetooth, NFC, USB, Camera support max., Video capture max., Video playback max., Display max., CPU, CPU cores number, CPU clock speed max., CPU architecture, GPU, GPU API support, AI support
@@ -14,7 +14,7 @@
 #
 # ✿✿✿✿ ʕ •ᴥ•ʔ/ ︻デ═一
 
-# Debug purposses
+# Debug purposes
 #set -euxo pipefail
 set -euo pipefail
 
@@ -75,11 +75,11 @@ while read -r line; do
 
 	# ***** Step 4: Split the line and replace ; by \n, and delete useless "
 	fieldIndex=0
-	if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
+	#if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
 		regex="s/;/\n/g"
-	else # macOS
-		regex="s/;/\'$'\n/g"
-	fi	
+	#else # macOS
+	#	regex="s/;/\'$'\n/g"
+	#fi	
 	echo $line | sed $regex | while read -r item; do
 		cleanItem=`echo $item | sed 's/\"//g'`
 		# Update entry

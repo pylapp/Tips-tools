@@ -1,10 +1,10 @@
 #!/bin/bash
 # Software Name: Tips'n'tools
-# SPDX-FileCopyrightText: Copyright (c) 2016-2023 Pierre-Yves Lapersonne
+# SPDX-FileCopyrightText: Copyright (c) 2016-2024 Pierre-Yves Lapersonne
 # SPDX-License-Identifier: MIT
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 15.1.0
+# Version.............: 15.1.1
 # Since...............: 05/10/2016
 # Description.........: Provides some features about this update/technical watch/... project: find some elements or build HTML files from CSV files to update another file
 #
@@ -225,11 +225,11 @@ fFindInCsvFile(){
 	cat $file | while read -r line; do
 		case "$line" in
 			*$regex*)
-			if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
-				regex="s/;/\'$'\n/g"
-			else # macOS
-				regex="s/;/\n/g"
-			fi
+			#if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
+			#	regex="s/;/\'$'\n/g"
+			#else # macOS
+			regex="s/;/\n/g"
+			#fi
 			echo $line | sed $regex | while read -r item; do
 				if [ "$item" = "" ]; then
 					echo -e "\t <null>"

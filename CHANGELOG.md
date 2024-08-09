@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/pylapp/Tips-tools/compare/15.1.0...dev)
 
+### Fixed
+
+- Hotfix: polluted output results for socz and devz because of regex with $ symbol
+
 ### Changed
 
 - Add FUNDING
