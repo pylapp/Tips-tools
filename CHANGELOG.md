@@ -3,7 +3,9 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/pylapp/Tips-tools/compare/15.1.0...dev)
+## [Unreleased](https://github.com/pylapp/Tips-tools/compare/15.1.1...dev)
+
+## [15.1.1](https://github.com/pylapp/Tips-tools/compare/15.1.0...15.1.1) - 2024-08-10
 
 ### Fixed
 
