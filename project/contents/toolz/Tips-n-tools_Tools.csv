@@ -2116,7 +2116,7 @@ CryptoCurrency;CakeWallet;;device , wallet , cold storage , Monero , XMR , Andro
 CryptoCurrency;Monejuro;;Android , wallet , smartphone , colde storage , Monero , XMR , Ledger;https://www.monerujo.io/;;;;;;;;;;;;;;;;;;;;;
 CryptoCurrency;BraveBat;;Brave , BAT , Basic Attention Token , stats , metrics , community;https://bravebat.info/;;;;;;;;;;;;;;;;;;;;;
 CryptoCurrency;Basic Attention Token Growth;;Brave , BAT , Basic Attention Token , stats , metrics , community;https://basicattentiontoken.org/growth/;;;;;;;;;;;;;;;;;;;;;
-Android;Paparazzi;An Android library to render your application screens without a physical device or emulator.;Android , screen rendering ,devices , preview , simulators , emulators , devices , golden;https://cashapp.github.io/paparazzi/;;;;;;;;;;;;;;;;;;;;;
+Android;Paparazzi;An Android library to render your application screens without a physical device or emulator.;Android , screen rendering , devices , preview , simulators , emulators , devices , golden , GUI , screenshots , comparisons , tests;https://cashapp.github.io/paparazzi/;;;;;;;;;;;;;;;;;;;;;
 /;Cleanmymac;;macOS , MacBook , storage , disks , memory. ,HDD , SSD , hard drives;https://macpaw.com/fr/cleanmymac;;;;;;;;;;;;;;;;;;;;;
 /;PunkinDev;;podcast , développeur , craftmanship , french;https://podcast.ausha.co/punkindev;;;;;;;;;;;;;;;;;;;;;
 /;Le Rendez-vous des Speakers;;podcast , développeurs , french;https://podcasts.apple.com/fr/podcast/le-rendez-vous-des-speakers/id1559843293;;;;;;;;;;;;;;;;;;;;;
@@ -2354,7 +2354,7 @@ DevTool;semantic release;Fully automated version management and package publishi
 /;Beavernotes;;notes , notepad , open source , app;https://beavernotes.com/;;;;;;;;;;;;;;;;;;;;;
 Web;A11Y checklist;;WCAG , checklist , a11y;https://www.a11yproject.com/checklist/;;;;;;;;;;;;;;;;;;;;;
 Humanism;Privacy Guides;;privacy , guides , tools , resources;https://www.privacyguides.org;;;;;;;;;;;;;;;;;;;;;
-Swift;swift-snapshot-testing;Delightful Swift snapshot testing.;UI , tests , GUI , screenshots , golden;https://github.com/pointfreeco/swift-snapshot-testing;;;;;;;;;;;;;;;;;;;;;
+Swift;swift-snapshot-testing;Delightful Swift snapshot testing.;iOS , screen rendering , devices , preview , simulators , devices , golden , GUI , screenshots , comparisons , tests;https://github.com/pointfreeco/swift-snapshot-testing;;;;;;;;;;;;;;;;;;;;;
 Humanism;Strongbox;;passwords , Keepass , kpbx , secrets;https://strongboxsafe.com/;;;;;;;;;;;;;;;;;;;;;
 Humanism;Mullvad;;VPN , privacy , web;https://mullvad.net;;;;;;;;;;;;;;;;;;;;;
 Humanism;Exiftool;;EXIF , PNG , JPG , WebP , metadata , removal;https://exiftool.org/;;;;;;;;;;;;;;;;;;;;;
@@ -2428,7 +2428,7 @@ Android;Articons; A monotone line-based icon pack for Android.;assets , icons , 
 /;Devices specifications;;hardware , devices , specifications , catalog;https://www.devicespecifications.com/;;;;;;;;;;;;;;;;;;;;;
 DevTool;LibreTranslate;;wordings , l10n , i18n , localizables , strings , translations;https://libretranslate.com/;;;;;;;;;;;;;;;;;;;;;
 Android;Obtainium;Get Android App Updates Directly From the Source.;Android , app , build , APK, upload , CICD;https://github.com/ImranR98/Obtainium;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+DevTool;macFUSE;File system integration made easy;macOS , file systme , FUSE , VeraCrypt , volumes , mount;https://osxfuse.github.io/;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
