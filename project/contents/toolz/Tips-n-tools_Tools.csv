@@ -2434,9 +2434,9 @@ Swift;swift-algorithms; Commonly used sequence and collection algorithms for Swi
 iOS;iOS Resolution;;Apple , iOS , design , layouts , displays , screens , resolutions , GUI;https://www.ios-resolution.com/;;;;;;;;;;;;;;;;;;;;;
 Android;Material 3;;M3 , GUI , design , Android , design system;https://m3.material.io/;;;;;;;;;;;;;;;;;;;;;
 DevTool;sly;Friendly image editor;Dart , image , editor , open source;https://github.com/kra-mo/sly;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+/;Repobeat;Give your README.md some insightful eye-candy;GitHub , README , insights , figures ;https://repobeats.axiom.co/;;;;;;;;;;;;;;;;;;;;;
+Web;Astro; The web framework for content-driven websites ;framework , web site , web , content;https://astro.build/;;;;;;;;;;;;;;;;;;;;;
+Web;Starlight;Make your docs shine with Starlight;framework , web site , web , content , documentation , doc;https://starlight.astro.build/;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
