@@ -20,6 +20,8 @@ Apple;iPhone 7;A10 Fusion;?;?;?;?;4.1 , BLE;?;?;12 MP;4K;4K;?;Apple Twister;4;2.
 Apple;IPhone 8;A11 Bionic;10 nm;?;?;?;?;?;?;?;?;?;?;Apple Monsoon , Apple Mistral;2 + 4;?;64 bits;Custom 3 cores;Metal 2;Neural Engine;
 Apple;iPhone XR / XS / XS Max;A12 Bionic;7 nm;?;?;?;?;?;?;?;?;?;?;?;2 + 4;?;64 bits;Custom 4 cores;Metal 2;Neural Engine;
 Apple;iPhone 15 Pro / Pro Max;A17 Bionic;3 nm;?;?;?;?;?;?;?;?;?;?;?;2 + 4;?;64 bits;?;?;16-core Neural Engine;
+Apple;iPhone 16 / 16 Plus;A18;3 nm;?;?;?;?;?;?;?;?;?;?;?;2 + 4;?;64 bits;Custom 5 cores;?;16-core Neural Engine;
+Apple;iPhone 16 Pro / 16 Pro Max;A18 Pro;3 nm;?;?;?;?;?;?;?;?;?;?;?;2 + 4;?;64 bits;Custom 6 cores;?;16-core Neural Engine;
 MediaTek;smartphone;Helio P10;?;?;?;?;?;?;?;21 MP;?;?;1200 x 1900 , Full HD;ARM Cortex A53;8;2 GHz;64 bits;ARM Mali T860;?;no;
 MediaTek;smartphone;Helio P23;16 mm;?;?;?;?;?;?;24 MP;1920 x 1080;?;2160 x 1080;ARM Cortex A53;8;2.3 GHz;64 bits;ARM Mali G71;?;?;
 MediaTek;smartphone;Helio P35;?;?;?;?;?;?;?;?;?;?;1080p;ARM Cortex-A73 , ARM Cortex-A52 , ARM Cortex-A35;4 + 4 + 2;?;?;ARM Mali G71;?;no;

@@ -2428,12 +2428,12 @@ Android;Articons; A monotone line-based icon pack for Android.;assets , icons , 
 /;Devices specifications;;hardware , devices , specifications , catalog;https://www.devicespecifications.com/;;;;;;;;;;;;;;;;;;;;;
 DevTool;LibreTranslate;;wordings , l10n , i18n , localizables , strings , translations;https://libretranslate.com/;;;;;;;;;;;;;;;;;;;;;
 Android;Obtainium;Get Android App Updates Directly From the Source.;Android , app , build , APK, upload , CICD;https://github.com/ImranR98/Obtainium;;;;;;;;;;;;;;;;;;;;;
-DevTool;macFUSE;File system integration made easy;macOS , file systme , FUSE , VeraCrypt , volumes , mount;https://osxfuse.github.io/;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+DevTool;macFUSE;File system integration made easy;macOS , file system , FUSE , VeraCrypt , volumes , mount;https://osxfuse.github.io/;;;;;;;;;;;;;;;;;;;;;
+/;Yes We Hack;;security , bounties , reward , pentest , hackers , white hat , vulnerability , attack;https://www.yeswehack.com;;;;;;;;;;;;;;;;;;;;;
+Swift;swift-algorithms; Commonly used sequence and collection algorithms for Swift ;Apple , Swift , algorithm , sequence , collections;https://github.com/apple/swift-algorithms;;;;;;;;;;;;;;;;;;;;;
+iOS;iOS Resolution;;Apple , iOS , design , layouts , displays , screens , resolutions , GUI;https://www.ios-resolution.com/;;;;;;;;;;;;;;;;;;;;;
+Android;Material 3;;M3 , GUI , design , Android , design system;https://m3.material.io/;;;;;;;;;;;;;;;;;;;;;
+DevTool;sly;Friendly image editor;Dart , image , editor , open source;https://github.com/kra-mo/sly;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
