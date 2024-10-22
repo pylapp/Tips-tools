@@ -1608,7 +1608,7 @@ Android;MPAndroidChart;;GUI , UI , views , charts , candlestick , bubble , radar
 Android;Violation-comments-to-github-gradle-plugin;;Gradle , plugin , GitHub , static , code , analysis , quality , sources;https://github.com/tomasbjerre/violation-comments-to-github-gradle-plugin;;;;;;;;;;;;;;;;;;;;;
 Android;materialfields;;GUI , UI , viws , material , forms;https://gitlab.com/gabrielepmattia/materialfields;;;;;;;;;;;;;;;;;;;;;
 DevTool;CircleCI;Continuous Integration and Delivery;CICD , integration , delivery , continous , automation , quality;https://circleci.com/;;;;;;;;;;;;;;;;;;;;;
-Humanism;Home Assistant;;home , smart home , automation , IoT , DIY , FOSS;https://www.home-assistant.io/;;;;;;;;;;;;;;;;;;;;;
+Humanism;Home Assistant;;home , smart home , automation , IoT , DIY , FOSS , domotique;https://www.home-assistant.io/;;;;;;;;;;;;;;;;;;;;;
 Humanism;BrewPi;;Raspberry , Pi , brewery , controller , DIY , FOSS;https://www.brewpi.com/;;;;;;;;;;;;;;;;;;;;;
 Humanism;Armbian;;Linux , ARM , XFCE , OS;https://www.armbian.com/;;;;;;;;;;;;;;;;;;;;;
 Humanism;Hypriot;;ARM , Docker , Linux , Pi , OS , DIY , HypriotOS;https://blog.hypriot.com;;;;;;;;;;;;;;;;;;;;;
@@ -1830,7 +1830,7 @@ iOS;IOS-Runtime-Headers;iOS Objective-C headers as derived from runtime introspe
 Kotlin;ktlint;An anti-bikeshedding Kotlin linter with built-in formatter;Kotlin , linter , lint , quality , code smells;https://github.com/pinterest/ktlint;;;;;;;;;;;;;;;;;;;;;
 Humanism;Codeurs.com;;freelance , share , patreon , creativity , back;https://www.codeur.com;;;;;;;;;;;;;;;;;;;;;
 Swift;objc.io;Swift quiz;Swift , quizz , puzzlers;https://www.objc.io/quiz/;;;;;;;;;;;;;;;;;;;;;
-/;Regex Crossword;;Regex , regular expressions , game , puzzlers;https://regexcrossword.com/;;;;;;;;;;;;;;;;;;;;;
+/;Regex Crossword;;Regex , regular expressions , game , puzzlers , lulz;https://regexcrossword.com/;;;;;;;;;;;;;;;;;;;;;
 Humanism;nitter;Alternative Twitter front-end;Twitter , GUI , frontend , privacy;https://github.com/zedeus/nitter;;;;;;;;;;;;;;;;;;;;;
 /;Lutris;Play all your games on Linux;Linux , games;https://lutris.net/;;;;;;;;;;;;;;;;;;;;;
 /;Update faker;;GUI , OS , updates , pranks;https://updatefaker.com/;;;;;;;;;;;;;;;;;;;;;
@@ -2441,7 +2441,7 @@ DevTool;Writer Side;;Jetbrains , documentation , online , web , Markdown , XML ,
 /;Holopin;;badges , rewards , pins;https://www.holopin.io/;;;;;;;;;;;;;;;;;;;;;
 DevTool;Cachethq.io;The open-source status page system;ticketing , support , open source;https://cachethq.io/;;;;;;;;;;;;;;;;;;;;;
 /;Tuxguitar;;tablatures , guitar , open source;https://www.tuxguitar.app/;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+/;Ecosyste.ms;Free and open resources for those working to sustain and secure open source software;resources , stats , metrics , GitHub , open source;https://ecosyste.ms/;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
