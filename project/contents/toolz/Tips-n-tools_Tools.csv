@@ -2442,6 +2442,16 @@ DevTool;Writer Side;;Jetbrains , documentation , online , web , Markdown , XML ,
 DevTool;Cachethq.io;The open-source status page system;ticketing , support , open source;https://cachethq.io/;;;;;;;;;;;;;;;;;;;;;
 /;Tuxguitar;;tablatures , guitar , open source;https://www.tuxguitar.app/;;;;;;;;;;;;;;;;;;;;;
 /;Ecosyste.ms;Free and open resources for those working to sustain and secure open source software;resources , stats , metrics , GitHub , open source;https://ecosyste.ms/;;;;;;;;;;;;;;;;;;;;;
+DevTool;macOS image templates;;Cirruslabs , Tart , Xcode , macOS , docker , images , CI/CD;https://github.com/cirruslabs/macos-image-templates;;;;;;;;;;;;;;;;;;;;;
+DevTool;Tart;;Cirruslabs , Tart , VM , Apple , Sillicon , CI/CD , images;https://github.com/cirruslabs/tart;;;;;;;;;;;;;;;;;;;;;
+DevTool;GitHub SwiftLint Action;;GitHub , GitHub Actions , SwiftLint , Actions;https://github.com/cirruslabs/swiftlint-action;;;;;;;;;;;;;;;;;;;;;
+Java;Git Changelog Lib;;Gradle , Changelog , Git , lib;https://github.com/tomasbjerre/git-changelog-lib;;;;;;;;;;;;;;;;;;;;;
+/;Swig;;JNI , C, C++, bridge , gateway , native , code;https://www.swig.org/;;;;;;;;;;;;;;;;;;;;;
+Humanism;LibreWolf;;web , browser , Firefox , privacy;https://librewolf.net/;;;;;;;;;;;;;;;;;;;;;
+Humanism;GNU IceCar;;web , browser , Firefox , privacy;https://icecatbrowser.org/index.html;;;;;;;;;;;;;;;;;;;;;
+/;Firejail;;security , sandbox , SUID , namespaces , trusted , apps;https://firejail.wordpress.com/;;;;;;;;;;;;;;;;;;;;;
+Humanism;CanvasBlocker;;Firefox , privacy , plugin , fingerprinting , canvas;https://github.com/kkapsner/CanvasBlocker;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
