@@ -132,7 +132,7 @@ if [ -d "/proc" ]; then
         warningPointsCount=$(($warningPointsCount + 1))
     fi
 else # Maybe on macOS
-    echo "Supposing you are in macOS operating system (don(t say you are on Windows)"
+    echo "Supposing you are in macOS operating system (don't say you are on Window$)"
     if ! grep -q "bash" "$SHELL" ; then
         echo "This script should be run with bash shell (zsh is fine too)"
     	warningPointsCount=$(($warningPointsCount + 1))
