@@ -1,7 +1,7 @@
 [![Opened issues](https://img.shields.io/github/issues-raw/pylapp/Tips-tools?style=for-the-badge)](https://github.com/pylapp/Tips-tools/issues)
 [![MIT license](https://img.shields.io/github/license/pylapp/Tips-tools?style=for-the-badge)](https://github.com/pylapp/Tips-tools/blob/master/LICENSE.txt)
 [![Versions](https://img.shields.io/github/v/release/pylapp/Tips-tools?label=Last%20version&style=for-the-badge)](https://github.com/pylapp/Tips-tools/releases)
-[![Still maintained](https://img.shields.io/maintenance/yes/2023?style=for-the-badge)](https://github.com/pylapp/Tips-tools/issues?q=is%3Aissue+is%3Aclosed)
+[![Still maintained](https://img.shields.io/maintenance/yes/2024?style=for-the-badge)](https://github.com/pylapp/Tips-tools/issues?q=is%3Aissue+is%3Aclosed)
 
 [![Code size](https://img.shields.io/github/languages/code-size/pylapp/Tips-Tools?style=for-the-badge)](https://github.com/pylapp/Tips-tools/tree/content)
 
