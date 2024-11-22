@@ -4,21 +4,21 @@
 # SPDX-License-Identifier: MIT
 #
 # Author..............: Pierre-Yves Lapersonne
-# Version.............: 15.1.1
+# Version.............: 15.2.0
 # Since...............: 05/10/2016
 # Description.........: Provides some features about this update/technical watch/... project: find some elements or build HTML files from CSV files to update another file
 #
-# Usage: bash tipsntools.sh {--help | --version |--count | --md5 | --sha1 | --update | --stats | --check | --full | {--findAll | --findWeb | --findTools | --findDevices | --findSocs} yourRegexp [--json | --csv]}
-# Usage: bash tipsntools.sh {-h | -v | -c | -m | -s1 | -u | -st | -ch | -f | {-a | -w | -t | -d | -s } yourRegexp [-json | -csv] }
+# Usage: bash tipsntools.sh {--help | --version |--count | --md5 | --sha1 | --update | --stats | --check | --full | {--findAll | --findWeb | --findTools | --findDevices | --findSocs} yourRegexp [--json]}
+# Usage: bash tipsntools.sh {-h | -v | -c | -m | -s1 | -u | -st | -ch | -f | {-a | -w | -t | -d | -s } yourRegexp [-json] }
 #
 # ✿✿✿✿ ʕ •ᴥ•ʔ/ ︻デ═一
 #
 
-# Debug purposes (beware with UCRL: if a request fails because of DNS issue or other stuff, script will fail)
+# Debug purposes (beware with CURL: if a request fails because of DNS issue or other stuff, script will fail)
 #set -euxo pipefail
 #set -euo pipefail
 
-VERSION="15.1.1"
+VERSION="15.2.0"
 
 # ############# #
 # CONFIGURATION #
@@ -52,7 +52,7 @@ SOC_DIR="contents/socz"
 CSV_SOC_FILE="$SOC_DIR/Tips-n-tools_SoC.csv"
 JSON_SOC_FILE="$SOC_DIR/Tips-n-tools_SoC.json"
 
-# The folder where the HTML pages (web app / pwa / spa and global page) are
+# The folder where the HTML pages (web app / PWA / SPA and global page) are
 BUILD_DIR="build"
 
 # ##### #
@@ -78,10 +78,10 @@ fUsageAndExit(){
 	echo "Tips-n-tools (macOS) $VERSION"
 	echo "*********************"
 	echo "USAGE:"
-	echo "bash tipsntools.sh {--help | --version | --count | --md5 | sha1 | --update | --check | --stats | --full | {--findAll | --findWeb | --findTools | --findDevices | --findSocs} yourRegexp [--json | --csv]}"
-	echo "bash tipsntools.sh {-h | -v | -c | -m | -s1 | -u | -ch | -st | -f | {-a | -w | -t | -d | -s} yourRegexp [-json | -csv]}"
-	echo -e "\t --help (-h)......................: display the help, i.e. this usage"
-	echo -e "\t --version (-v)...................: display the verison of this tool"
+	echo "bash tipsntools.sh {--help | --version | --count | --md5 | sha1 | --update | --check | --stats | --full | {--findAll | --findWeb | --findTools | --findDevices | --findSocs} yourRegexp [--json]}"
+	echo "bash tipsntools.sh {-h | -v | -c | -m | -s1 | -u | -ch | -st | -f | {-a | -w | -t | -d | -s} yourRegexp [-json]}"
+	echo -e "\t --help (-h)......................: display the help, i.e. this usage message"
+	echo -e "\t --version (-v)...................: display the version of this tool"
 	echo -e "\t --count (-c).....................: count the number of items"
 	echo -e "\t --md5 (-m).......................: compute the MD5 checksum"
 	echo -e "\t --sha1 (-s1).....................: compute the SHA1 checksum"
@@ -89,13 +89,11 @@ fUsageAndExit(){
 	echo -e "\t --check (-ch)....................: check for not found URL, i.e. not anymore reachable content (404 error code)"
 	echo -e "\t --stats (-st)....................: compute some metrics about the subject or category of each row"
 	echo -e "\t --full (-f)......................: get all the data, without filter, returns JSON objects"
-	echo -e "\t --findAll (-a) yourRegexp........: [--json or --csv needed] find in all the CSV source files the rows which contain elements matching yourRegexp"
-	echo -e "\t --findWeb (-w) yourRegexp........: [--json or --csv needed] find in the web links CSV source file the rows which contain elements matching yourRegexp"
-	echo -e "\t --findTools (-t) yourRegexp......: [--json or --csv needed] find in the tools CSV source file the rows which contain elements matching yourRegexp"
-	echo -e "\t --findDevices (-d) yourRegexp....: [--json or --csv needed] find in the devices CSV source file the rows which contain elements matching yourRegexp"
-	echo -e "\t --findSocs (-s) yourRegexp.......: [--json or --csv needed] find in the SoC CSV source file the rows which contain elements matching yourRegexp"
-	echo -e "\t --json (-json)...................: for 'find' commands, produce results in JSON format, not plain text"
-	echo -e "\t --csv (-csv).....................: for 'find' commands, produce results in CSV format, not plain text"
+	echo -e "\t --findAll (-a) yourRegexp........: [--json] find in all the CSV source files (or JSON) the rows which contain elements matching yourRegexp, and returns if asked JSON results"
+	echo -e "\t --findWeb (-w) yourRegexp........: [--json] find in the web links CSV source file (or JSON) the rows which contain elements matching yourRegexp, and returns if asked JSON results"
+	echo -e "\t --findTools (-t) yourRegexp......: [--json] find in the tools CSV source file (or JSON) the rows which contain elements matching yourRegexp, and returns if asked JSON results"
+	echo -e "\t --findDevices (-d) yourRegexp....: [--json] find in the devices CSV source file (or JSON) the rows which contain elements matching yourRegexp, and returns if asked JSON results"
+	echo -e "\t --findSocs (-s) yourRegexp.......: [--json] find in the SoC CSV source file (or JSON) the rows which contain elements matching yourRegexp, and returns if asked JSON results"
 	exit 0
 }
 
@@ -107,7 +105,7 @@ fVersion(){
 }
 
 # \fn fUpdate
-# \brief Updates the result file with HTML files built with CSV soruce files
+# \brief Updates the result file with HTML files built with CSV source files
 fUpdate(){
 	echo "*******************************"
 	echo "* Updating destination files..."
@@ -124,7 +122,7 @@ errBadCommand(){
 }
 
 # \fn errBadCommandAndExit
-# \brief Displays an error message saying there is a bad command and exists
+# \brief Displays an error message saying there is a bad command and exits
 errBadCommandandExit(){
 	errBadCommand
 	exit 1
@@ -274,7 +272,7 @@ fFindInJsonFile(){
 }
 
 # \fn fMd5sum
-# \brief Make an MD5 checksum for each file and display them in the standard ouput
+# \brief Compute an MD5 checksum for each file and display them in the standard ouput
 fMd5sum(){
 	if [ $(DoesRunOnGNULinux) == "yes" ]; then
 		command="md5sum"
@@ -310,7 +308,7 @@ fMd5sum(){
 }
 
 # \fn fSha1sum
-# \brief Make a SHA1 checksum for each file and display them in the standard ouput
+# \brief Compute a SHA1 checksum for each file and display them in the standard ouput
 # WARNING: For GNU/Linux, the command is 'sha1sum', for macOS the command is 'shasum'
 fSha1sum(){
 	if [ $(DoesRunOnGNULinux) == "yes" ]; then
@@ -508,7 +506,7 @@ if [ "$#" -lt 1 -o "$#" -gt 3 ]; then
 	fUsageAndExit
 # Need some help?
 elif [ "$1" = "--help" -o "$1" = "-h" ]; then
-		fUsageAndExit
+	fUsageAndExit
 fi
 
 # Check id the directories containing the data and the script exist
@@ -553,9 +551,9 @@ if [ ! -e "$UTILS_DIR/$CSV2GLOBAL_SCRIPT" ]; then
 	errBadFile "$UTILS_DIR/$CSV2GLOBAL_SCRIPT"
 fi
 
-# Let's work !
+# Let's work!
 if [ $1 ]; then
-# FIXME Cyclomatic number of McCabe is burning...
+# FIXME Cyclomatic number of McCabe is insane...
 	# Get the version
 	if [ "$1" = "--version" -o "$1" = "-v" ]; then
 		if [ "$#" -ne 1 ]; then
@@ -577,7 +575,7 @@ if [ $1 ]; then
 			echo "Update done during $DURATION seconds"
 		fi
 	# Get all the data?
-elif [ "$1" = "--full" -o "$1" = "-f" ]; then
+	elif [ "$1" = "--full" -o "$1" = "-f" ]; then
 		if [ "$#" -gt 2 ]; then
 			errBadCommand
 			fUsageAndExit
@@ -593,11 +591,8 @@ elif [ "$1" = "--full" -o "$1" = "-f" ]; then
 		regexp="$2"
 		if [ "$3" = "--json" -o "$3" = "-json" ]; then
 			fFindInAllJsonFiles $regexp
-		elif [ "$3" = "--csv" -o "$3" = "-csv" ]; then
-			fFindInAllCsvFiles $regexp
 		else
-			errBadCommand
-			fUsageAndExit
+			fFindInAllCsvFiles $regexp
 		fi
 	# Find some data in web file?
 	elif [ "$1" = "--findWeb" -o "$1" = "-w" ]; then
@@ -664,12 +659,12 @@ elif [ "$1" = "--full" -o "$1" = "-f" ]; then
 		fi
 	# Compute SHA1 checksums
 	elif [ "$1" = "--sha1" -o "$1" = "-s1" ]; then
-			if [ "$#" -ne 1 ]; then
-				errBadCommand
-				fUsageAndExit
-			else
-				fSha1sum
-			fi
+		if [ "$#" -ne 1 ]; then
+			errBadCommand
+			fUsageAndExit
+		else
+			fSha1sum
+		fi
 	# Compute the number of items in each file
 	elif [ "$1" = "--count" -o "$1" = "-c" ]; then
 		if [ "$#" -ne 1 ]; then

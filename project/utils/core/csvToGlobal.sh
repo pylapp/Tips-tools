@@ -7,7 +7,7 @@
 # Version.............: 14.0.0
 # Since...............: 28/09/2017
 # Description.........: Parses the CSV files (previously generated from the ODS file) to HTML and JSON files,
-#	and concatenate them to the global web page file, and update the web app.
+# concatenates them to the global web page file, and updates the web app.
 #
 # Usage: bash csvToGlobal.sh
 #

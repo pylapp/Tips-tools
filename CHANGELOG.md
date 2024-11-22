@@ -4,11 +4,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/pylapp/Tips-tools/compare/15.1.1...dev)
+## [Unreleased](https://github.com/pylapp/Tips-tools/compare/15.2.0...dev)
+
+## [15.2.0](https://github.com/pylapp/Tips-tools/compare/15.1.1...15.2.0) - 2024-11-22
 
 ### Changed
 
 - Various little cleanings ([#28](https://github.com/pylapp/Tips-tools/issues/28))
+
+### Removed
+
+- Useless CSV option
 
 ## [15.1.1](https://github.com/pylapp/Tips-tools/compare/15.1.0...15.1.1) - 2024-08-10
 

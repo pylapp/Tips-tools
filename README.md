@@ -69,7 +69,7 @@ bash tipsntools.sh --help
 
  Run
 ```shell
-bash tipsntools.sh {--findAll | --findWeb | --findDevices | --findTools | --findSocs} yourRegex {--json | --csv}
+bash tipsntools.sh {--findAll | --findWeb | --findDevices | --findTools | --findSocs} yourRegex {--json}
 ```
  to make some searches in files with a regular expression as a filter. The _--json_ flag after the regex makes the script produce JSON-based data.
 
