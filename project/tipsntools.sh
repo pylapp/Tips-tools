@@ -584,7 +584,7 @@ if [ $1 ]; then
 		fi
 	# Find some data in all files?
 	elif [ "$1" = "--findAll" -o "$1" = "-a" ]; then
-		if [ "$#" -ne 3 ]; then
+		if [ "$#" -gt 3 ]; then
 			errBadCommand
 			fUsageAndExit
 		fi

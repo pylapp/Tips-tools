@@ -12,9 +12,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Various little cleanings ([#28](https://github.com/pylapp/Tips-tools/issues/28))
 
+### Fixed
+
+- Some commands failed ([#28](https://github.com/pylapp/Tips-tools/issues/28))
+
 ### Removed
 
-- Useless CSV option
+- Useless CSV option ([#28](https://github.com/pylapp/Tips-tools/issues/28))
 
 ## [15.1.1](https://github.com/pylapp/Tips-tools/compare/15.1.0...15.1.1) - 2024-08-10
 
