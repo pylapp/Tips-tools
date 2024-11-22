@@ -223,19 +223,14 @@ fFindInCsvFile(){
 	cat $file | while read -r line; do
 		case "$line" in
 			*$regex*)
-			#if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
-			#	regex="s/;/\'$'\n/g"
-			#else # macOS
-			regex="s/;/\n/g"
-			#fi
-			echo $line | sed $regex | while read -r item; do
-				if [ "$item" = "" ]; then
-					echo -e "\t <null>"
-				else						
-					echo -e "\t" $item
-				fi
-			done
-			echo -e "\n"
+				echo "$line" | tr ';' '\n' | while read -r item; do
+					if [ "$item" = "" ]; then
+						echo -e "\t <null>"
+					else						
+						echo -e "\t" $item
+					fi
+				done
+				echo -e "\n"
 			;;
 			*)
 			;;

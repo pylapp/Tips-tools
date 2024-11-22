@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Some commands failed ([#28](https://github.com/pylapp/Tips-tools/issues/28))
+- Some failings commands (parameter issues, failures in `sed`) ([#28](https://github.com/pylapp/Tips-tools/issues/28))
 
 ### Removed
 
