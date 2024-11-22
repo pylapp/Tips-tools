@@ -1,0 +1,75 @@
+/*
+ * Software Name: Tips'n'tools
+ * SPDX-FileCopyrightText: Copyright (c) 2016-2023 Pierre-Yves Lapersonne
+ * SPDX-License-Identifier: MIT
+ */
+/*
+✿✿✿✿ ʕ •ᴥ•ʔ/ ︻デ═一
+*/
+
+/**
+* @file header.css
+* @brief Style sheet contaning definitions of styles to apply on the header
+* @author Pierre-Yves Lapersonne
+* @version 2.0.0
+* @since 10/12/2017
+*/
+
+header {
+  padding: 0px;
+  margin: 0px;
+}
+
+.header-baseline {
+  background-color: #212121;
+  color: #ffffff;
+  text-align: center
+}
+
+.header-text {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.headerSummary {
+  display: inline-block;
+  margin: 10px auto;
+  text-align: left;
+}
+
+.headerTextSummary {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.headerTextSummary > p {
+  margin: 5px auto;
+  vertical-align: middle;
+}
+
+.headerPhoto {
+  width: 128px;
+  height: 128px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.myName {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#mainHeader {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 0%;
+}

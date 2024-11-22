@@ -1,0 +1,107 @@
+/*
+ * Software Name: Tips'n'tools
+ * SPDX-FileCopyrightText: Copyright (c) 2016-2023 Pierre-Yves Lapersonne
+ * SPDX-License-Identifier: MIT
+ */
+/*
+✿✿✿✿ ʕ •ᴥ•ʔ/ ︻デ═一
+*/
+
+/**
+* @file devices.css
+* @brief Style sheet to apply on outptus related tod evices
+* @author Pierre-Yves Lapersonne
+* @version 2.0.0
+* @since 10/12/2017
+*/
+
+/* **************** */
+/* Types of devices */
+/* **************** */
+
+.typeSmartphone {
+	background-color: #ffc107;
+	color: #000000;
+	font-weight: bold;
+}
+
+.typeWatch {
+	background-color: #795548;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.typeBand {
+	background-color: #000000;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.typeBox {
+	background-color: #2196f3;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.typeOther {
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+}
+
+/* ******************* */
+/* Types of platforms */
+/* ****************** */
+
+.pfOther {
+	background-color: #9e9e9e;
+}
+
+.pfAndroid {
+	background-color: #8bc34a;
+}
+
+.pfCyanogen {
+	background-color: #00bcd4;
+}
+
+.pfOxygenOS {
+	background-color: #009688;
+}
+
+.pfIOS {
+	background-color: #f44336;
+}
+
+.pfWatchOS {
+	background-color: #f44336;
+}
+
+.pfWindows {
+	background-color: #3f51b5;
+}
+
+.pfFirefoxOS {
+	background-color: #ff9800;
+}
+
+.pfUbuntuTouch {
+	background-color: #ffeb3b;
+}
+
+.pfTizen {
+	background-color: #2196f3;
+}
+
+.pfFuschia {
+	background-color: #e91e63;
+}
+
+/* *************** */
+/* Technical items */
+/* *************** */
+
+.os, .constructor, .name, .screensize, .screentype, .screenresolution, .soc, .gpu, .sensors, .battery, .storage, .ram, .camera, .dimensions, .weight, .ip, .usbtype, .sdcard, .sim, .ui {
+	text-align: center;
+	font-weight: normal;
+}

@@ -1,0 +1,63 @@
+/*
+ * Software Name: Tips'n'tools
+ * SPDX-FileCopyrightText: Copyright (c) 2016-2023 Pierre-Yves Lapersonne
+ * SPDX-License-Identifier: MIT
+ */
+/*
+✿✿✿✿ ʕ •ᴥ•ʔ/ ︻デ═一
+*/
+
+/**
+* @file global.css
+* @brief Style sheet contaning definitions of global styles
+* @author Pierre-Yves Lapersonne
+* @version 2.2.0
+* @since 10/12/2017
+*/
+
+body {
+	font-family: sans-serif;
+	background-color: #F5F5F5;
+	margin: 0px;
+}
+
+p {
+  font-size: 22px;
+  margin: 0px;
+  padding: 10px 0px;
+}
+
+.text {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: 300;
+	line-height: 0.5rem;
+	text-align: left;
+	color: #212121;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+#contentSection {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	margin-left: 1rem;
+	margin-left: 1rem;
+}
+
+.errorMessage {
+	font-weight: bold;
+	font-size: medium;
+	text-align: center;
+	color: #FFEB3B;
+	background-color: #FF5722;
+}
+
+p > a {
+	text-decoration: none;
+	color: #03A9F4;
+}
