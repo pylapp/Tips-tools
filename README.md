@@ -61,33 +61,37 @@ bash doctor.sh
 
 ## The main script
 
- Run
+### Get help about commands
+
 ```shell
 bash tipsntools.sh --help
 ```
- to get some help about the commands ;-)
 
- Run
+### Make queries using regexp
+
 ```shell
 bash tipsntools.sh {--findAll | --findWeb | --findDevices | --findTools | --findSocs} yourRegex {--json}
 ```
- to make some searches in files with a regular expression as a filter. The _--json_ flag after the regex makes the script produce JSON-based data.
 
- Run
+It makes some searches in files with a regular expression as a filter. The _--json_ flag after the regex makes the script produce JSON-based data.
+
+### Update corpora
+
 ```shell
 bash tipsntools.sh --update
 ```
- to build HTML and JSON files from your CSV files, and build a global web page and the little web app (to see as a Progressive Web App or Single Page Application if you like buzzwords)
+It builds HTML and JSON files from your CSV files, and build a global web page and the little web app (to see as a Progressive Web App or Single Page Application if you like buzzwords).
 
 ## Add new elements in spreadsheets and other files
 
 You can fill the _.ods_ spreadsheet file with new data you want to save.
 You should keep the columns order.
-Then run
+Then export the spreadsheet tabs in CSV format (UTF8 encoded) in the suitable folders.
+And run the command bellow to update the _.html_ and _.json_ files.
+
 ```shell
 bash tipsntools.sh --update
 ```
-to update the _.html_ and _.json_ files.
 
 ## Who's who
 
@@ -99,14 +103,14 @@ Finally, the CSV files you should export from ODS (preserving UTF8), and the gen
 
 ## Customize the project
 
-In most of case nothing is hard-coded. Feel free to customize the Shell scripts, the HTML assets, etc.
+In most of case nothing is hard-coded, I hope. Feel free to customize the Shell scripts, the HTML assets, etc.
 The thing is, if you want to add a column in one of the spreadsheet's sheets, do not forget to update the dedicated Shell scripts and the HTML elements (CSS style sheets, HTML tables, etc.).
 
 ## Run the web app
 
 The web app here is a kind of "Progressive Web App" as a "Single App Application" (one page, offline, installable, with a cache, responsive, etc), BUT it remains web before all and it's a bit crapy.
-So because web browsers world is fu****g missy (and also coz' I enjoy native apps <3), it remains web browsers which do not support Service Workers, Web Workers, IndexedDB, Promises, ES6 or common and nowadays tools blablabla. 
-Thus you should use an up-to-date web browser. And sometimes it still won't work. "Web is universal and cool" they said (U_U))
+So because web browsers world is fu****g missy (and also coz' I enjoy native apps), it remains web browsers which do not support Service Workers, Web Workers, IndexedDB, Promises, ES6 or common and nowadays tools blablabla. 
+Thus you should use an up-to-date web browser. And sometimes it still won't work. "Web is universal and cool" they said (U_U)
 Because Service Workers are used, you should reach the web app through HTTPS or a local web server (_localhost_).
 
 _If you saw newbie things I did, feel free to submit a pull request!_
@@ -144,7 +148,8 @@ Here is the file tree for this version:
 ## Note
 
 It seems some web browsers (Firefox 58 for Android and Ubuntu) have bugs with IndexedDB. So you won't use the web app with them.  
-You ask why Shell and Ruby are used instead of full cross-platforms languages? Power, effectiveness, and free and open-source OS ;-)  
+You ask why Shell and Ruby are used instead of full cross-platforms languages? Power, effectiveness, and free and open-source OS.
+This project was, and in fact still is, a side project without too much ambitions with naive implementations. Feel free to subit pull requests to improve it.
 
 ## Must-read note
 
