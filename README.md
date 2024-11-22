@@ -32,8 +32,8 @@ width="500"/>
 
 <em>Keep time and be faster with your own cache of references, tools and specifications useful for developers!</em>
 
-_Tips'n'tools_ is a project which has the aim of making searches a bit more fast and improving technical watch.  
-Indeed sometimes you need to share usefull web links and cool libraries to your colleagues, but which platform to use?
+_Tips'n'tools_ is a project which has the aim of making searches a bit faster and improving technical watch.  
+Indeed sometimes you need to share useful web links and cool libraries to your colleagues, but which platform to use?
 Your company's inner social network? Lost time if you move from your job.
 A public social media? Lost time if this medium is closed.
 Fill your web browser's bookmarks? Yeah, got stolen or reinitialized your computer and you are done.  
@@ -49,7 +49,7 @@ Then you can:
 **_Tips'n'tools_ may be useful if you want to compile, in one place, plenty of references and data interesting for your projects.
 Never rely on social networks or corporate heavy tools, make your own cache and bring it everywhere!**
 
-You can get more detials [in the wiki](https://github.com/pylapp/Tips-tools/wiki).
+You can get more details [in the wiki](https://github.com/pylapp/Tips-tools/wiki).
 
 ## The doctor
 
@@ -156,7 +156,7 @@ If you get errors like _sed: RE error: illegal byte sequence_, please refer to t
 It seems some files (like CSV files) you produce contain special characters '�' making `sed` fail.
 https://stackoverflow.com/questions/19242275/re-error-illegal-byte-sequence-on-mac-os-x
 
-You may also have in the wepp app error like _"An error occured with the JSON data gotten from the feed Web API. The degraded mode is still available"_. By looking in the developer console, you may find there is unexpected error in the JSON data returned by the script.
+You may also have in the web app error like _"An error occured with the JSON data gotten from the feed Web API. The degraded mode is still available"_. By looking in the developer console, you may find there is unexpected error in the JSON data returned by the script.
 In this case you should have a look on the CSV files you exported ; maybe there are not well formatted and make the produced JSON bad.
 
 In addition, if you install the web app on your computer, you may have different behaviors if you choose Brave, Chrome or Firefox :-/
