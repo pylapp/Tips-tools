@@ -64,13 +64,8 @@ while read -r line; do
 		# Get the line of the document where the headers of the columns are
 		if [ $currentRowIndex -eq $(($NUMBER_OF_LINES_TO_IGNORE - 1)) ]; then
 			echo -e "\t<thead>"
-			echo -e "\t\t<tr>"
-			#if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
-				regex="s/;/\n/g"
-			#else # macOS
-			#	regex="s/;/\'$'\n/g"
-			#fi		
-			echo $line | sed $regex | while read -r item; do
+			echo -e "\t\t<tr>"	
+			echo $line | tr ';' '\n' | while read -r item; do
 				echo -e "\t\t\t<td class=\"header\">" $item "</td>"
 			done
 			echo -e "\t\t</tr>"
@@ -86,12 +81,7 @@ while read -r line; do
 
 	# ***** Step 4: Split the line and replace ; by \n, and delete useless "
 	fieldIndex=0
-	#if [ $(DoesRunOnGNULinux) == "yes" ]; then # GNU/Linux
-		regex="s/;/\n/g"
-	#else # macOS
-	#	regex="s/;/\'$'\n/g"
-	#fi	
-	echo $line | sed $regex | while read -r item; do
+	echo $line | tr ';' '\n' | while read -r item; do
 		cleanItem=`echo $item | sed 's/\"//g'`
 		# Add a good CSS class
 		case "$fieldIndex" in

@@ -14,7 +14,7 @@ repository-code: 'https://github.com/pylapp/Tips-tools'
 url: 'https://github.com/pylapp/Tips-tools'
 abstract: >-
   Tips'n'tools is a project which has the aim of making searches faster and improving technical watch.
-  Indeed, sometimes you need to share usefull web links and cool libraries to your colleagues, 
+  Indeed, sometimes you need to share useful web links and cool libraries to your colleagues, 
   but which platform to use?
 
   Your company's inner social network? Lost time if you move from your job. 
@@ -40,5 +40,5 @@ keywords:
   - Ruby
   - PWA
 license: MIT
-version: 15.0.0
-date-released: '2023-09-25'
+version: 15.2.0
+date-released: '2024-11-22'

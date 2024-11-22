@@ -1,9 +1,24 @@
 # Tips'n'tools library changelog
 
 All notable changes to this project will be documented in this file.
-This project adheres to [Semantic Versioning](http://semver.org/).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/pylapp/Tips-tools/compare/15.1.1...dev)
+## [Unreleased](https://github.com/pylapp/Tips-tools/compare/15.2.0...dev)
+
+## [15.2.0](https://github.com/pylapp/Tips-tools/compare/15.1.1...15.2.0) - 2024-11-22
+
+### Changed
+
+- Various little cleanings ([#28](https://github.com/pylapp/Tips-tools/issues/28))
+
+### Fixed
+
+- Some failings commands (parameter issues, failures in `sed`) ([#28](https://github.com/pylapp/Tips-tools/issues/28))
+
+### Removed
+
+- Useless CSV option ([#28](https://github.com/pylapp/Tips-tools/issues/28))
 
 ## [15.1.1](https://github.com/pylapp/Tips-tools/compare/15.1.0...15.1.1) - 2024-08-10
 
@@ -30,13 +45,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 
-- [#7](https://github.com/pylapp/Tips-tools/issues/7) Pick hard-coded fixes and improve versions
+- Pick hard-coded fixes and improve versions ([#7](https://github.com/pylapp/Tips-tools/issues/7))
 
 ### Changed
 
-- [#15](https://github.com/pylapp/Tips-tools/issues/15) Add dry-run script 
-- [#10](https://github.com/pylapp/Tips-tools/issues/10) Deal with GNU/Linux and macOS primitives
-- [#14](https://github.com/pylapp/Tips-tools/issues/14) Add CC-BY license for generated and ODS file
+- Add dry-run script ([#15](https://github.com/pylapp/Tips-tools/issues/15))
+- Deal with GNU/Linux and macOS primitives ([#10](https://github.com/pylapp/Tips-tools/issues/10))
+- Add CC-BY license for generated and ODS file ([#14](https://github.com/pylapp/Tips-tools/issues/14))
 - Improve check of URL in CSV files
 - Update sources headers
 - Refactor file tree
@@ -76,7 +91,7 @@ _This version is dedicated to macOS users, and is based on v14.3.0_
 
 ## [14.3.0] - 2023-08-28
 
-_This version id dedicated to GNU/Linux users_
+_This version is dedicated to GNU/Linux users_
 
 ### Changed
 
