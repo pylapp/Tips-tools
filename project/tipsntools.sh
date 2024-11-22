@@ -18,7 +18,7 @@
 #set -euxo pipefail
 #set -euo pipefail
 
-VERSION="15.1.0"
+VERSION="15.1.1"
 
 # ############# #
 # CONFIGURATION #
